@@ -19,12 +19,50 @@ def openFile(file):
     golfer[0][8] = 'Total Score'
     del golfer[1]
     npGolfer = np.asarray(golfer)
+    npGolfer = npGolfer[1:]
 
     return npGolfer
 
+def createArrayFromSpecifiedIndices(target, listOfIndices):
+    """
+    From a 2D array, return a 1D array of the given elements
+    :param target: A 2D array
+    :param listOfIndices: A list of elements
+    :return: A list of elements from every item in the list
+    """
+    returnable = []
+    for x in target:
+        for y in listOfIndices:
+            returnable += [x[y]]
+
+    return returnable
+
+def dataPurge(data):
+    purged = []
+    for x in data:
+        if x != "--":
+            purged += [int(x)]
+
+    return purged
+
 def main():
+
     golfer = openFile('DustinJohnson.csv')
-    print(golfer)
+    scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
+    purged = dataPurge(scores)
+    for x in range(0,len(purged)%4):
+        del purged[len(purged)-x-1]
+    fours = []
+    index = int(len(purged)/4)
+    for x in range(0,index):
+        fours += [purged[4 * x] + purged[4 * x + 1] + purged[4 * x + 2] + purged[4 * x + 3]]
+
+    kernel = gaussian_kde(fours)
+
+    for x in range(216,360):
+        print(x, kernel.integrate_box_1d(0, x))
+
+
 
 if __name__ == "__main__":
     main()
