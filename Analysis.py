@@ -92,7 +92,6 @@ def main():
     df.to_csv("JordanSpiethProbabilities.csv")
     """
     TODO: 
-    Write function to write score and probability to csv
     Apply other data to problem
     """
 
