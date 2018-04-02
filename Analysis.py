@@ -1,4 +1,5 @@
 from scipy.stats import gaussian_kde
+import pandas as pd
 import numpy as np
 import csv
 
@@ -38,6 +39,11 @@ def createArrayFromSpecifiedIndices(target, listOfIndices):
     return returnable
 
 def dataPurge(data):
+    """
+    Given a list of numbers and empty entries (--), remove the empty entries and return the list
+    :param data: list of numbers
+    :return: list of numbers purged of (--)
+    """
     purged = []
     for x in data:
         if x != "--":
@@ -45,24 +51,50 @@ def dataPurge(data):
 
     return purged
 
+def writeFile(data, file):
+    """
+    Writes file of probabilities
+    :param scores: Scores that are keys in probability dictionary
+    :param probabilities: Dict of probabilities
+    :param file: file name
+    :return: void
+    """
+    with open(file, 'wb') as csvfile:
+        for x in data:
+            spamwriter = csv.writer(csvfile, delimiter=' ',quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            spamwriter.writerow(x[0],x[1])
+            print(x[0],x[1])
+
 def main():
 
-    golfer = openFile('DustinJohnson.csv')
+    golfer = openFile('JordanSpieth.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
-    purged = dataPurge(scores)
-    for x in range(0,len(purged)%4):
-        del purged[len(purged)-x-1]
-    fours = []
-    index = int(len(purged)/4)
-    for x in range(0,index):
-        fours += [purged[4 * x] + purged[4 * x + 1] + purged[4 * x + 2] + purged[4 * x + 3]]
+    purgedGolfer = dataPurge(scores)
+    kernel = gaussian_kde(purgedGolfer)
 
-    kernel = gaussian_kde(fours)
-
-    for x in range(216,360):
-        print(x, kernel.integrate_box_1d(0, x))
-
-
+    keys = []
+    probs = {}
+    for i in range(216,360):
+        if i not in keys:
+            keys += [i]
+            probs[i] = 0
+        for w in range(54,90):
+            for x in range(54,90):
+                for y in range(54,90):
+                    for z in range(54,90):
+                        if (w+x+y+z)==i:
+                            probs[i] += kernel.evaluate(w) * kernel.evaluate(x) * kernel.evaluate(y) * kernel.evaluate(z)
+        print(i)
+    probabilities = []
+    for x in keys:
+        probabilities += [[x, probs[x]]]
+    df = pd.DataFrame(probabilities)
+    df.to_csv("JordanSpiethProbabilities.csv")
+    """
+    TODO: 
+    Write function to write score and probability to csv
+    Apply other data to problem
+    """
 
 if __name__ == "__main__":
     main()
