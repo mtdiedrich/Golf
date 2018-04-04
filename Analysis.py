@@ -85,9 +85,11 @@ def main():
                         if (w+x+y+z)==i:
                             probs[i] += kernel.evaluate(w) * kernel.evaluate(x) * kernel.evaluate(y) * kernel.evaluate(z)
         print(i)
+    sum = 0
     probabilities = []
     for x in keys:
-        probabilities += [[x, probs[x]]]
+        sum += float(probs[x])
+        probabilities += [[x, float(probs[x]), sum]]
     df = pd.DataFrame(probabilities)
     df.to_csv("JordanSpiethProbabilities.csv")
     """
@@ -97,3 +99,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
