@@ -16,7 +16,10 @@ def openFile(file):
 
 
 def main():
-    x = 0
+    file = 'DustinJohnsonProbabilities.csv'
+    golfer = openFile(file)
+    for x in golfer:
+        print(x)
 
 if __name__ == "__main__":
     main()
