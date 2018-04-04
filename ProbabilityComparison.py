@@ -16,10 +16,15 @@ def openFile(file):
 
 
 def main():
-    file = 'DustinJohnsonProbabilities.csv'
-    golfer = openFile(file)
-    for x in golfer:
-        print(x)
+    file1 = 'DustinJohnsonProbabilities.csv'
+    file2 = 'JordanSpiethProbabilities.csv'
+    golfer1 = openFile(file1)
+    golfer2 = openFile(file2)
+    sum = 0
+    for x in range(0,len(golfer1)):
+        sum += float(golfer1[x][2]) * float(golfer2[x-1][3])
+    print(sum)
+
 
 if __name__ == "__main__":
     main()
