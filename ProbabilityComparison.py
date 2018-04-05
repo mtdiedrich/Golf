@@ -16,38 +16,32 @@ def openFile(file):
 
 
 def main():
-
+    # DO NOT FORGET: Low score wins :)
     golfer1 = openFile('DustinJohnsonProbabilities.csv')
-    golfer2 = openFile('JustinThomasProbabilities.csv')
-    golfer3 = openFile('JordanSpiethProbabilities.csv')
-    golfers = [golfer1, golfer2, golfer3]
+    golfer2 = openFile('JustinRoseProbabilities.csv')
+    # Delete informationless column titles
 
-    sum  = 0
-    for x in range(0,len(golfer1)):
-        for y in range(0,len(golfer2)):
-            for z in range(0, min(x,y)):
-                sum += float(golfer1[x][2]) * float(golfer2[y][2]) * float(golfer3[z][2])
-                print(sum)
-    print(sum)
-
-    sum2beats1 = 0
+    sum2 = 0
     for x in range(0,len(golfer1)):
         for y in range(0,x):
-            sum2beats1 += float(golfer1[x][2]) * float(golfer2[y][2])
-    print(sum2beats1-1)
+            sum2 += float(golfer1[x][2]) * float(golfer2[y][2])
+    sum2 = sum2 - 1
+    print(sum2)
 
-    sum1beats2 = 0
-    for x in range(0,len(golfer2)):
-        for y in range(0,x):
-            sum1beats2 += float(golfer2[x][2]) * float(golfer1[y][2])
-    print(sum1beats2-1)
+    golfer2 = openFile('DustinJohnsonProbabilities.csv')
+    golfer1 = openFile('JustinRoseProbabilities.csv')
+    # Delete informationless column titles
 
-    sumTie = 0
+    sum1 = 0
     for x in range(0,len(golfer1)):
-        sumTie += float(golfer1[x][2]) * float(golfer2[x][2])
-    print(sumTie-1)
-    
-    print(sum2beats1 + sum1beats2 + sumTie - 3)
+        for y in range(0,x):
+            sum1 += float(golfer1[x][2]) * float(golfer2[y][2])
+    sum1 = sum1 - 1
+    print(sum1)
+
+    print(1-sum1-sum2)
+
+
 
 if __name__ == "__main__":
     main()

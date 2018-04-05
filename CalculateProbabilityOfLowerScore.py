@@ -51,53 +51,16 @@ def dataPurge(data):
 
     return purged
 
-def writeFile(data, file):
-    """
-    Writes file of probabilities
-    :param scores: Scores that are keys in probability dictionary
-    :param probabilities: Dict of probabilities
-    :param file: file name
-    :return: void
-    """
-    with open(file, 'wb') as csvfile:
-        for x in data:
-            spamwriter = csv.writer(csvfile, delimiter=' ',quotechar='|', quoting=csv.QUOTE_MINIMAL)
-            spamwriter.writerow(x[0],x[1])
-            print(x[0],x[1])
-
 def main():
 
     golfer = openFile('DustinJohnson.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     purgedGolfer = dataPurge(scores)
-    kernel = gaussian_kde(purgedGolfer)
-
-
-    keys = []
-    probs = {}
-    for i in range(216,360):
-        if i not in keys:
-            keys += [i]
-            probs[i] = 0
-        for w in range(54,90):
-            for x in range(54,90):
-                for y in range(54,90):
-                    for z in range(54,90):
-                        if (w+x+y+z)==i:
-                            probs[i] += kernel.evaluate(w) * kernel.evaluate(x) * kernel.evaluate(y) * kernel.evaluate(z)
-        print(i)
-    sum = 0
-    probabilities = []
-    for x in keys:
-        sum += float(probs[x])
-        probabilities += [[x, float(probs[x]), sum]]
-    df = pd.DataFrame(probabilities)
-    df.to_csv("JustinRoseProbabilities.csv")
-    """
-    TODO: 
-    Apply other data to problem
-    """
+    incr = 0
+    for x in purgedGolfer:
+        if x < 70.5:
+            incr += 1
+    print(incr/len(purgedGolfer))
 
 if __name__ == "__main__":
     main()
-
