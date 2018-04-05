@@ -53,12 +53,12 @@ def dataPurge(data):
 
 def main():
 
-    golfer = openFile('RafaCabreraBello.csv')
+    golfer = openFile('JordanSpieth.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     purgedGolfer = dataPurge(scores)
     incr = 0
     for x in purgedGolfer:
-        if x < 71.5:
+        if x < 70.5:
             incr += 1
     print(incr/len(purgedGolfer))
 

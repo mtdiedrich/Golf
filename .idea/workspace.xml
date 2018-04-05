@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee34506-33e3-441e-ab3b-c7b3428de3cc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis.py" afterPath="$PROJECT_DIR$/Analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" afterPath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="Analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+            <state relative-caret-position="228">
+              <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -29,8 +31,8 @@
       <file leaf-file-name="CalculateProbabilityOfLowerScore.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="296">
+              <caret line="65" column="10" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="65" selection-end-column="10" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -293,8 +295,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.CalculateProbabilityOfLowerScore" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Analysis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ProbabilityComparison" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ProbabilityComparison" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Analysis" />
         <item index="3" class="java.lang.String" itemvalue="Python.DistributionAnalysis" />
         <item index="4" class="java.lang.String" itemvalue="Python.Dice" />
       </list>
@@ -437,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        <state relative-caret-position="228">
+          <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -447,8 +449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state relative-caret-position="296">
+          <caret line="65" column="10" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="65" selection-end-column="10" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
