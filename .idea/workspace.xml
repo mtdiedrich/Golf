@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee34506-33e3-441e-ab3b-c7b3428de3cc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DustinJohnson.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DustinJohnsonProbabilities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JordanSpieth.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JordanSpiethProbabilities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JustinRose.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JustinRoseProbabilities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JustinThomas.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JustinThomasProbabilities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RafaCabreraBello.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis.py" afterPath="$PROJECT_DIR$/Analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" afterPath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProbabilityComparison.py" afterPath="$PROJECT_DIR$/ProbabilityComparison.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Analysis.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+            <state relative-caret-position="-282">
+              <caret line="69" column="96" lean-forward="false" selection-start-line="69" selection-start-column="96" selection-end-line="69" selection-end-column="96" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -28,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateProbabilityOfLowerScore.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CalculateProbabilityOfLowerScore.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="65" column="10" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="65" selection-end-column="10" />
+            <state relative-caret-position="126">
+              <caret line="55" column="91" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="91" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -43,8 +53,8 @@
       <file leaf-file-name="ProbabilityComparison.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProbabilityComparison.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -68,9 +78,9 @@
         <option value="$PROJECT_DIR$/DistributionAnalysis.py" />
         <option value="$PROJECT_DIR$/Dice.py" />
         <option value="$PROJECT_DIR$/JordanSpiethProbabilities.csv" />
+        <option value="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
         <option value="$PROJECT_DIR$/ProbabilityComparison.py" />
         <option value="$PROJECT_DIR$/Analysis.py" />
-        <option value="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
       </list>
     </option>
   </component>
@@ -129,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CalculateProbabilityOfLowerScore">
+  <component name="RunManager" selected="Python.Analysis">
     <configuration default="false" name="DistributionAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,9 +304,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CalculateProbabilityOfLowerScore" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Analysis" />
         <item index="1" class="java.lang.String" itemvalue="Python.ProbabilityComparison" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Analysis" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CalculateProbabilityOfLowerScore" />
         <item index="3" class="java.lang.String" itemvalue="Python.DistributionAnalysis" />
         <item index="4" class="java.lang.String" itemvalue="Python.Dice" />
       </list>
@@ -431,26 +441,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProbabilityComparison.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis.py">
+    <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+        <state relative-caret-position="126">
+          <caret line="55" column="91" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="91" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
+    <entry file="file://$PROJECT_DIR$/Analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="65" column="10" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="65" selection-end-column="10" />
+        <state relative-caret-position="-282">
+          <caret line="69" column="96" lean-forward="false" selection-start-line="69" selection-start-column="96" selection-end-line="69" selection-end-column="96" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

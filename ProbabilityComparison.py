@@ -17,8 +17,8 @@ def openFile(file):
 
 def main():
     # DO NOT FORGET: Low score wins :)
-    golfer1 = openFile('DustinJohnsonProbabilities.csv')
-    golfer2 = openFile('JustinRoseProbabilities.csv')
+    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\DustinJohnsonProbabilities.csv')
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\JustinRoseProbabilities.csv')
     # Delete informationless column titles
 
     sum2 = 0
@@ -28,8 +28,8 @@ def main():
     sum2 = sum2 - 1
     print(sum2)
 
-    golfer2 = openFile('DustinJohnsonProbabilities.csv')
-    golfer1 = openFile('JustinRoseProbabilities.csv')
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\DustinJohnsonProbabilities.csv')
+    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\JustinRoseProbabilities.csv')
     # Delete informationless column titles
 
     sum1 = 0

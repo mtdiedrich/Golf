@@ -67,7 +67,7 @@ def writeFile(data, file):
 
 def main():
 
-    golfer = openFile('JustinThomas.csv')
+    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\RafaCabreraBello.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     purgedGolfer = dataPurge(scores)
     kernel = gaussian_kde(purgedGolfer)
@@ -92,7 +92,7 @@ def main():
         sum += float(probs[x])
         probabilities += [[x, float(probs[x]), sum]]
     df = pd.DataFrame(probabilities)
-    df.to_csv("JustinThomasProbabilities.csv")
+    df.to_csv(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\RafaCabreraBelloProbabilities.csv')
     """
     TODO: 
     Apply other data to problem
