@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee34506-33e3-441e-ab3b-c7b3428de3cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AlternativeMethod.py" afterPath="$PROJECT_DIR$/AlternativeMethod.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis.py" afterPath="$PROJECT_DIR$/Analysis.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" afterPath="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProbabilityComparison.py" afterPath="$PROJECT_DIR$/ProbabilityComparison.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateProbabilityOfLowerScore.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CalculateProbabilityOfLowerScore.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="126">
+              <caret line="55" column="89" lean-forward="false" selection-start-line="55" selection-start-column="89" selection-end-line="55" selection-end-column="89" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -53,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbabilityComparison.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProbabilityComparison.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProbabilityComparison.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -83,9 +80,9 @@
         <option value="$PROJECT_DIR$/JordanSpiethProbabilities.csv" />
         <option value="$PROJECT_DIR$/Probabilities/AlternativeMethod.py" />
         <option value="$PROJECT_DIR$/Analysis.py" />
-        <option value="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
         <option value="$PROJECT_DIR$/AlternativeMethod.py" />
         <option value="$PROJECT_DIR$/ProbabilityComparison.py" />
+        <option value="$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py" />
       </list>
     </option>
   </component>
@@ -158,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ProbabilityComparison">
+  <component name="RunManager" selected="Python.CalculateProbabilityOfLowerScore">
     <configuration default="false" name="Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,8 +320,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ProbabilityComparison" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CalculateProbabilityOfLowerScore" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CalculateProbabilityOfLowerScore" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ProbabilityComparison" />
         <item index="2" class="java.lang.String" itemvalue="Python.AlternativeMethod (1)" />
         <item index="3" class="java.lang.String" itemvalue="Python.AlternativeMethod" />
         <item index="4" class="java.lang.String" itemvalue="Python.Analysis" />
@@ -524,16 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AlternativeMethod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -549,6 +536,16 @@
         <state relative-caret-position="126">
           <caret line="20" column="96" lean-forward="false" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculateProbabilityOfLowerScore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="55" column="89" lean-forward="false" selection-start-line="55" selection-start-column="89" selection-end-line="55" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
