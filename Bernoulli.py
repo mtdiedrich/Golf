@@ -15,7 +15,7 @@ def nCr(n,r):
 
 
 def main():
-    p = .8
+    p = .5
     n = 1001
     r = 801
     sum = 0
