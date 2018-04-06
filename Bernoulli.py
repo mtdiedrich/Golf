@@ -15,9 +15,9 @@ def nCr(n,r):
 
 
 def main():
-    p = .575
-    n = 1029
-    r = 560
+    p = .8
+    n = 1001
+    r = 801
     sum = 0
     for x in range(r,n+1):
         sum += nCr(n,x) * (p**x) * ((1-p)**(n-x))
