@@ -67,19 +67,24 @@ def writeFile(data, file):
 
 def main():
 
-    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\RafaCabreraBello.csv')
-    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\JordanSpieth.csv')
+    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\PhilMickelson.csv')
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\MattKuchar.csv')
+    golfer3 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\RickieFowler.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     scores2 = np.asarray(createArrayFromSpecifiedIndices(golfer2, [3, 4, 5, 6, 7]))
+    scores3 = np.asarray(createArrayFromSpecifiedIndices(golfer3, [3, 4, 5, 6, 7]))
     purgedGolfer = dataPurge(scores)
     purgedGolfer2 = dataPurge(scores2)
+    purgedGolfer3 = dataPurge(scores3)
     kernel = gaussian_kde(purgedGolfer)
     kernel2 = gaussian_kde(purgedGolfer2)
+    kernel3 = gaussian_kde(purgedGolfer3)
 
     sum = 0
     for x in range(54,90):
-        for y in range(54,x):
-            sum += kernel.evaluate(x) * kernel2.evaluate(y)
+        for y in range(54,90):
+            for z in range(54,min(x,y)):
+                sum += kernel.evaluate(x) * kernel3.evaluate(y) * kernel2.evaluate(z)
     print(float(sum))
 
 
