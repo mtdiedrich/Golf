@@ -67,8 +67,8 @@ def writeFile(data, file):
 
 def main():
 
-    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\PhilMickelson.csv')
-    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\MattKuchar.csv')
+    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\PaulCasey.csv')
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HidekiMatsuyama.csv')
     golfer3 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\RickieFowler.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     scores2 = np.asarray(createArrayFromSpecifiedIndices(golfer2, [3, 4, 5, 6, 7]))
@@ -86,6 +86,29 @@ def main():
             for z in range(54,min(x,y)):
                 sum += kernel.evaluate(x) * kernel3.evaluate(y) * kernel2.evaluate(z)
     print(float(sum))
+
+    newSum = 0
+    massSum = 0
+    for x in range(54,90):
+        for y in range(0,x):
+            newSum += kernel.evaluate(x) * kernel2.evaluate(y)
+    print(newSum)
+    massSum += float(newSum)
+
+    newSum = 0
+    for x in range(54,90):
+        for y in range(0,x):
+            newSum += kernel2.evaluate(x) * kernel.evaluate(y)
+    massSum += float(newSum)
+    print(newSum)
+
+    newSum = 0
+    for x in range(54,90):
+        newSum += kernel.evaluate(x) * kernel2.evaluate(x)
+    massSum += float(newSum)
+    print(newSum)
+    print(massSum)
+
 
 
 

@@ -17,9 +17,8 @@ def openFile(file):
 
 def main():
     # DO NOT FORGET: Low score wins :)
-    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\DocRedman.csv')
+    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\DocRedmanProbabilities.csv')
     golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\JustinThomasProbabilities.csv')
-    # Delete informationless column titles
 
     sum2 = 0
     for x in range(0,len(golfer1)):
@@ -28,9 +27,8 @@ def main():
     sum2 = sum2 - 1
     print(sum2)
 
-    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\DocRedman.csv')
-    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\JustinThomasProbabilities.csv')
-    # Delete informationless column titles
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\PaulCaseyProbabilities.csv')
+    golfer1 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\HidekiMatsuyamaProbabilities.csv')
 
     sum1 = 0
     for x in range(0,len(golfer1)):
@@ -39,7 +37,10 @@ def main():
     sum1 = sum1 - 1
     print(sum1)
 
-    print(1-sum1-sum2)
+    tieSum = 0
+    for x in range(0,len(golfer1)):
+        tieSum += float(golfer1[x][2]) * float(golfer2[x][2])
+    print(tieSum-1)
 
 
 

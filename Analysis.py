@@ -67,7 +67,7 @@ def writeFile(data, file):
 
 def main():
 
-    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\PaulCasey.csv')
+    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HidekiMatsuyama.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     purgedGolfer = dataPurge(scores)
     kernel = gaussian_kde(purgedGolfer)
@@ -91,7 +91,7 @@ def main():
         sum += float(probs[x])
         probabilities += [[x, float(probs[x]), sum]]
     df = pd.DataFrame(probabilities)
-    df.to_csv(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\PaulCaseyProbabilities.csv')
+    df.to_csv(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Probabilities\HidekiMatsuyamaProbabilities.csv')
 
 if __name__ == "__main__":
     main()
