@@ -67,8 +67,8 @@ def writeFile(data, file):
 
 def main():
 
-    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\PaulCasey.csv')
-    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HidekiMatsuyama.csv')
+    golfer = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\CharleyHoffman.csv')
+    golfer2 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\TonyFinau.csv')
     golfer3 = openFile(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\RickieFowler.csv')
     scores = np.asarray(createArrayFromSpecifiedIndices(golfer, [3,4,5,6,7]))
     scores2 = np.asarray(createArrayFromSpecifiedIndices(golfer2, [3, 4, 5, 6, 7]))
