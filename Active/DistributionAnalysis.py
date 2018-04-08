@@ -5,6 +5,8 @@ import math
 import numpy as np
 import csv
 
+# Rewrite this if you care. You don't have to care.
+
 def dateFormatConversion(date):
 
     month = date[0:2]

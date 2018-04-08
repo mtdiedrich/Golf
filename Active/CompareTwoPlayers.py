@@ -1,4 +1,6 @@
-import Utilities as ut
+from Active import Utilities as ut
+
+# Rewrite to compare n players
 
 def main():
 

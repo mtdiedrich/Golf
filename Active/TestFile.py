@@ -1,5 +1,3 @@
-import Utilities as ut
-
 def main():
     x = 0
 

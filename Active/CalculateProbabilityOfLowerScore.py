@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import csv
 
+# Rewrite using new utilities
+# Remove unnecessary imports
+
 def openFile(file):
     """
     Given a csv of golf scores, returns an list of pairs of scores and tournament dates as datetime
