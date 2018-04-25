@@ -11,5 +11,8 @@ def main():
     iowa_city = forecast(*IC,time=time)
     print(iowa_city.temperature, iowa_city.windSpeed, iowa_city.windGust)
 
+    df = pd.read_csv(r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\JordanSpieth.csv')
+    print(df)
+
 if __name__ == "__main__":
     main()
