@@ -6,7 +6,7 @@ from darksky import forecast
 
 def main():
 
-    IC = ('6c02739879c5b450bb2f2794ba61ddeb', 41.3949, -91.3147)
+    IC = ('6c02739879c5b450bb2f2794ba61ddeb', 31.10452, 121.22187)
     time = dt.datetime(2018,4,24,16).isoformat()
     iowa_city = forecast(*IC,time=time)
     print(iowa_city.temperature, iowa_city.windSpeed, iowa_city.windGust)
