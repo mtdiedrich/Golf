@@ -11,6 +11,7 @@ def main():
 
     file_object = open(file = r'C:\Users\Mitch\Downloads\SafewayOpen2007.html',mode = 'r').read()
     x = 1
+    golfers = []
 
     while find_nth(file_object,'<td class="cell">',x) != -1:
 
@@ -25,10 +26,19 @@ def main():
         third_round_score = round_scores[find_nth(round_scores, '>', 5) + 1:find_nth(round_scores, '<', 6)]
         fourth_round_score = round_scores[find_nth(round_scores, '>', 7) + 1:find_nth(round_scores, '<', 8)]
 
-        print(pd.DataFrame([golfer, first_round_score,second_round_score,third_round_score,fourth_round_score]))
+        if first_round_score != "":
+            first_round_score = int(first_round_score)
+        if second_round_score != "":
+            second_round_score = int(second_round_score)
+        if third_round_score != "":
+            third_round_score = int(third_round_score)
+        if fourth_round_score != "":
+            fourth_round_score = int(fourth_round_score)
 
+        golfers += [[golfer, first_round_score,second_round_score,third_round_score,fourth_round_score]]
         x += 1
 
+    print(pd.DataFrame(golfers))
 
 if __name__ == "__main__":
     main()
