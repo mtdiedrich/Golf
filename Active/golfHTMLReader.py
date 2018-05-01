@@ -41,8 +41,14 @@ def main():
 
     next_end = file_object[file_object.find("Ending:"):].find('<')
     date_string = file_object[file_object.find("Ending:")+len("Ending: "):file_object.find("Ending:")+next_end]
+    year = int(date_string[find_nth(date_string,'/',2)+1:])
+    month = int(date_string[:find_nth(date_string,'/',1)])
+    day = int(date_string[find_nth(date_string,'/',1)+1:find_nth(date_string,'/',2)])
+    ending_date = dt.datetime(year,month,day)
 
     print(date_string)
+    print(ending_date)
+
 
 if __name__ == "__main__":
     main()
