@@ -1,4 +1,5 @@
 import pandas as pd
+import datetime as dt
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
@@ -9,7 +10,7 @@ def find_nth(haystack, needle, n):
 
 def main():
 
-    file_object = open(file = r'C:\Users\Mitch\Downloads\SafewayOpen2007.html',mode = 'r').read()
+    file_object = open(file = r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html',mode = 'r').read()
     x = 1
     golfers = []
 
@@ -38,7 +39,10 @@ def main():
         golfers += [[golfer, first_round_score,second_round_score,third_round_score,fourth_round_score]]
         x += 1
 
-    print(pd.DataFrame(golfers))
+    next_end = file_object[file_object.find("Ending:"):].find('<')
+    date_string = file_object[file_object.find("Ending:")+len("Ending: "):file_object.find("Ending:")+next_end]
+
+    print(date_string)
 
 if __name__ == "__main__":
     main()
