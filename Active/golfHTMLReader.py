@@ -16,17 +16,17 @@ def main():
     #Must combine all events for each individual golfer
 
     files = []
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2008.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2009.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2010.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2011.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2012.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2014.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2015.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2016.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2017.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2018.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2007.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2008.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2009.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2010.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2011.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2012.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2014.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2015.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2016.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2017.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2018.html']
 
     frames = []
 
@@ -87,7 +87,7 @@ def main():
 
     result = pd.concat(frames)
     sorted_result = result.sort_values(by=[0])
-    
+
     print(sorted_result)
 
 if __name__ == "__main__":
