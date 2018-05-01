@@ -18,7 +18,6 @@ def main():
 
     files = []
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2008.html']
 
     for x in files:
         file_object = open(file=x,mode='r').read()
@@ -60,10 +59,18 @@ def main():
         second_date = fourth_date - dt.timedelta(days=2)
         third_date = fourth_date - dt.timedelta(days=1)
 
-        for x in golfers:
-            x += [str(first_date), str(second_date), str(third_date), str(fourth_date)]
+        course_end = file_object[file_object.find("Course: "):].find('<')
+        course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
 
-        print(pd.DataFrame(golfers))
+    for x in golfers:
+        x.insert(1,course_name)
+        x.insert(2,str(first_date))
+        x.insert(4, str(second_date))
+        x.insert(6, str(third_date))
+        x.insert(8, str(fourth_date))
+
+    print(pd.DataFrame(golfers))
+
 
 
 if __name__ == "__main__":
