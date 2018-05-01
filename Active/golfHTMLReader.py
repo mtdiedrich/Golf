@@ -29,6 +29,7 @@ def main():
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2018.html']
 
     frames = []
+    golfer_dictionary = {}
 
     for x in files:
         file_object = open(file=x,mode='r').read()
@@ -83,12 +84,15 @@ def main():
             x.insert(7, str(third_date))
             x.insert(9, str(fourth_date))
 
-        frames += [pd.DataFrame(golfers)]
+        frames += golfers
 
-    result = pd.concat(frames)
-    sorted_result = result.sort_values(by=[0])
+    for x in frames:
+        golfer_dictionary[x[0]] = []
+    for x in frames:
+        golfer_dictionary[x[0]] += [x[1:]]
 
-    print(sorted_result)
+    print(golfer_dictionary.keys())
+
 
 if __name__ == "__main__":
     main()
