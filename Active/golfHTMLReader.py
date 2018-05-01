@@ -11,7 +11,6 @@ def find_nth(haystack, needle, n):
 def main():
 
     #TO DO
-    #Each entry must be labelled with course name and tournament name
     #Eventually must add geolocation data
     #Afterwards must add weather data from DarkSky API
     #Must combine all events for each individual golfer
@@ -64,17 +63,15 @@ def main():
 
         tournament_name = file_object[file_object.find('"title" content')+17:file_object.find(": Past Results")]
 
-    for x in golfers:
-        x.insert(1,tournament_name)
-        x.insert(2,course_name)
-        x.insert(3,str(first_date))
-        x.insert(5, str(second_date))
-        x.insert(7, str(third_date))
-        x.insert(9, str(fourth_date))
-        print(x)
+        for x in golfers:
+            x.insert(1,tournament_name)
+            x.insert(2,course_name)
+            x.insert(3,str(first_date))
+            x.insert(5, str(second_date))
+            x.insert(7, str(third_date))
+            x.insert(9, str(fourth_date))
 
-
-
+        print(pd.DataFrame(golfers))
 
 if __name__ == "__main__":
     main()
