@@ -17,6 +17,9 @@ def main():
 
     files = []
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2008.html']
+
+    frames = []
 
     for x in files:
         file_object = open(file=x,mode='r').read()
@@ -71,7 +74,10 @@ def main():
             x.insert(7, str(third_date))
             x.insert(9, str(fourth_date))
 
-        print(pd.DataFrame(golfers))
+        frames += [pd.DataFrame(golfers)]
+
+    result = pd.concat(frames)
+    print(result)
 
 if __name__ == "__main__":
     main()
