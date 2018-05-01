@@ -62,14 +62,17 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
 
-    for x in golfers:
-        x.insert(1,course_name)
-        x.insert(2,str(first_date))
-        x.insert(4, str(second_date))
-        x.insert(6, str(third_date))
-        x.insert(8, str(fourth_date))
+        tournament_name = file_object[file_object.find('"title" content')+17:file_object.find(": Past Results")]
 
-    print(pd.DataFrame(golfers))
+    for x in golfers:
+        x.insert(1,tournament_name)
+        x.insert(2,course_name)
+        x.insert(3,str(first_date))
+        x.insert(5, str(second_date))
+        x.insert(7, str(third_date))
+        x.insert(9, str(fourth_date))
+        print(x)
+
 
 
 
