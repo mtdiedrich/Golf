@@ -16,7 +16,9 @@ def main():
     #Afterwards must add weather data from DarkSky API
     #Must combine all events for each individual golfer
 
-    files = [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html']
+    files = []
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2007.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Data\HTML Data\SafewayOpen2008.html']
 
     for x in files:
         file_object = open(file=x,mode='r').read()
