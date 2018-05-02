@@ -11,6 +11,8 @@ def find_nth(haystack, needle, n):
 
 def main():
 
+    pd.set_option('display.expand_frame_repr', False)
+
     #TO DO
     #Eventually must add geolocation data
     #Afterwards must add weather data from DarkSky API
@@ -30,6 +32,7 @@ def main():
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2018.html']
 
     frames = []
+    courses = []
     golfer_dictionary = {}
 
     for x in files:
@@ -74,6 +77,8 @@ def main():
 
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
+        if course_name not in courses:
+            courses += [course_name]
 
         tournament_name = file_object[file_object.find('"title" content')+17:file_object.find(": Past Results")]
 
@@ -97,25 +102,9 @@ def main():
     for x in dictionary_keys:
         golfer_dictionary[x] = pd.DataFrame(golfer_dictionary[x])
 
-    google_api_key = 'YOUR KEY'
-    google_places = GooglePlaces(google_api_key)
-
-    print("Begin Query")
-
-    query_result = google_places.text_search(query="Silverado Country",location="Napa, California",radius="50000")
-
-    if query_result.has_attributions:
-        print(query_result.html_attributions)
-
-    for place in query_result.places:
-        # Returned places from a query are place summaries.
-        print(place.name)
-        print(place.geo_location)
-        place.get_details()
-        print(place.details)
-
-    print("End Query")
-
+    df = pd.DataFrame(courses)
+    print(df)
+    df.to_csv(path_or_buf="Courses.csv")
 
 if __name__ == "__main__":
     main()
