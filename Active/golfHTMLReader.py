@@ -1,5 +1,6 @@
 import pandas as pd
 import datetime as dt
+from googleplaces import GooglePlaces, types, lang
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
@@ -91,7 +92,29 @@ def main():
     for x in frames:
         golfer_dictionary[x[0]] += [x[1:]]
 
-    print(golfer_dictionary.keys())
+    dictionary_keys = list(golfer_dictionary.keys())
+
+    for x in dictionary_keys:
+        golfer_dictionary[x] = pd.DataFrame(golfer_dictionary[x])
+
+    google_api_key = 'YOUR KEY'
+    google_places = GooglePlaces(google_api_key)
+
+    print("Begin Query")
+
+    query_result = google_places.text_search(query="Silverado Country",location="Napa, California",radius="50000")
+
+    if query_result.has_attributions:
+        print(query_result.html_attributions)
+
+    for place in query_result.places:
+        # Returned places from a query are place summaries.
+        print(place.name)
+        print(place.geo_location)
+        place.get_details()
+        print(place.details)
+
+    print("End Query")
 
 
 if __name__ == "__main__":
