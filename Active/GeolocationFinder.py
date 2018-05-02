@@ -8,7 +8,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
 
-    google_api_key = 'AIzaSyD1hQsTXB9npkfQL_IillnMk1Lzh6EsjW8'
+    google_api_key = 'API KEY'
     google_places = GooglePlaces(google_api_key)
 
     query_result = google_places.text_search(query="Grayhawk Raptor", location="Scottsdale, Arizona", radius="50000")
@@ -34,6 +34,18 @@ def main():
     query_result = google_places.text_search(query="TPC", location="Kuala Lumpur, Malaysia", radius="50000")
     df.loc[5,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[5,'Longitude'] = query_result.places[0].geo_location['lng']
+
+    query_result = google_places.text_search(query="Country Club", location="Hattiesburg, Mississippi", radius="50000")
+    df.loc[6,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[6,'Longitude'] = query_result.places[0].geo_location['lng']
+
+    query_result = google_places.text_search(query="Annandale Golf", location="Madison, Mississippi", radius="50000")
+    df.loc[7,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[7,'Longitude'] = query_result.places[0].geo_location['lng']
+
+    query_result = google_places.text_search(query="Country Club", location="Jackson, Mississippi", radius="50000")
+    df.loc[8,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[8,'Longitude'] = query_result.places[0].geo_location['lng']
 
     print(df)
     print()
