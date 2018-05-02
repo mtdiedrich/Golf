@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee34506-33e3-441e-ab3b-c7b3428de3cc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/Courses.csv" afterPath="$PROJECT_DIR$/Active/Courses.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/GeolocationFinder.py" afterPath="$PROJECT_DIR$/Active/GeolocationFinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/golfHTMLReader.py" afterPath="$PROJECT_DIR$/Active/golfHTMLReader.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="golfHTMLReader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="golfHTMLReader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Active/golfHTMLReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+            <state relative-caret-position="-357">
+              <caret line="84" column="87" lean-forward="false" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeolocationFinder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GeolocationFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Active/GeolocationFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="129">
+              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -50,6 +52,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>td class=&quot;cell&quot;</find>
+      <find>tiger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GeolocationFinder">
+  <component name="RunManager" selected="Python.golfHTMLReader">
     <configuration default="false" name="TestFile (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,8 +331,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GeolocationFinder" />
-        <item index="1" class="java.lang.String" itemvalue="Python.golfHTMLReader" />
+        <item index="0" class="java.lang.String" itemvalue="Python.golfHTMLReader" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GeolocationFinder" />
         <item index="2" class="java.lang.String" itemvalue="Python.DataBuilder" />
         <item index="3" class="java.lang.String" itemvalue="Python.ProbabilityLowerScore" />
         <item index="4" class="java.lang.String" itemvalue="Python.TestFile (1)" />
@@ -558,22 +561,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Active/golfHTMLReader.py">
+    <entry file="file://$PROJECT_DIR$/Active/GeolocationFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+        <state relative-caret-position="129">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Active/GeolocationFinder.py">
+    <entry file="file://$PROJECT_DIR$/Active/golfHTMLReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="-357">
+          <caret line="84" column="87" lean-forward="false" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
