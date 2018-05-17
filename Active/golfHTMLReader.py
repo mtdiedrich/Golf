@@ -117,6 +117,9 @@ def main():
     courses = []
     golfer_dictionary = {}
 
+
+    newpar = 0
+
     for x in files:
         file_object = open(file=x,mode='r').read()
         x = 1
@@ -159,6 +162,10 @@ def main():
 
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
+
+        par = file_object.find("PAR: ")
+        
+        
         if course_name not in courses:
             courses += [course_name]
 
@@ -192,6 +199,8 @@ def main():
     df = pd.DataFrame(courses)
     print(df)
     df.to_csv(path_or_buf="Courses.csv")
+
+    print(par)
 
 if __name__ == "__main__":
     main()
