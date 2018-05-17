@@ -3,6 +3,12 @@ import pandas as pd
 
 def main():
 
+    # HARD NOTE
+    # Data for Sheshan International (Nine Bridges) removed
+    # Difficult to parse and work with
+    # May want this data in the future because
+    # The exotic could provide interesting weather data
+
     df = pd.DataFrame.from_csv(path="Courses.csv")
     df['Latitude'] = 0
     df['Longitude'] = 0
@@ -46,18 +52,10 @@ def main():
     query_result = google_places.text_search(query="Country Club", location="Jackson, Mississippi", radius="50000")
     df.loc[8,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[8,'Longitude'] = query_result.places[0].geo_location['lng']
-
-    query_result = google_places.text_search(query="Sheshan Golf", location="Shanghai Shi, China", radius="50000")
-    df.loc[9,'Latitude'] = query_result.places[0].geo_location['lat']
-    df.loc[9,'Longitude'] = query_result.places[0].geo_location['lng']
-
-    query_result = google_places.text_search(query="Mission Hills", location="Dongguan, China", radius="50000")
-    df.loc[10,'Latitude'] = query_result.places[0].geo_location['lat']
-    df.loc[10,'Longitude'] = query_result.places[0].geo_location['lng']
     """
     query_result = google_places.text_search(query="TPC Summerlin", location="Las Vegas, Nevada", radius="5000")
-    df.loc[11,'Latitude'] = query_result.places[0].geo_location['lat']
-    df.loc[11,'Longitude'] = query_result.places[0].geo_location['lng']
+    df.loc[9,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[9,'Longitude'] = query_result.places[0].geo_location['lng']
 
 
     print(df)

@@ -18,6 +18,10 @@ def main():
     #Afterwards must add weather data from DarkSky API
     #Must combine all events for each individual golfer
 
+    # NOTES
+    # Data is curated such that certain events are ecluded
+    # Exclusion parameters include limited data, course changes mid tournament, or odd formatting
+
     files = []
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2007.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SafewayOpen2008.html']
@@ -112,6 +116,15 @@ def main():
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SandersonFarmsChampionship2015.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SandersonFarmsChampionship2016.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SandersonFarmsChampionship2017.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2009.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2010.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2011.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2012.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2014.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2015.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2016.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2017.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2018.html']
 
     frames = []
     courses = []
