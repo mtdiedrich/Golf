@@ -63,12 +63,23 @@ def main():
     df.loc[10,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[10,'Longitude'] = query_result.places[0].geo_location['lng']
 
-    """
-
     query_result = google_places.text_search(query="Sea Island Resort", location="Sea Island Georgia", radius="5000")
     df.loc[11,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[11,'Longitude'] = query_result.places[0].geo_location['lng']
+     
+    query_result = google_places.text_search(query="Sherwood Golf", location="Thousand Oaks, California", radius="5000")
+    df.loc[12,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[12,'Longitude'] = query_result.places[0].geo_location['lng']
 
+    query_result = google_places.text_search(query="Isleworth", location="Windermere, Florida", radius="5000")
+    df.loc[13,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[13,'Longitude'] = query_result.places[0].geo_location['lng']
+
+    """
+    
+    query_result = google_places.text_search(query="Albany", location="New Providence, Bahamas", radius="5000")
+    df.loc[13,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[13,'Longitude'] = query_result.places[0].geo_location['lng'] 
     
     print(df)
     print()
