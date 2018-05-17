@@ -11,7 +11,7 @@ def main():
 
     google_api_key = 'AIzaSyD1hQsTXB9npkfQL_IillnMk1Lzh6EsjW8'
     google_places = GooglePlaces(google_api_key)
-
+    
     query_result = google_places.text_search(query="Grayhawk Raptor", location="Scottsdale, Arizona", radius="50000")
     df.loc[0,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[0,'Longitude'] = query_result.places[0].geo_location['lng']
@@ -71,15 +71,29 @@ def main():
     query_result = google_places.text_search(query="Albany Golf", location="New Providence, Bahamas", radius="5000")
     df.loc[14,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[14,'Longitude'] = query_result.places[0].geo_location['lng'] 
+
+    query_result = google_places.text_search(query="La Costa Golf", location="Carlsbad, California", radius="5000")
+    df.loc[15,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[15,'Longitude'] = query_result.places[0].geo_location['lng'] 
+
+    query_result = google_places.text_search(query="Plantation Course", location="Lahaina, Hawaii", radius="5000") 
+    df.loc[16,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[16,'Longitude'] = query_result.places[0].geo_location['lng'] 
+    
+    query_result = google_places.text_search(query="Waiale Golf", location="Honolulu, Hawaii", radius="5000") 
+    df.loc[17,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[17,'Longitude'] = query_result.places[0].geo_location['lng'] 
     
     print(df)
     print()
-
+    
+    """
     for place in query_result.places:
         # Returned places from a query are place summaries.
         print(place.name)
         print(place.geo_location)
         print()
+    """
 
 if __name__ == "__main__":
     main()

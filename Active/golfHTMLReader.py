@@ -204,6 +204,26 @@ def main():
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SentryTournamentOfChampions2016.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SentryTournamentOfChampions2017.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SentryTournamentOfChampions2018.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen1999.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2000.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2001.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2002.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2003.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2004.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2005.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2006.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2007.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2008.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2009.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2010.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2011.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2012.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2013.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2014.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2015.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2016.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2017.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\SonyOpen2017.html']
 
     frames = []
     courses = []
@@ -255,6 +275,9 @@ def main():
 
         par_end = file_object[file_object.find("PAR: "):].find('<')
         par = file_object[file_object.find("PAR: ")+len("PAR: "):file_object.find("PAR:") + par_end]
+        
+        if "amp;" in str(course_name):
+            course_name = str(course_name.replace("amp;", ""))
 
         course = str(course_name), int(par)
         
