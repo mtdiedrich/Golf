@@ -117,10 +117,8 @@ def main():
     courses = []
     golfer_dictionary = {}
 
-
-    newpar = 0
-
     for x in files:
+
         file_object = open(file=x,mode='r').read()
         x = 1
         golfers = []
@@ -163,11 +161,13 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
 
-        par = file_object.find("PAR: ")
+        par_end = file_object[file_object.find("PAR: "):].find('<')
+        par = file_object[file_object.find("PAR: ")+len("PAR: "):file_object.find("PAR:") + par_end]
+
+        course = str(course_name), str(par)
         
-        
-        if course_name not in courses:
-            courses += [course_name]
+        if course not in courses:
+            courses += [course]
 
         tournament_name = file_object[file_object.find('"title" content')+17:file_object.find(": Past Results")]
 
@@ -199,8 +199,6 @@ def main():
     df = pd.DataFrame(courses)
     print(df)
     df.to_csv(path_or_buf="Courses.csv")
-
-    print(par)
 
 if __name__ == "__main__":
     main()
