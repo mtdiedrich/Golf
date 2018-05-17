@@ -65,6 +65,9 @@ def main():
 
     """
 
+    query_result = google_places.text_search(query="Sea Island Resort", location="Sea Island Georgia", radius="5000")
+    df.loc[11,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[11,'Longitude'] = query_result.places[0].geo_location['lng']
 
     
     print(df)
