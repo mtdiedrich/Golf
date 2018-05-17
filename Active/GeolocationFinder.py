@@ -3,22 +3,15 @@ import pandas as pd
 
 def main():
 
-    # HARD NOTE
-    # Data for Sheshan International (Nine Bridges) removed
-    # Difficult to parse and work with
-    # May want this data in the future because
-    # The exotic could provide interesting weather data
-
     df = pd.DataFrame.from_csv(path="Courses.csv")
     df['Latitude'] = 0
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
+    df.rename(columns={'1': 'Par'}, inplace=True)
 
     google_api_key = 'AIzaSyD1hQsTXB9npkfQL_IillnMk1Lzh6EsjW8'
     google_places = GooglePlaces(google_api_key)
 
-    """
-    
     query_result = google_places.text_search(query="Grayhawk Raptor", location="Scottsdale, Arizona", radius="50000")
     df.loc[0,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[0,'Longitude'] = query_result.places[0].geo_location['lng']
@@ -75,11 +68,9 @@ def main():
     df.loc[13,'Latitude'] = query_result.places[0].geo_location['lat']
     df.loc[13,'Longitude'] = query_result.places[0].geo_location['lng']
 
-    """
-    
-    query_result = google_places.text_search(query="Albany", location="New Providence, Bahamas", radius="5000")
-    df.loc[13,'Latitude'] = query_result.places[0].geo_location['lat']
-    df.loc[13,'Longitude'] = query_result.places[0].geo_location['lng'] 
+    query_result = google_places.text_search(query="Albany Golf", location="New Providence, Bahamas", radius="5000")
+    df.loc[14,'Latitude'] = query_result.places[0].geo_location['lat']
+    df.loc[14,'Longitude'] = query_result.places[0].geo_location['lng'] 
     
     print(df)
     print()
