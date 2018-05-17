@@ -125,7 +125,15 @@ def main():
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2016.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2017.html']
     files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\ShrinersHospitalsForChildrenOpen2018.html']
-
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2010.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2011.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2012.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2014.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2015.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2016.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2017.html']
+    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Data\HTML Data\OHLClassic2018.html']
+    
     frames = []
     courses = []
     golfer_dictionary = {}
