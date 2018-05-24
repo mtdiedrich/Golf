@@ -996,3 +996,1308 @@ JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/
 [GPU 5028, Chrome_
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1527104044616	geckodriver	INFO	geckodriver 0.20.1
+1527104044632	geckodriver	INFO	Listening on 127.0.0.1:55978
+1527104047663	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.YisMfduGnE0s"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527104055823	Marionette	INFO	Listening on port 55986
+1527104056970	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 7920, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7920, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+istry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527105463053	Marionette	INFO	Listening on port 56301
+1527105463181	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 5600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5600, [C[Parent 9432, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 9548, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9140, Chrome_ChildThread] WUnable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 9548, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10080, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527107419281	geckodriver	INFO	geckodriver 0.20.1
+1527107419281	geckodriver	INFO	Listening on 127.0.0.1:56592
+1527107422344	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.6RvDakFP6igB"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527107427294	Marionette	INFO	Listening on port 56600
+1527107427886	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000001FF0 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 8372, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7748, Chro[Parent 8372, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 8372, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 4612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8260, Chrome_ChildThread] WARNING: pipe e
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://s0.2mdn.net/ads/richmedia/studio/pv2/60254077/20180516151629709/full_bleed.js, line 1: ReferenceError: TimelineMax is not defined
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 6044, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 8900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8900, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: resource:///modules/WindowsJumpLists.jsm, line 230: TypeError: this._builder is undefined
+[Child 5240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5240[GPU 26
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ //# instead
+out of memory: 0x0000000000010000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 7572, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7572, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 3148, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 314[Parent 7572, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+r::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+[Parent 7756, Gecko_IOThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 7756, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Ch[Parent 7756, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188i
+ld 2924, Chrome_ChildThread] WAR[Parent 7756, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527108257323	geckodriver	INFO	geckodriver 0.20.1
+1527108257338	geckodriver	INFO	Listening on 127.0.0.1:58044
+1527108260370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.hjj57Fu7ra8P"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527108267261	Marionette	INFO	Listening on port 58053
+1527108267911	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaugh
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 7536, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 2408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 24[Parent 7536, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , 
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Child 7464, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7464, Chrome_ChildThread] WAR[Parent 4700, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 4700, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Script error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+[Parent 7924, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_[Parent 7924, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[C[Parent 7924, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527108901210	Marionette	INFO	Listening on port 58997
+1527108901963	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 8308, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 9060, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 8308, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6720,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000002000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 4800, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 7636, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 76[Parent 4800, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9420, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9420
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+//@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000001000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 5888, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 7484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7484, Chrome_C[Parent 5888, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6804, Chrome_ChildThread] WARNIN
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ould not resize the swapchain (0x556,0x307)
+console.error: 
+  out of memory
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+[Parent 8376, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+[GFX1-]: Failed to resize swap chain buffers: 0x8007000e
+[GFX1-]: Could not resize the swapchain (0x556,0x307)
+JavaScript error: resource:///modules/AsyncTabSwitcher.jsm, line 140: TypeError: initialBrowser.frameLoader.tabParent is null
+Assertion failure
+assert@resource:///modules/AsyncTabSwitcher.jsm:446:36
+preActions@resource:///modules/AsyncTabSwitcher.jsm:494:5
+handleEvent@resource:///modules/AsyncTabSwitcher.jsm:943:5
+Assertion failure
+assert@resource:///modules/AsyncTabSwitcher.jsm:446:36
+preActions@resource:///modules/AsyncTabSwitcher.jsm:495:5
+handleEvent@resource:///modules/AsyncTabSwitcher.jsm:943:5
+JavaScript error: chrome://global/content/bindings/remote-browser.xml, line 233: TypeError: this.frameLoader.tabParent is null
+Assertion failure
+assert@resource:///modules/AsyncTabSwitcher.jsm:446:36
+preActions@resource:///modules/AsyncTabSwitcher.jsm:494:5
+onLoadTimeout@resource:///modules/AsyncTabSwitcher.jsm:655:5
+loadRequestedTab/this.loadTimer<@resource:///modules/AsyncTabSwitcher.jsm:465:42
+Assertion failure
+assert@resource:///modules/AsyncTabSwitcher.jsm:446:36
+preActions@resource:///modules/AsyncTabSwitcher.jsm:495:5
+onLoadTimeout@resource:///modules/AsyncTabSwitcher.jsm:655:5
+loadRequestedTab/this.loadTimer<@resource:///modules/AsyncTabSwitcher.jsm:465:42
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+692695	geckodriver	INFO	Listening on 127.0.0.1:59988
+1527109695711	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.65r9AZHxiFVd"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527109702015	Marionette	INFO	Listening on port 59996
+1527109702030	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000002000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11240, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6660, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6660, Chr[oParent 11240, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 11240, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2356, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2356
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[Parent 11240, Gecko_IOThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+for 0, 0, 1349, 1688
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1688)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1688
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1688)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1688
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,2560)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 2560
+[Parent 11120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 11120, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+th Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527110015362	Marionette	INFO	Listening on port 60555
+1527110015766	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: chrome://marionette/content/event.js, line 1278: uncaught exception: out of memory
+Assertion failure: [unhandlable oom] Failed to allocate for MonoTypeBuffer::put., at z:/build/build/src/js/src/vm/JSContext.cpp:1662
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 3104, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 3104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527110080581	geckodriver	INFO	geckodriver 0.20.1
+1527110080581	geckodriver	INFO	Listening on 127.0.0.1:60872
+1527110083644	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.dsP06pOAIfUm"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527110088172	Marionette	INFO	Listening on port 60880
+1527110088976	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Child 10248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10[Parent 10312, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 10312, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 10312, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527110178461	geckodriver	INFO	geckodriver 0.20.1
+1527110178476	geckodriver	INFO	Listening on 127.0.0.1:61158
+1527110181492	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.GRmeV7qNKH6h"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527110188081	Marionette	INFO	Listening on port 61166
+1527110189034	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 5228, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7836, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 783JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 56: NS_ERROR_NOT_INITIALIZED: 
+[Parent 5228, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[C[Parent 5228, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5176, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 7384, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7384, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+g on port 61713
+1527110346262	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 6584, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[[Child 9544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+s\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527110398515	Marionette	INFO	Listening on port 61944
+1527110399560	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Assertion failure: [unhandlable oom] Bitmap OOM, at z:/build/build/src/js/src/vm/JSContext.cpp:1662
+Assertion failure: [unhandlable oom] Failed to allocate for MonoTypeBuffer::put., at z:/build/build/src/js/src/vm/JSContext.cpp:1662
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Child 10120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[Parent 8944, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+[Child 10120, Chrome_Ch[Parent 8944, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7012, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7012*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527110449727	geckodriver	INFO	geckodriver 0.20.1
+1527110449742	geckodriver	INFO	Listening on 127.0.0.1:62150
+1527110452774	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.WgP8TnRRQl8t"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527110458455	Marionette	INFO	Listening on port 62158
+1527110458616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000007FE8 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 2764, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2764, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 9732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2764, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndJavaScript error: , line 0: uncaught exception: out of memory
+out of memory: 0x0000000000001000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 4108, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 4108, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 10672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1[Parent 4108, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rror: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+out of memory: 0x0000000000002000 bytes requested
+ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7[Parent 2504, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 2504, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 2504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8624, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8624, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527111044499	geckodriver	INFO	geckodriver 0.20.1
+1527111044515	geckodriver	INFO	Listening on 127.0.0.1:63195
+1527111047531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.6ZZqKMQRNhFQ"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527111052056	Marionette	INFO	Listening on port 63203
+1527111053115	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000010000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 7380, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7380, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 5876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5876,[Parent 7380, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9508, Ch
+###!!! [Chiout of memory: 0x0000000000000080 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 3240, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7336, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent [Child 7333240, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 3240, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000001000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11240, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 8524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+\Local\openvr\openvrpaths.vrpath
+1527111434978	Marionette	INFO	Listening on port 64224
+1527111435725	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000000038 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11244, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+arent][MessageChannel] Error: (msgtype=0x2C0056,name=PContent::Msg_RefreshScreens) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0036,name=PContent::Msg_SetXPCOMProcessAttributes) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0018,name=PContent::Msg_RegisterChrome) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0032,name=PContent::Msg_AppInfo) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0033,name=PContent::Msg_RemoteType) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0016,name=PContent::Msg_PScriptCacheConstructor) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C000B,name=PContent::Msg_InitRendering) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C003A,name=PContent::Msg_LoadAndRegisterSheet) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C004A,name=PContent::Msg_SetAudioSessionData) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C000F,name=PContent::Msg_SetProcessSandbox) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0034,name=PContent::Msg_InitServiceWorkers) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0035,name=PContent::Msg_InitBlobURLs) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0059,name=PContent::Msg_SetPluginList) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C005D,name=PContent::Msg_SetInputEventQueueEnabled) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0060,name=PContent::Msg_SuspendInputEventQueue) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C005E,name=PContent::Msg_FlushInputEventQueue) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C005F,name=PContent::Msg_ResumeInputEventQueue) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0008,name=PContent::Msg_InitProcessHangMonitor) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C000A,name=PContent::Msg_InitProfiler) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0055,name=PContent::Msg_SetPermissionsWithKey) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C004E,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0001,name=PContent::Msg_PBrowserConstructor) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0059,name=PContent::Msg_SetPluginList) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C004E,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: [D3D11] Failed to init compositor with reason: FEATURE_FAILURE_D3D11_NO_DEVICE
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+1527111646712	geckodriver	INFO	geckodriver 0.20.1
+1527111646728	geckodriver	INFO	Listening on 127.0.0.1:64575
+1527111649759	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.7BW1ipmD2bJo"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527111655591	Marionette	INFO	Listening on port 64583
+1527111655617	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 4332, MediaPlayback #2] WARNING: 1da918eea00 OpenCubeb() failed to init cubeb: file z:/build/build/src/dom/media/AudioStream.cpp, line 388
+[Child 4332, MediaPlayback #2] WARNING: Decoder=1da9070d800 [OnMediaSinkAudioError]: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3746
+[Parent 10608, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10608, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bu[Parent 10608, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+e 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 10048, MediaPlayback #1] WARNING: 266770d6c40 OpenCubeb() failed to init cubeb: file z:/build/build/src/dom/media/AudioStream.cpp, line 388
+[Child 10048, MediaPlayback #1] WARNING: Decoder=26679bab800 [OnMediaSinkAudioError]: file z:/build/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3746
+JavaScript error: https://cdn-gl.imrworldwide.com/novms/js/2/nlsSDK600.bundle.min.js, line 9: ReferenceError: method is not defined
+[Parent 3032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3920,JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 56: NS_ERROR_NOT_INITIALIZED: 
+[Parent 3032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 3032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 3676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6604, Chrome_Child[Child 11160, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11160, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 3676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 10084, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10084, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527115014716	geckodriver	INFO	geckodriver 0.20.1
+1527115014732	geckodriver	INFO	Listening on 127.0.0.1:49285
+1527115018117	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.qaXqCNfOMxYb"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527115027221	Marionette	INFO	Listening on port 49293
+1527115027740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527115051765	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1527115062891	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1527115062912	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 98: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 206: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 225: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 231: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 318: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 373: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 430: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 567: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 581: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 602: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 702: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 721: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 886: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 962: ReferenceError: jQuery is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1090: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1103: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1107: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1124: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1129: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1141: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1192: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1225: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1265: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1310: ReferenceError: pgatour is not defined
+JavaScript error: https://www.pgatour.com/tournaments/safeway-open/past-results.html, line 1318: ReferenceError: pgatour is not defined
+JavaScript error: https://assets.adobedtm.com/451d8f311835dd53235415a7dbaa5b0eabe1bfd4/satelliteLib-28740220da3fe96250ebd8a48dd2218560823841.js, line 12: ReferenceError: pgatour is not defined
+[Child 9592, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9592, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527115201487	geckodriver	INFO	geckodriver 0.20.1
+1527115201487	geckodriver	INFO	Listening on 127.0.0.1:49567
+1527115204534	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.fdc6HJKYy5RA"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527115209794	Marionette	INFO	Listening on port 49575
+1527115210476	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+out of memory: 0x0000000000000038 bytes requested
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.xnBkBx5JYRZu"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527115360276	Marionette	INFO	Listening on port 50042
+1527115361136	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+out of memory: 0x0000000000001000 bytes requested
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 468, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 468, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7644, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 468, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+[Child 11012, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1101[Child 9316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[Parent 2896, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11028, Chrome_ChildThread] WARNING: pipe
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9620, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9620,A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11216, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1580, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1580, Chrome_ChildThread] WARNING: pipe
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+r\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://s0.2mdn.net/ads/richmedia/studio/pv2/60254077/20180516151629709/full_bleed.js, line 1: ReferenceError: TimelineMax is not defined
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+[Parent 7632, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2836, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2836,[Child 8984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8984, Chrome_ChildThread
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+startup()@resource://gre/modules/AddonManager.jsm:892
+startup()@resource://gre/modules/AddonManager.jsm:2976
+observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:63
+1527115898064	addons.manager	ERROR	startup failed: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+out of memory: 0x000000000000C728 bytes requested
+1527116014643	geckodriver	INFO	geckodriver 0.20.1
+1527116014659	geckodriver	INFO	Listening on 127.0.0.1:54718
+1527116017721	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.1whM7O8yDmnn"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527116026597	Marionette	INFO	Listening on port 54726
+1527116027581	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1527116216045	geckodriver	INFO	geckodriver 0.20.1
+1527116216045	geckodriver	INFO	Listening on 127.0.0.1:58641
+1527116219139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.8ES42widxvMD"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527116223931	Marionette	INFO	Listening on port 58649
+1527116224491	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/157609/24388626/xbbe/creative/adj?p=APEucNWCm_NNw4jv5yeyFjkUCkE3Vyu8Pvtw2mPHqjGFGFk6uulnkRI&d=CjkAoCZ_4EOUO5P2ZvtIARFeoG1AsC8R1mOXkb2nIcYqazFGYnUSpM_GVZdwnD2RozJZDAtvwt93p1ASiQ4AoCZ_4HA1XQK1vf-O8l6CuRMk4C92gpXESe8Y-KNGcgFPTP-za_hWzOMdluFzvP1k2VHB-RbJUVrEuBNVv3DVi5Ug82a9EWaIezYsWhShbUy_8rhFLIV2MJkjinnDCb9BEcYwsATZe1kqihbTP67loSLtJRE_cSupGpn4M-nDdMIKWEbu_Xyqf_CWQBy3TX0o2HAPvv8DbsVup1iKr3WD5cTTnMDBflmLyiPQVuIDvkGt1b-NIV_yuYFDI4rt4nZ6NBudCKDKg93PF3tQEek2RzCfcni5Hm3_muS7q3T8_gc_ZhU71y8y_cDeX7lvMvJsHBmV3N-NmMVeTjGmo8YDRy07nMz0opNrIm0oYLY12hOn2ZnJbGrkDC9jOApStRhgmlFE-LlG9nyZ39iW-WjaNvfIYgnKkZdM3j365sn_wrjInjX9iCJbjlyHgqJoDwELQkIgXFwfYVWXwlHxdDUi5TblGGsr8etcfA-sRtw3cfU2dpOFzUdnQK3JOUxo3UftvkcRgMj5t4-W9WGpWD1iUdQCsXtiWMJ6c2CkGnKkQrMPDoNEXck4NMMj-2S9qUDBKmvLG-G7hbpKPAJ9qZM8VR4BNDJSpqfDfvg1rsyGf2Qj4N3kIwEry5J1i40XUyA6a7hTNzifPy3CJH9mbUo0A7wI23d9w4hjN4zB7vvU7ld0C6TAlmor324E7W4QKdV91g5Is6ASvPUoH7BfsnI_6RRDEQJ51YxDlyfW5nqAuQFedDDgzn84CrDinCeo8BEJ9d0cmbotHuIaRnMuWoPUBtjhHEJmrsqLWAuyrXVOkWFtR8cM-BaaoA1gHFMI60RzhP-sku9X1eQEtYQEVoHpuoMaBoDNDpOR2Pw50em3GqlA-DDWRQMQzHdEKIRALGtTyMX-hr_bsSsWJR7TIMAP7b1RHmchLIWPBCBj0vtodT4MU_XvyRG8H32l_hrZ3867xtJukVbzKaB98Wv5yAmgzyjbghvuZJ33tGcbKKfq__O-mVyfmWR3iB1PDw2rOR3Ze4p_AUMRRvNgxY2Pc2YsRUy1_ZoZAWQ4LXc5hhbTyxTw1CheWWDuTYJBj3xw8e5Mb4FHAA6aUsC4i1RYUnQBHd53BxN3L6b55F23weTMaGmRkCyKfA4tCCQkKMl9gGXGKfVn4R8y8Pp1ZXdlbcBCNFUpy2F1y7Z0qFIVMEYywpbvmaLVrxw7D6N3tLVk3eyatyycMsZUu2645uer4G0HGfOKYy5qPJ8PP247T6bD_jkRNWGVsef3dkFFj3AzC-3zt7lFf-JH0zWsMkx_cZbXIduNl_hy3xukEkw7Ii2QE92JslTRQy3ixyO6Pkk3yxyyaNAjaKm7yP-z-hjWhROg9AW-6qvgQnetlqVkXkQ3efkH0yQmiKoqkabtEVuHOGzcHNtsp_lFKOceFfkv_R0okUiDsfiOyposootott4yboe5puwGym5mxWQMkkWYlN8Ht1s8eVo8IygWBe6M8AbHHvmIkm2R8ricasPONMi4dbq-yRRVpZftfSj-BcBlIt7waIRR_PFG4cv_klNAHi-Fyi0G1VpJFdS8zqr7f-QClAyVBs2BaKMTzS30pJKu2D4eIb3ADheRy7VgHH9pRL2kIsyTUv7iMVzSNoZbBi-XI5A6RiaCnwTVNizSVRl84S7bjk7mEigmMMmrAEoJJzaLarD7lA91JMdNsOGdDZ6ilcLT8o-wo8Mc9FrTM92nRrorjTfsM8_mtPzkOBu8ep9Snxll6SuqjCxGp_Lbyix_-VD7WUGP24TROKhKslOLdKS5bxFSTB8Sea0nrIjAAGUwuHTywMa2WX6AcPoW0Ioy_kryiBqow73238qhgjeQk8Or1DaJ4HVEoAvQX05b8qUvHLTX67tFOpGgNk9o9YDH4WuOaYZMwa6XpzskSD68X1zxuSKtwVEbzBDGRosUoUllok0rkV9E9Ht2FCMzQrB-0Nj3E_85yRZPmDfCzgkUUdgSnn7tSVZmYHM1UooghqktgwJ-6oV7kioTTAu-qDKDxVXOitBDhgdm2KbKWPG2TDDMq8Gre2SApa6dYcu5yMgQn47awJ3t4GAiLTcJfUe9ctNaezsEVb_dD4jAsm-04YZL4-cbPt4gGcnbLEIa0ak908exZqO7i7Lmv_9DtUzvoY333Z4wTBnWa6aDXmQ7IKsPEfJA-luo5b5gmM8UydBbs1aW6RqJhVkBPtWv2jSmTk3R1pdl3H9C7_DYKTne8zOhYJh6m28UabQeD1uTmQOjmZcbMtIKQ4eyUknhpTk5sCeMxXOaJWccswH_oZVRXRPYyhdH0bPRt-KOmyqzHllXQUZ5bqLFa4godu_kr-yTqdUgKjarKiN61cPHnu0v3OmIT4NEMBLSbYc5hPyuiDxor-PkTTEk_NVBGhYIABIS5Gi7a5d0WiM2ePNfRljqhW5ZYAE, line 805: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 30Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/bu[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3396, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3396, Chrome_ChildThread] WARNING: piUnable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11188, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11188, Chro[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9508,Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1428, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1428, Chr[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8560, Chrome_Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://cdn-gl.imrworldwide.com/novms/js/2/nlsSDK600.bundle.min.js, line 9: ReferenceError: method is not defined
+JavaScript error: https://www.pgatour.com/etc/designs/the-players-site/clientlibs/theme-players-js-embedded.min.js, line 1: TypeError: a.pgatour is undefined
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6672, CJavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 2388, Chrome_ChildThreJavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PAPZCTreeManager::Msg_SetTargetAPZC Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 9148, ChrJavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 5084, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5084, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.pgatour.com/tournaments/sentry-tournament-of-champions.html, line 1647: TypeError: document.getElementsByName(...)[0] is undefined
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common1527120601516	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.1jvvYUFNbx33"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527120607013	Marionette	INFO	Listening on port 56493
+1527120607646	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+rror: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 6908, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527120914304	geckodriver	INFO	geckodriver 0.20.1
+1527120914319	geckodriver	INFO	Listening on 127.0.0.1:62631
+1527120917367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.udkLaqBZiOph"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527120922395	Marionette	INFO	Listening on port 62639
+1527120922814	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1527121019704	geckodriver	INFO	geckodriver 0.20.1
+1527121019720	geckodriver	INFO	Listening on 127.0.0.1:63157
+1527121022845	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.coOQ0wo7cgIa"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527121028370	Marionette	INFO	Listening on port 63165
+1527121028929	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/157609/24388626/xbbe/creative/adj?p=APEucNWCm_NNw4jv5yeyFjkUCkE3Vyu8Pvtw2mPHqjGFGFk6uulnkRI&d=CjkAoCZ_4HS_8njMwiREcCV_NBkED9w76fCvpLv_d375lYAGHVn8UB_D24E-1I4vIckI8IVXGKAQGLISmQ8AoCZ_4G59Q7330Solsggk1kP3VW5_93EHdsbFyY9xNFoTrMP82iNwh8MRjOQxyleo6UkV-MwkYnmxrnlOnizaMaMqwN1xGRP6eXCn9PiHvsqW6J-QqAlq8rMZ5EYkc3vk1Wp58Wj3ty7tA02nwkkW8n4eU9uRyzin4SLz9zp8-iQSOi6pfgdQlpmNf-2vCMg6rs0LEAy5JwKk7QK04BDn0xFeBaH56ZZrwHPkhQUxTfcxGOGClzNHVGLj67WZS7Cbq5OqgUDf5xC3-faeiksbRa1lQwD6tfJDwJ43vhA2V_Wcxq4ykbQQ7ShsjHr79MqrHoMw6_so9TXhjDPh3KcujzzimV_Z8jqRf2y5UEwrgqhLB60-vY-KRPfShJMG3niTceUAxbqaGNfrKNU78g7SocFBldW7Im7GKDByuTzZP3MynAx8AJ3SxhFBfx20reaJspAH39RLAWUXxNrUBFGLvx82kFwiKPOv_EmhR_gn4s_0h_Vvo8WOT4QFrUMVK3_7jVK8kqYy0MhjcwyNIyVwgjQYk5JficlMBpfEooLS_6VcKbmlEiHa8mhrGbn8dob_7-3g-lJu3EuQOXfiM-cBASYdDl9aYXXSvzxi25wJBccQWwRvApmSdDXmO5eZp-w0RZjWG6UVdssYOgZJlRYbD58bk7ZNnET2MljK_wJ5hMhsy1GJHk_JZtwvLPxUs-2McNcSDbexueIM5u6vjV7PgGTdrrOcmdMEzqb_C9srAhQW19NTUon8nZkvg_e5aqhjzulWvylgNthn_EFSxjHxKaPV1jcfzfEncw6QI64PxGVBy4qKQ3GNXnfr-KDGFhNcyX_mtFo0QsLBRh47Sxtx6d0X9b_OeLI5BfJHv-0CxrPBFM4NTnRuV45AG-ILuH5GxYs4QRTaT_akZUm3vDnes0ATJLKfGN4vebLeGzYIu7TxsSfJw279dvHp3B2etHgNkEuepj_2e2yEwU0Ldh6GwuEIpqqTz-DDQ6kMcJrugtdRbN3CPwXv8WnjGsg8BiFv3mepIG2AVBvCLJgtJ5CpGKl1ov3J4Gt4ovFag4hALwqGGe0PR-I74kzULZ2NHicDMMr-H5w576PEM2Ve96UND8zFn39Dz07A9qcr7BheDBlEktWhQAMpmluEjy-7_Dec9k5NRTLyM-l0N2aPq3SkiLhiQ6YVJ8We-5nm6JgGRq73oeWHCYTUTsp2ak42564Cu2YJxekSeIFr83_us_huFSZSdHZKiFEmhuoHf1AbPtCZd1-4NmzOy26Q1NUOzpBA7C55HeTvzdGbdz8y7Z4L38BHsqzJqPR3WGNrVI_XOCGK-T5QnrnM59-Nr3AjMzNFk3GX5yLgV530bFHTi713KYzBm50Q5MuRTtYcH2d87cNvO-u7M5ljNv1-lPYJdWu6HMmoNsEqyTKNcnNm10G2J6ie9yu3EgiRQ9xl6rsd6MXH4XtHYr4l7DQP-uEIyGUft_O43dcOzHX61MC_Jl60as-MSokRqfJIRJFxR2TBOnlk37rwG9MjSP4ggw7Otl_nxMz6YZr8--AX7r03KcSWTpggsdyK8AubY34BvKVeRHekQHbNRoSqOZoI98CQvCgbA6mZzI1eoJnBemB3A42soIn9DDQpkb-J-czXuL44OlRLDVz2bBXaMznAQnVrbNcols7BzkaPFA6monKebV6UdTHZHGnRkVk9ziPBJW1NoPSB8sp3UxLhkd64hATq0jJ6wqjNeu1lq0LnZiS_08YwVvB18RH00Q6hwpJlJkj9Rlm5-QEwh60NXiUfFPgEWsM6S5Vv_h95ba2NbS-3JaGEjHv0lYC0gSR_ExNYpeyGvRGxEVtuTRgngoHEPTvgHlcF4qe5qe_0pD_Fn4kgTnGWeD3A1IZMyi-kZ1p5PCOKcn1NThZSsMYvPqpU_nkNZ4SeK05AKISvIi0Zxhv7G16u8kMRQz9-XInw0FuCOCnl2VhYmlZLghD2wR3vXcs9H0zgPmYJF7XLWG6JZw1VcaPP6E8nJxqh2U_pMP_Sk77BZgn0GDdPVdf35HdWe32RjIdXooxgkCRFks_LuChEvuX7k8DtynEWvLQosHhxhHcSmYNhtupave6f8SQbgkYrDVUoQQ3PQw1rv69XAgWhEs9kx3V3axlfb3olmEDFD5tRsVKXVz4rqWLozIGyN54L4QduZK4mG6dF_THo8aVuR6Awlf6IFiw8ZsQVL5EL6tzpoKll5aTfUcRkhrjR0Wamdxghoes5IQbu7UcZtCA9lWVsR7bIyULhDxKT3SnQJMBNU-jMWw-7w6geSBwidqaP8_cP6Y_yVOvi03qke9UIdPyU46Uhc_akVCT9J2NsEVWSeyl74sGTRM--Zdfa7VZRjtk7rToozJoydWnf5--3DSAOfhRXq2JaIK0HFKm9bkBUJD93jQ_TuA1vYtA5Hg_vmAN4ad2BKu0zEby0FF7OSYVbA93QRNqjdBU-7yNwWXXEGOACl9_E9iDqfI2G6vDfD5OOqopRKdZkqv9fBxjhgz7mpvvvnqzg6TLPShZng-v0-95f9AmOM-t_jCXYfyaTZa1q_WqYIQWkT3UxlJ7cTqWvALepqSCT9uJcGhYIABIS5Gi6-h5vhnwHGoGAGAO4u9DWYAE, line 805: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://fw.adsafeprotected.com/rjss/bgd/157609/24388626/xbbe/creative/adj?p=APEucNWCm_NNw4jv5yeyFjkUCkE3Vyu8Pvtw2mPHqjGFGFk6uulnkRI&d=CjkAoCZ_4HS_8njMwiREcCV_NBkED9w76fCvpLv_d375lYAGHVn8UB_D24E-1I4vIckI8IVXGKAQGLISmQ8AoCZ_4G59Q7330Solsggk1kP3VW5_93EHdsbFyY9xNFoTrMP82iNwh8MRjOQxyleo6UkV-MwkYnmxrnlOnizaMaMqwN1xGRP6eXCn9PiHvsqW6J-QqAlq8rMZ5EYkc3vk1Wp58Wj3ty7tA02nwkkW8n4eU9uRyzin4SLz9zp8-iQSOi6pfgdQlpmNf-2vCMg6rs0LEAy5JwKk7QK04BDn0xFeBaH56ZZrwHPkhQUxTfcxGOGClzNHVGLj67WZS7Cbq5OqgUDf5xC3-faeiksbRa1lQwD6tfJDwJ43vhA2V_Wcxq4ykbQQ7ShsjHr79MqrHoMw6_so9TXhjDPh3KcujzzimV_Z8jqRf2y5UEwrgqhLB60-vY-KRPfShJMG3niTceUAxbqaGNfrKNU78g7SocFBldW7Im7GKDByuTzZP3MynAx8AJ3SxhFBfx20reaJspAH39RLAWUXxNrUBFGLvx82kFwiKPOv_EmhR_gn4s_0h_Vvo8WOT4QFrUMVK3_7jVK8kqYy0MhjcwyNIyVwgjQYk5JficlMBpfEooLS_6VcKbmlEiHa8mhrGbn8dob_7-3g-lJu3EuQOXfiM-cBASYdDl9aYXXSvzxi25wJBccQWwRvApmSdDXmO5eZp-w0RZjWG6UVdssYOgZJlRYbD58bk7ZNnET2MljK_wJ5hMhsy1GJHk_JZtwvLPxUs-2McNcSDbexueIM5u6vjV7PgGTdrrOcmdMEzqb_C9srAhQW19NTUon8nZkvg_e5aqhjzulWvylgNthn_EFSxjHxKaPV1jcfzfEncw6QI64PxGVBy4qKQ3GNXnfr-KDGFhNcyX_mtFo0QsLBRh47Sxtx6d0X9b_OeLI5BfJHv-0CxrPBFM4NTnRuV45AG-ILuH5GxYs4QRTaT_akZUm3vDnes0ATJLKfGN4vebLeGzYIu7TxsSfJw279dvHp3B2etHgNkEuepj_2e2yEwU0Ldh6GwuEIpqqTz-DDQ6kMcJrugtdRbN3CPwXv8WnjGsg8BiFv3mepIG2AVBvCLJgtJ5CpGKl1ov3J4Gt4ovFag4hALwqGGe0PR-I74kzULZ2NHicDMMr-H5w576PEM2Ve96UND8zFn39Dz07A9qcr7BheDBlEktWhQAMpmluEjy-7_Dec9k5NRTLyM-l0N2aPq3SkiLhiQ6YVJ8We-5nm6JgGRq73oeWHCYTUTsp2ak42564Cu2YJxekSeIFr83_us_huFSZSdHZKiFEmhuoHf1AbPtCZd1-4NmzOy26Q1NUOzpBA7C55HeTvzdGbdz8y7Z4L38BHsqzJqPR3WGNrVI_XOCGK-T5QnrnM59-Nr3AjMzNFk3GX5yLgV530bFHTi713KYzBm50Q5MuRTtYcH2d87cNvO-u7M5ljNv1-lPYJdWu6HMmoNsEqyTKNcnNm10G2J6ie9yu3EgiRQ9xl6rsd6MXH4XtHYr4l7DQP-uEIyGUft_O43dcOzHX61MC_Jl60as-MSokRqfJIRJFxR2TBOnlk37rwG9MjSP4ggw7Otl_nxMz6YZr8--AX7r03KcSWTpggsdyK8AubY34BvKVeRHekQHbNRoSqOZoI98CQvCgbA6mZzI1eoJnBemB3A42soIn9DDQpkb-J-czXuL44OlRLDVz2bBXaMznAQnVrbNcols7BzkaPFA6monKebV6UdTHZHGnRkVk9ziPBJW1NoPSB8sp3UxLhkd64hATq0jJ6wqjNeu1lq0LnZiS_08YwVvB18RH00Q6hwpJlJkj9Rlm5-QEwh60NXiUfFPgEWsM6S5Vv_h95ba2NbS-3JaGEjHv0lYC0gSR_ExNYpeyGvRGxEVtuTRgngoHEPTvgHlcF4qe5qe_0pD_Fn4kgTnGWeD3A1IZMyi-kZ1p5PCOKcn1NThZSsMYvPqpU_nkNZ4SeK05AKISvIi0Zxhv7G16u8kMRQz9-XInw0FuCOCnl2VhYmlZLghD2wR3vXcs9H0zgPmYJF7XLWG6JZw1VcaPP6E8nJxqh2U_pMP_Sk77BZgn0GDdPVdf35HdWe32RjIdXooxgkCRFks_LuChEvuX7k8DtynEWvLQosHhxhHcSmYNhtupave6f8SQbgkYrDVUoQQ3PQw1rv69XAgWhEs9kx3V3axlfb3olmEDFD5tRsVKXVz4rqWLozIGyN54L4QduZK4mG6dF_THo8aVuR6Awlf6IFiw8ZsQVL5EL6tzpoKll5aTfUcRkhrjR0Wamdxghoes5IQbu7UcZtCA9lWVsR7bIyULhDxKT3SnQJMBNU-jMWw-7w6geSBwidqaP8_cP6Y_yVOvi03qke9UIdPyU46Uhc_akVCT9J2NsEVWSeyl74sGTRM--Zdfa7VZRjtk7rToozJoydWnf5--3DSAOfhRXq2JaIK0HFKm9bkBUJD93jQ_TuA1vYtA5Hg_vmAN4ad2BKu0zEby0FF7OSYVbA93QRNqjdBU-7yNwWXXEGOACl9_E9iDqfI2G6vDfD5OOqopRKdZkqv9fBxjhgz7mpvvvnqzg6TLPShZng-v0-95f9AmOM-t_jCXYfyaTZa1q_WqYIQWkT3UxlJ7cTqWvALepqSCT9uJcGhYIABIS5Gi6-h5vhnwHGoGAGAO4u9DWYAE, line 805: NS_ERROR_NOT_INITIALIZED: 
+[Child [Parent 8988, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+zrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.KoMYyxYWE5w2"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527121475608	Marionette	INFO	Listening on port 57597
+1527121476320	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+1527121686853	geckodriver	INFO	geckodriver 0.20.1
+1527121686885	geckodriver	INFO	Listening on 127.0.0.1:58094
+1527121689885	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.ackfnbhxBGV3"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527121696489	Marionette	INFO	Listening on port 58102
+1527121697977	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://callousbrake.com/9acf03f201565ce05a46f7af00bfd36b1bb9e4180cb186d9cfc73fb9da772c93a8e6e885c3a2287bb650dee50ade5565fd7ba86c6015c8190773140e9aae, line 1: Error: Timed out waiting for response
+JavaScript error: https://callousbrake.com/9acf03f201565ce05a46f7af00bfd36b1bb9e4180cb186d9cfc73fb9da772c93a8e6e885c3a2287bb650dee50ade5565fd7ba86c6015c8190773140e9aae, line 1: Error: Timed out waiting for response
+[Parent 8376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2856, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2856, Chrome_ChildThread] WARNING: pipe error: 109: file z[Child 32, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.c[Parent 8376, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10112, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10112, Chrome_ChildThread] WARNIN
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+nored for this session
+1527122072582	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 1352, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1527122225920	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Parent 1352, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3104, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3104, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 1352, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8272, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8272, Chro[GPU 2192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 34
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527122229381	geckodriver	INFO	geckodriver 0.20.1
+1527122229396	geckodriver	INFO	Listening on 127.0.0.1:59111
+1527122232428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.nkwNYd2APzKU"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527122238860	Marionette	INFO	Listening on port 59119
+1527122239926	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-131741/WSFolders/11660961//js_payload.min.js, line 1: TypeError: p[t].call is not a function
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 4316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3984, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[Child 3984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://www.redditstatic.com/reddit-init.en.xE6foQQcI8M.js, line 8: TypeError: e.sendError is not a function
+[Parent 4316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6484, Chro[Parent 4316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+11660961//js_payload.min.js, line 1: TypeError: right-hand side of 'in' should be an object, got undefined
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3396, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3396, Chrome_Chil[Child 6056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bJavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+out of memory: 0x0000000000002000 bytes requested
+ errors will be ignored for this session
+1527124732631	geckodriver	INFO	geckodriver 0.20.1
+1527124732647	geckodriver	INFO	Listening on 127.0.0.1:56141
+1527124735694	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.EsImLXGkVy9P"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527124740003	Marionette	INFO	Listening on port 56149
+1527124741011	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://code.createjs.com/createjs-2015.11.26.min.js, line 12: TypeError: f is undefined
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://cdn.doubleverify.com/dv-measurements224.js, line 24: TypeError: this.m(...) is null
+JavaScript error: https://cdn.doubleverify.com/dv-measurements224.js, line 24: TypeError: this.m(...) is null
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+Assertion failure: [unhandlable oom] Failed to allocate slots while tenuring., at z:/build/build/src/js/src/vm/JSContext.cpp:1662
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 2972, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Parent 2972, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2972, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2552, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Chil
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527126840707	geckodriver	INFO	geckodriver 0.20.1
+1527126840707	geckodriver	INFO	Listening on 127.0.0.1:58992
+1527126843879	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.lFUYIWFzSs6K"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527126848945	Marionette	INFO	Listening on port 59000
+1527126849507	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://callousbrake.com/9acf03f201565ce05a46f7af00bfd36b1bb9e4180cb186d9cfc73fb9da772c93a8e6e885c3a2287bb650dee50ade5565fd7ba86c6015c8190773140e9aae, line 1: Error: Timed out waiting for response
+JavaScript error: https://callousbrake.com/9acf03f201565ce05a46f7af00bfd36b1bb9e4180cb186d9cfc73fb9da772c93a8e6e885c3a2287bb650dee50ade5565fd7ba86c6015c8190773140e9aae, line 1: Error: Timed out waiting for response
+1527130599867	geckodriver	INFO	geckodriver 0.20.1
+1527130599883	geckodriver	INFO	Listening on 127.0.0.1:59853
+1527130603039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.Wg1dtkuviuRD"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527130609132	Marionette	INFO	Listening on port 59863
+1527130609837	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(17,693)texture11: false Code: 0x8007000e
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,896)texture11: false Code: 0x8007000e
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1689)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1689
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1688)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1688
+JavaScript error: , line 0: uncaught exception: out of memory
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1688)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1688
+[GFX1-]: [D3D11] 2 CreateTexture2D failure Size: Size(1349,1688)texture11: false Code: 0x8007000e
+[GFX1-]: Failed buffer for 0, 0, 1349, 1688
+Assertion failure: [unhandlable oom] Failed to allocate object while tenuring., at z:/build/build/src/js/src/vm/JSContext.cpp:1662
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 2884, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 6636, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 66[Parent 2884, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

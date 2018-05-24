@@ -1,38 +1,37 @@
 import pandas as pd
 import datetime as dt
+import os
 from googleplaces import GooglePlaces, types, lang
+
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
     while start >= 0 and n > 1:
-        start = haystack.find(needle, start+len(needle))
+        start = haystack.find(needle, start + len(needle))
         n -= 1
     return start
 
-def main():
 
+def main():
     pd.set_option('display.expand_frame_repr', False)
 
-    #TO DO
-    #Eventually must add geolocation data
-    #Afterwards must add weather data from DarkSky API
-    #Must combine all events for each individual golfer
+    # TO DO
+    # Eventually must add geolocation data
+    # Afterwards must add weather data from DarkSky API
+    # Must combine all events for each individual golfer
 
     # NOTES
     # Data is curated such that certain events are ecluded
     # Exclusion parameters include limited data, course changes mid tournament, or odd formatting
 
-    files = []
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Active\SafewayOpen2016.html']
-    files += [r'C:\Users\Mitch\Projects\PycharmProjects\Golf\Active\SafewayOpen2018.html']
-
     frames = []
     courses = []
     golfer_dictionary = {}
+    base_directory = r'C:\Users\Mitch\Projects\Data\Tournaments'
 
-    for x in files:
-
-        file_object = open(file=x,mode='r').read()
+    for x in os.listdir(base_directory):
+        print(x)
+        file_object = open(file=base_directory+r"\\"+x, mode='r').read()
         x = 1
         golfers = []
 
@@ -72,32 +71,29 @@ def main():
         third_date = fourth_date - dt.timedelta(days=1)
 
         course_end = file_object[file_object.find("Course: "):].find('<')
-        course_name = file_object[file_object.find("Course: ")+len("Course: "):file_object.find("Course:") + course_end]
+        course_name = file_object[
+                      file_object.find("Course: ") + len("Course: "):file_object.find("Course:") + course_end]
 
         par_end = file_object[file_object.find("PAR: "):].find('<')
-        par = file_object[file_object.find("PAR: ")+len("PAR: "):file_object.find("PAR:") + par_end]
-        
+        par = file_object[file_object.find("PAR: ") + len("PAR: "):file_object.find("PAR:") + par_end]
+
         if "amp;" in str(course_name):
             course_name = str(course_name.replace("amp;", ""))
 
         course = str(course_name), int(par)
-        
+
         if course not in courses:
             courses += [course]
 
-
-        start_index = file_object.find('PAST <b>')+67
+        start_index = file_object.find('PAST <b>') + 67
         end_index = file_object[start_index:].find("</span>")
-        
-        tournament_name = file_object[start_index:start_index+end_index]
-        
-        print(start_index)
-        print(end_index)
+
+        tournament_name = file_object[start_index:start_index + end_index]
 
         for x in golfers:
-            x.insert(1,tournament_name)
-            x.insert(2,course_name)
-            x.insert(3,str(first_date))
+            x.insert(1, tournament_name)
+            x.insert(2, course_name)
+            x.insert(3, str(first_date))
             x.insert(5, str(second_date))
             x.insert(7, str(third_date))
             x.insert(9, str(fourth_date))
@@ -122,6 +118,7 @@ def main():
     df = pd.DataFrame(courses)
     print(df)
     df.to_csv(path_or_buf="Courses.csv")
+
 
 if __name__ == "__main__":
     main()
