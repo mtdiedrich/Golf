@@ -1,8 +1,6 @@
 import pandas as pd
 import datetime as dt
 import os
-from googleplaces import GooglePlaces, types, lang
-
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee34506-33e3-441e-ab3b-c7b3428de3cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Active/html_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Active/tournament_html_download.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/SeleniumTest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/TestFile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/golfHTMLReader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/golf_copy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/test_file.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Active/tournament_html_parser.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/Courses.csv" afterPath="$PROJECT_DIR$/Active/Courses.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/geckodriver.log" afterPath="$PROJECT_DIR$/Active/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/html_parser.py" afterPath="$PROJECT_DIR$/Active/html_parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Active/tournament_html_download.py" afterPath="$PROJECT_DIR$/Active/tournament_html_download.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +20,8 @@
       <file leaf-file-name="tournament_html_download.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Active/tournament_html_download.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="84" lean-forward="false" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+            <state relative-caret-position="-153">
+              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -39,8 +32,8 @@
       <file leaf-file-name="html_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Active/html_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1218">
-              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -598,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Active/html_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1218">
-          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -608,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Active/tournament_html_download.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="84" lean-forward="false" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+        <state relative-caret-position="-153">
+          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

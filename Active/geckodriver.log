@@ -2301,3 +2301,102 @@ A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1527132439253	geckodriver	INFO	geckodriver 0.20.1
+1527132439300	geckodriver	INFO	Listening on 127.0.0.1:61475
+1527132442660	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.KlWDZjMvWUko"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527132452251	Marionette	INFO	Listening on port 61483
+1527132453081	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://ds.fuel451.com/script.js, line 460: TypeError: document.getElementById(...) is null
+JavaScript error: https://ds.fuel451.com/script.js, line 460: TypeError: document.getElementById(...) is null
+1527132876573	geckodriver	INFO	geckodriver 0.20.1
+1527132876589	geckodriver	INFO	Listening on 127.0.0.1:62092
+1527134405931	geckodriver	INFO	geckodriver 0.20.1
+1527134405946	geckodriver	INFO	Listening on 127.0.0.1:63238
+1527134409118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.oF92jdNpAWr3"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527134418569	Marionette	INFO	Listening on port 63246
+1527134418693	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://ds.fuel451.com/script.js, line 460: TypeError: document.getElementById(...) is null
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+JavaScript error: https://s0.2mdn.net/4896560/1520868309103/2018_Display_Banner_Tour%20Soft_Competitive_300x250/tourSoft_300X250chrome.js, line 6265: TypeError: this.scroll_legal is undefined
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-131741/WSFolders/11660961//js_payload.min.js, line 1: TypeError: right-hand side of 'in' should be an object, got undefined
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-131741/WSFolders/11660961//js_payload.min.js, line 1: TypeError: right-hand side of 'in' should be an object, got undefined
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-131741/WSFolders/11660961//js_payload.min.js, line 1: TypeError: right-hand side of 'in' should be an object, got undefined
+JavaScript error: https://cdn.doubleverify.com/dv-measurements224.js, line 48: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 7852, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7852, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 7648, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7648, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 7852, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13212, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13[GPU 12640, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527136460925	geckodriver	INFO	geckodriver 0.20.1
+1527136460941	geckodriver	INFO	Listening on 127.0.0.1:64961
+1527136464035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.OdfRh2AgHjJi"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527136470957	Marionette	INFO	Listening on port 64969
+1527136471746	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: c is null
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: null has no properties
+JavaScript error: https://static.chartbeat.com/js/chartbeat_refresh.js, line 61: TypeError: null has no properties
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://cdn-gl.imrworldwide.com/novms/js/2/nlsSDK600.bundle.min.js, line 9: ReferenceError: method is not defined
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 12084, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 12084, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+[Child 11408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1[Parent 12084, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1527171424415	geckodriver	INFO	geckodriver 0.20.1
+1527171424431	geckodriver	INFO	Listening on 127.0.0.1:50180
+1527171427572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mitch\\AppData\\Local\\Temp\\rust_mozprofile.Zt6NgBW2u8Bq"
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Mitch\AppData\Local\openvr\openvrpaths.vrpath
+1527171437206	Marionette	INFO	Listening on port 50188
+1527171438033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.pgatour.com/etc/designs/pgatour-site/clientlibs/theme-pgatour-js-embedded.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
