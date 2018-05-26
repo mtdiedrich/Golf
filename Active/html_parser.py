@@ -111,6 +111,7 @@ def main():
 
     for x in dictionary_keys:
         df = golfer_dictionary[x].transpose()
+        golfer = []
         for col in range(0,len(df.columns)):
             round_one = x, df[col][0], df[col][1], df[col][2], df[col][3]
             round_two = x, df[col][0], df[col][1], df[col][4], df[col][5]
@@ -120,7 +121,22 @@ def main():
             print(round_two)
             print(round_three)
             print(round_four)
-        print()
+            if (round_one[4]==""):
+                print(True)
+            else:
+                print(False)
+            if (round_two[4]==""):
+                print(True)
+            else:
+                print(False)
+            if(round_three[4]==""):
+                print(True)
+            else:
+                print(False)
+            if(round_four[4]==""):
+                print(True)
+            else:
+                print(False)
 
     df = pd.DataFrame(courses)
     print(df)
