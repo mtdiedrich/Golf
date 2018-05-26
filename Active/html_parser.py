@@ -22,11 +22,12 @@ def main():
     # Data is curated such that certain events are ecluded
     # Exclusion parameters include limited data, course changes mid tournament, or odd formatting
 
+
     frames = []
     courses = []
     golfer_dictionary = {}
     base_directory = r'C:\Users\Mitch\Projects\Data\Tournaments'
-
+    #base_directory = r'C:\Users\Mitch\Projects\Data\Test'
     for x in os.listdir(base_directory):
         print(x)
         file_object = open(file=base_directory+r"\\"+x, mode='r').read()
@@ -109,8 +110,16 @@ def main():
         golfer_dictionary[x] = pd.DataFrame(golfer_dictionary[x])
 
     for x in dictionary_keys:
-        print(x)
-        print(golfer_dictionary[x])
+        df = golfer_dictionary[x].transpose()
+        for col in range(0,len(df.columns)):
+            round_one = x, df[col][0], df[col][1], df[col][2], df[col][3]
+            round_two = x, df[col][0], df[col][1], df[col][4], df[col][5]
+            round_three = x, df[col][0], df[col][1], df[col][6], df[col][7]
+            round_four = x, df[col][0], df[col][1], df[col][8], df[col][9]
+            print(round_one)
+            print(round_two)
+            print(round_three)
+            print(round_four)
         print()
 
     df = pd.DataFrame(courses)

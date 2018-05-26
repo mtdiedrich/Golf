@@ -44,7 +44,7 @@ def main():
     #urls += ["https://www.theplayers.com/past-results.html"]
     #urls += ["https://www.pgatour.com/tournaments/at-t-byron-nelson/past-results.html"]
     urls += ["https://www.pgatour.com/tournaments/fort-worth-invitational/past-results.html"]
-    urls += ["https://www.pgatour.com/tournaments/the-memorial-tournament-presented-by-nationwide/past-results.html"
+    urls += ["https://www.pgatour.com/tournaments/the-memorial-tournament-presented-by-nationwide/past-results.html"]
     urls += ["https://www.pgatour.com/tournaments/us-open/past-results.html"]
     urls += ["https://www.pgatour.com/tournaments/fedex-st-jude-classic/past-results.html"]
     urls += ["https://www.pgatour.com/tournaments/travelers-championship/past-results.html"]
