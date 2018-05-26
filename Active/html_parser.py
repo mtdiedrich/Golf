@@ -108,36 +108,26 @@ def main():
 
     for x in dictionary_keys:
         golfer_dictionary[x] = pd.DataFrame(golfer_dictionary[x])
+    
+    golfers_list = []
 
     for x in dictionary_keys:
         df = golfer_dictionary[x].transpose()
-        golfer = []
         for col in range(0,len(df.columns)):
             round_one = x, df[col][0], df[col][1], df[col][2], df[col][3]
             round_two = x, df[col][0], df[col][1], df[col][4], df[col][5]
             round_three = x, df[col][0], df[col][1], df[col][6], df[col][7]
             round_four = x, df[col][0], df[col][1], df[col][8], df[col][9]
-            print(round_one)
-            print(round_two)
-            print(round_three)
-            print(round_four)
-            if (round_one[4]==""):
-                print(True)
-            else:
-                print(False)
-            if (round_two[4]==""):
-                print(True)
-            else:
-                print(False)
-            if(round_three[4]==""):
-                print(True)
-            else:
-                print(False)
-            if(round_four[4]==""):
-                print(True)
-            else:
-                print(False)
-
+            if (round_one[4]!=""):
+                golfers_list += [round_one]
+            if (round_two[4]!=""):
+                golfers_list += [round_two]
+            if(round_three[4]!=""):
+                golfers_list += [round_three]
+            if(round_four[4]!=""):
+                golfers_list += [round_four]
+    for x in golfers_list:
+        print(x)
     df = pd.DataFrame(courses)
     print(df)
     df.to_csv(path_or_buf="Courses.csv")
