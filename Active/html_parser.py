@@ -126,12 +126,16 @@ def main():
                 golfers_list += [round_three]
             if(round_four[4]!=""):
                 golfers_list += [round_four]
-    for x in golfers_list:
-        print(x)
-    df = pd.DataFrame(courses)
-    print(df)
-    df.to_csv(path_or_buf="Courses.csv")
 
+    gdf = pd.DataFrame(golfers_list)
+    gdf.to_csv(path_or_buf=r'C:\Users\Mitch\Projects\Data\Golfers.csv')
+    print(gdf)
+
+    cdf = pd.DataFrame(courses)
+    cdf.to_csv(path_or_buf=r'C:\Users\Mitch\Projects\Data\Courses.csv')
+    print(cdf)
+    for x in courses:
+        print(x)
 
 if __name__ == "__main__":
     main()
