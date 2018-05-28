@@ -134,8 +134,11 @@ def main():
     cdf = pd.DataFrame(courses)
     cdf.to_csv(path_or_buf=r'C:\Users\Mitch\Projects\Data\Courses.csv')
     print(cdf)
-    for x in courses:
-        print(x)
+    
+    courses.sort(key=lambda x: x[1])
+
+    for x in range (0,len(courses)):
+        print(x, courses[x]) 
 
 if __name__ == "__main__":
     main()
