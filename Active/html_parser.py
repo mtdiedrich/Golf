@@ -152,8 +152,12 @@ def main():
     for x in courses:
         course_pars_dictionary[x[0]] = x[1]
     
+
     for x in golfers_list:
+        print(x)      
+    
+    for x in course_pars_dictionary.keys():
         print(x)
-   
+
 if __name__ == "__main__":
     main()
