@@ -1,6 +1,7 @@
 import pandas as pd
 import datetime as dt
 import os
+from difflib import SequenceMatcher
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
@@ -9,11 +10,14 @@ def find_nth(haystack, needle, n):
         n -= 1
     return start
 
+def similar(a,b):
+    return SequenceMatcher(None, a, b).ratio()
 
 def main():
     pd.set_option('display.expand_frame_repr', False)
 
     # TO DO
+    # Dividing into rounds before pars, geolocation, weather data will result in computational infeasibility
     # Eventually must add geolocation data
     # Afterwards must add weather data from DarkSky API
     # Must combine all events for each individual golfer
@@ -110,35 +114,46 @@ def main():
         golfer_dictionary[x] = pd.DataFrame(golfer_dictionary[x])
     
     golfers_list = []
-
     for x in dictionary_keys:
         df = golfer_dictionary[x].transpose()
         for col in range(0,len(df.columns)):
-            round_one = x, df[col][0], df[col][1], df[col][2], df[col][3]
-            round_two = x, df[col][0], df[col][1], df[col][4], df[col][5]
-            round_three = x, df[col][0], df[col][1], df[col][6], df[col][7]
-            round_four = x, df[col][0], df[col][1], df[col][8], df[col][9]
-            if (round_one[4]!=""):
-                golfers_list += [round_one]
-            if (round_two[4]!=""):
-                golfers_list += [round_two]
-            if(round_three[4]!=""):
-                golfers_list += [round_three]
-            if(round_four[4]!=""):
-                golfers_list += [round_four]
+            tournament = x, df[col][0], df[col][1], df[col][2], df[col][3], df[col][4], df[col][5], df[col][6], df[col][7], df[col][8], df[col][9]
+            golfers_list += [tournament]
+    
 
-    gdf = pd.DataFrame(golfers_list)
-    gdf.to_csv(path_or_buf=r'C:\Users\Mitch\Projects\Data\Golfers.csv')
-    print(gdf)
-
-    cdf = pd.DataFrame(courses)
-    cdf.to_csv(path_or_buf=r'C:\Users\Mitch\Projects\Data\Courses.csv')
-    print(cdf)
+#    golfers_list = []
+#    for x in dictionary_keys:
+#        df = golfer_dictionary[x].transpose()
+#        for col in range(0,len(df.columns)):
+#            round_one = x, df[col][0], df[col][1], df[col][2], df[col][3]
+#            round_two = x, df[col][0], df[col][1], df[col][4], df[col][5]
+#            round_three = x, df[col][0], df[col][1], df[col][6], df[col][7]
+#            round_four = x, df[col][0], df[col][1], df[col][8], df[col][9]
+#            if (round_one[4]!=""):
+#                golfers_list += [round_one]
+#            if (round_two[4]!=""):
+#                golfers_list += [round_two]
+#            if(round_three[4]!=""):
+#                golfers_list += [round_three]
+#            if(round_four[4]!=""):
+#                golfers_list += [round_four]
     
     courses.sort(key=lambda x: x[1])
+    delete_indices = [221,217,215,212,211,210,206,205,204,203,202,201,200,
+            199,198,195,191,190,187,183,177,176,174,172,168,163,161,156,
+            149,148,146,144,142,138,137,133,132,128,127,126,124,122,121,120,
+            117,115,114,113,112,107,106,99,96,93,92,90,81,73,69,68,61,60,53,
+            48,44,35,29,26,25,16,12,2]
 
-    for x in range (0,len(courses)):
-        print(x, courses[x]) 
-
+    for x in delete_indices:
+        del courses[x]
+    
+    course_pars_dictionary = {}
+    for x in courses:
+        course_pars_dictionary[x[0]] = x[1]
+    
+    for x in golfers_list:
+        print(x)
+   
 if __name__ == "__main__":
     main()
