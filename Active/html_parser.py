@@ -152,11 +152,15 @@ def main():
     for x in courses:
         course_pars_dictionary[x[0]] = x[1]
     
-
-    for x in golfers_list:
-        print(x)      
     
-    for x in course_pars_dictionary.keys():
+    for x in golfers_list:
+        max_similarity = 0
+        max_string = ""
+        for y in course_pars_dictionary.keys():
+            if similar(x[2],y) > max_similarity:
+                max_similarity = similar(x[2],y)
+                max_string = y
+                print(max_similarity)
         print(x)
 
 if __name__ == "__main__":
