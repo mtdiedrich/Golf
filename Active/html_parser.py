@@ -149,10 +149,8 @@ def main():
     
     gdf = pd.DataFrame(golfers_list)
     gdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golfers.csv')
-    print(gdf.csv)
-
-
-
+    print(gdf)
+    print(cdf)
 
 if __name__ == "__main__":
     main()
