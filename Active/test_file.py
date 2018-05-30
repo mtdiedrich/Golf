@@ -1,5 +1,7 @@
-def main():
-    x=0
+import pandas as pd
 
-if __name__=="__main__":
+def main():
+    print(pd.read_csv(r'C:\Users\Mitch\Projects\Data\Golfers.csv'))
+
+if __name__=='__main__':
     main()
