@@ -9,7 +9,7 @@ def main():
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
 
-    google_api_key = 'AIzaSyCLxP9X3uDx6Hfcr5wb95fliDFN3--KmxY'
+    google_api_key = 'NO'
     google_places = GooglePlaces(google_api_key)
     
     #print(df)
