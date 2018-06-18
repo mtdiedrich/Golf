@@ -77,7 +77,14 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[
                       file_object.find("Course: ") + len("Course: "):file_object.find("Course:") + course_end]
-
+        if course_name == 'TPC Four Seasons Resort':
+            course_name = 'TPC Las Colinas'
+        if course_name == 'Oakland Hills CC (South)':
+            course_name = 'Oakland Hills (South)'
+        if course_name == 'Annanadle GC':
+            course_name = 'Annandale GC'
+        if course_name == 'Congressional CC':
+            course_name = 'Congressional CC (Blue)'
         par_end = file_object[file_object.find("PAR: "):].find('<')
         par = file_object[file_object.find("PAR: ") + len("PAR: "):file_object.find("PAR:") + par_end]
 
@@ -146,7 +153,7 @@ def main():
         golfers_list[x][2] = max_string
         print(golfers_list[x])
         print(float(x)/float(len(golfers_list)))
-    
+
     gdf = pd.DataFrame(golfers_list)
     gdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golfers.csv')
     print(gdf)
