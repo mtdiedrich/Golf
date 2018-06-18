@@ -6,14 +6,14 @@ google_api_key = input("Key: ")
 google_places = GooglePlaces(google_api_key)
 df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Data\Courses.csv')
 
-def add_geo_data(location, keyword, radius):
+def add_geo_data(location, keyword):
     
     global x
     global df
     global google_api_key
     global google_places
 
-    query_result = google_places.nearby_search(location=location,keyword=keyword, radius=radius)
+    query_result = google_places.nearby_search(location=location,keyword=keyword, radius=50000)
     df.iloc[x,2] = query_result.places[0].geo_location['lat']
     df.iloc[x,3] = query_result.places[0].geo_location['lng']
     x += 1
@@ -26,31 +26,12 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-    add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge', 50000)
-
-    '''    
-    x = 0
-
-    query_result = google_places.nearby_search(location='Orlando, Florida',keyword='Bay Hill Club and Lodge', radius=50000)
-    df.iloc[x,2] = query_result.places[0].geo_location['lat']
-    df.iloc[x,3] = query_result.places[0].geo_location['lng']
-    x += 1
-    query_result = google_places.nearby_search(location='Dallas, Texas',keyword='Preston Trail Golf', radius=50000)
-    df.iloc[x,2] = query_result.places[0].geo_location['lat']
-    df.iloc[x,3] = query_result.places[0].geo_location['lng']
-    x += 1
-    query_result = google_places.nearby_search(location='Irving, Texas',keyword='TPC Las Colinas', radius=50000)
-    df.iloc[x,2] = query_result.places[0].geo_location['lat']
-    df.iloc[x,3] = query_result.places[0].geo_location['lng']
-    x += 1
-    query_result = google_places.nearby_search(location='St. Louis, Missouri',keyword='Bellerive Country Club', radius=50000)
-    df.iloc[x,2] = query_result.places[0].geo_location['lat']
-    df.iloc[x,3] = query_result.places[0].geo_location['lng']
-    x += 1
-    query_result = google_places.nearby_search(location='Cherry Hills Village, Colorado',keyword='Cherry Hills Country Club', radius=50000)
-    df.iloc[x,2] = query_result.places[0].geo_location['lat']
-    df.iloc[x,3] = query_result.places[0].geo_location['lng']
-    x += 1
+    add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge')
+    add_geo_data('Dallas, Texas', 'Prestion Trail Golf')
+    add_geo_data('Irving, Texas', 'TPC Las Colinas')
+    add_geo_data('St. Louis, Missouri', 'Bellerive Country Club')
+    add_geo_data('Cherry Hills Village, Colorado', 'Cherry Hills Country Club')
+    '''
     query_result = google_places.nearby_search(location='Fort Worth, Texas',keyword='Colonial Country Club', radius=50000)
     df.iloc[x,2] = query_result.places[0].geo_location['lat']
     df.iloc[x,3] = query_result.places[0].geo_location['lng']
