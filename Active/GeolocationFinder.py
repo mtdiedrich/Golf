@@ -103,12 +103,29 @@ def main():
     df.iloc[x,3] = query_result.places[0].geo_location['lng']
     '''
     x += 1
-    '''
+    ''' 
     query_result = google_places.nearby_search(location='Sammamish, Washington',keyword='Sahalee Country Club', radius=50000)
     df.iloc[x,2] = query_result.places[0].geo_location['lat']
     df.iloc[x,3] = query_result.places[0].geo_location['lng']
     '''
+    x += 1
+    ''' 
+    query_result = google_places.nearby_search(location='Springfield Township, New Jersey',keyword='Baltusrol Golf Club', radius=50000)
+    df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
+    df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
+    '''
+    x += 1
+    '''
+    query_result = google_places.nearby_search(location='Mississaugua, Ontario',keyword='Mississaugua Golf and Country Club', radius=50000)
+    df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
+    df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
+    '''
+    x += 1
     
+    query_result = google_places.nearby_search(location='Montreal, Quebec',keyword='Royal Montreal Golf Club', radius=50000)
+    df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
+    df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
+
     for place in query_result.places:
         # Returned places from a query are place summaries.
         print(place.name)
