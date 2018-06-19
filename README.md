@@ -1,5 +1,5 @@
 # Golf
-Analysis of PGA Tour data.
+Collection and analysis of PGA Tour data.
 
 # Process
 ~~1. Download the results webpages for every year of all PGA Tour Tournaments~~
