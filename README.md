@@ -2,12 +2,13 @@
 Analysis of PGA Tour data.
 
 # Process
-   ~~1. Download the results webpages for every year of all PGA Tour Tournaments~~
+~~
+1. Download the results webpages for every year of all PGA Tour Tournaments
 
-   ~~2. Parse webpages into data by golfer~~
+2. Parse webpages into data by golfer
 
-   ~~3. Collect list of courses~~
-
+3. Collect list of courses
+~~
 4. Get geolocation data of all courses in list
 
 5. Get weather conditions of every course on tournament days
