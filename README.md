@@ -1,5 +1,5 @@
 # Golf
-Collection and analysis of PGA Tour data. Python.
+Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia for computation later.
 
 # Process
 ~~1. Download the results webpages for every year of all PGA Tour Tournaments~~
