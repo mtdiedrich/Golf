@@ -85,6 +85,12 @@ def main():
             course_name = 'Annandale GC'
         if course_name == 'Congressional CC':
             course_name = 'Congressional CC (Blue)'
+        if course_name == 'Royal Montreal GC':
+            course_name = 'Royal Montreal GC (Blue)'
+        if course_name == 'Royal Montreal GC(Blue Course)':
+            course_name = 'Royal Montreal GC (Blue)'
+        if course_name == 'Hattisburg CC':
+            course_name = 'Hattiesburg CC'
         par_end = file_object[file_object.find("PAR: "):].find('<')
         par = file_object[file_object.find("PAR: ") + len("PAR: "):file_object.find("PAR:") + par_end]
 
