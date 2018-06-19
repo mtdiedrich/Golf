@@ -27,7 +27,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-    '''
+    
     add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge')
     add_geo_data('Dallas, Texas', 'Prestion Trail Golf')
     add_geo_data('Irving, Texas', 'TPC Las Colinas')
@@ -49,9 +49,9 @@ def main():
     add_geo_data('Montreal, Quebec','Royal Montreal Golf Club')
     add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
     add_geo_data('Ancaster, Ontario','Hamilton Golf and Country Club')
-    add_geo_data('Vancouver, British Columbia','Essex Golf and Country Club')
-
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
+    add_geo_data('Vancouver, British Columbia','Shaughnessy Golf and Country Club')
+    add_geo_data('Hatiesburg, Mississippi','Hattiesburg Country Club')
+    '''
     add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
     add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
     add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
