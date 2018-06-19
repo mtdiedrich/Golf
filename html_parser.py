@@ -31,8 +31,7 @@ def main():
     frames = []
     courses = []
     golfer_dictionary = {}
-    base_directory = r'C:\Users\Mitch\Projects\Data\Tournaments'
-    #base_directory = r'C:\Users\Mitch\Projects\Data\Test'
+    base_directory = r'C:\Users\Mitch\Projects\Data\Golf\Tournaments'
     for x in os.listdir(base_directory):
         print(x)
         file_object = open(file=base_directory+r"\\"+x, mode='r').read()
@@ -130,7 +129,7 @@ def main():
         course_pars_dictionary[x[0]] = x[1]
     
     cdf = pd.DataFrame(courses)
-    cdf.to_csv(r'C:\Users\Mitch\Projects\Data\Courses.csv')
+    cdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golf\Courses.csv')
 
     for x in frames:
         golfer_dictionary[x[0]] = []
@@ -161,7 +160,7 @@ def main():
         print(float(x)/float(len(golfers_list)))
 
     gdf = pd.DataFrame(golfers_list)
-    gdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golfers.csv')
+    gdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golf\Golfers.csv')
     print(gdf)
     print(cdf)
 

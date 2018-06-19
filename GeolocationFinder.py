@@ -5,7 +5,7 @@ import numpy as np
 x = 0
 google_api_key = input("Key: ")
 google_places = GooglePlaces(google_api_key)
-df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Data\Courses.csv')
+df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Data\Golf\Courses.csv')
 
 def add_geo_data(location, keyword):
     
