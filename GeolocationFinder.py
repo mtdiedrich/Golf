@@ -55,12 +55,12 @@ def main():
     add_geo_data('Palm Beach Gardens, Florida','PGA National Champion Course')
     add_geo_data('Newtown Square, Pennsylvania','Aronimink Golf Club')
     add_geo_data('Potomac, Maryland','TPC Potomac')
-
+    add_geo_data('Edison, New Jersey','Plainfield Country Club')
 
     '''
 
 
-    query_result = google_places.nearby_search(location='Potomac, Maryland',keyword='TPC Potomac', radius=50000)
+    query_result = google_places.nearby_search(location='Edison, New Jersey',keyword='Plainfield Country Club', radius=50000)
     
     with pd.option_context('display.max_rows', 200):
         print(df)
