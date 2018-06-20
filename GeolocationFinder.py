@@ -27,7 +27,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-    '''
+
     add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge')
     add_geo_data('Dallas, Texas', 'Prestion Trail Golf')
     add_geo_data('Irving, Texas', 'TPC Las Colinas')
@@ -57,20 +57,18 @@ def main():
     add_geo_data('Potomac, Maryland','TPC Potomac')
     add_geo_data('Edison, New Jersey','Plainfield Country Club')
     add_geo_data('Old Westbury, New York','Glen Oaks Club')
+    add_geo_data('Kent, Sandwich','Royal St. George Golf Club')
+    print(df)
 
     '''
-
-
-    query_result = google_places.nearby_search(location='Old Westbury, New York',keyword='Glen Oaks Club', radius=50000)
-    
-    with pd.option_context('display.max_rows', 200):
-        print(df)
+    query_result = google_places.nearby_search(location='Kent, Sandwich',keyword='Royal St. George Golf Club', radius=50000)
     
     for place in query_result.places:
         # Returned places from a query are place summaries.
         print(place.name)
         print(place.geo_location)
         print()
-    
+    '''
+
 if __name__ == "__main__":
     main()

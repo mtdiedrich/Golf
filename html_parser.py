@@ -76,22 +76,6 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[
                       file_object.find("Course: ") + len("Course: "):file_object.find("Course:") + course_end]
-        if course_name == 'TPC Four Seasons Resort':
-            course_name = 'TPC Las Colinas'
-        if course_name == 'Las Colinas Sports Club':
-            course_name = 'TPC Las Colinas'
-        if course_name == 'Oakland Hills CC (South)':
-            course_name = 'Oakland Hills (South)'
-        if course_name == 'Annanadle GC':
-            course_name = 'Annandale GC'
-        if course_name == 'Congressional CC':
-            course_name = 'Congressional CC (Blue)'
-        if course_name == 'Royal Montreal GC':
-            course_name = 'Royal Montreal GC (Blue)'
-        if course_name == 'Royal Montreal GC(Blue Course)':
-            course_name = 'Royal Montreal GC (Blue)'
-        if course_name == 'Hattisburg CC':
-            course_name = 'Hattiesburg CC'
         par_end = file_object[file_object.find("PAR: "):].find('<')
         par = file_object[file_object.find("PAR: ") + len("PAR: "):file_object.find("PAR:") + par_end]
 
@@ -131,7 +115,7 @@ def main():
         course_pars_dictionary[x[0]] = x[1]
     
     cdf = pd.DataFrame(courses)
-    cdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golf\Courses.csv')
+    cdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
 
     for x in frames:
         golfer_dictionary[x[0]] = []
@@ -162,7 +146,7 @@ def main():
         print(float(x)/float(len(golfers_list)))
 
     gdf = pd.DataFrame(golfers_list)
-    gdf.to_csv(r'C:\Users\Mitch\Projects\Data\Golf\Golfers.csv')
+    gdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\Golfers.csv')
     print(gdf)
     print(cdf)
 
