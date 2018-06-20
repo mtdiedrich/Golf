@@ -5,7 +5,7 @@ import numpy as np
 x = 0
 google_api_key = input("Key: ")
 google_places = GooglePlaces(google_api_key)
-df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Data\Golf\Courses.csv')
+df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
 
 def add_geo_data(location, keyword):
     
@@ -27,7 +27,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-    
+    '''
     add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge')
     add_geo_data('Dallas, Texas', 'Prestion Trail Golf')
     add_geo_data('Irving, Texas', 'TPC Las Colinas')
@@ -51,25 +51,25 @@ def main():
     add_geo_data('Ancaster, Ontario','Hamilton Golf and Country Club')
     add_geo_data('Vancouver, British Columbia','Shaughnessy Golf and Country Club')
     add_geo_data('Hatiesburg, Mississippi','Hattiesburg Country Club')
-    '''
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    '''
-    query_result = google_places.nearby_search(location='Hattiesburg, Mississippi',keyword='Hattiesburg Country Club', radius=50000)
+    add_geo_data('Honolulu, Hawaii','Waialae Country Club')
+    add_geo_data('Palm Beach Gardens, Florida','PGA National Champion Course')
+    add_geo_data('Newtown Square, Pennsylvania','Aronimink Golf Club')
+    add_geo_data('Potomac, Maryland','TPC Potomac')
 
+
+    '''
+
+
+    query_result = google_places.nearby_search(location='Potomac, Maryland',keyword='TPC Potomac', radius=50000)
+    
     with pd.option_context('display.max_rows', 200):
         print(df)
-
+    
     for place in query_result.places:
         # Returned places from a query are place summaries.
         print(place.name)
         print(place.geo_location)
         print()
-
+    
 if __name__ == "__main__":
     main()
