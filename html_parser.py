@@ -31,7 +31,7 @@ def main():
     frames = []
     courses = []
     golfer_dictionary = {}
-    base_directory = r'C:\Users\Mitch\Projects\Data\Golf\Tournaments'
+    base_directory = r'C:\Users\Mitch\Projects\Golf\Data\Tournaments'
     for x in os.listdir(base_directory):
         print(x)
         file_object = open(file=base_directory+r"\\"+x, mode='r').read()
@@ -76,7 +76,7 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[
                       file_object.find("Course: ") + len("Course: "):file_object.find("Course:") + course_end]
-        if course_name == 'TPC Four Seasons Resort':
+        if course_name == 'TPC Four Seasons Resort' or course_name == 'Las Colinas Sports Club':
             course_name = 'TPC Las Colinas'
         if course_name == 'Oakland Hills CC (South)':
             course_name = 'Oakland Hills (South)'
