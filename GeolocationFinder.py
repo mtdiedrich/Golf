@@ -30,16 +30,15 @@ def main():
     df.rename(columns={'1': 'Par'}, inplace=True)
 
     print(df)
-
-    '''
-    query_result = google_places.nearby_search(location='Kent, Sandwich',keyword='Royal St. George Golf Club', radius=50000)
     
+    #query_result = google_places.nearby_search(location='Kent, Sandwich',keyword='Royal St. George Golf Club', radius=50000)
+    query_result = google_places.text_search(query="Bay Hill Club and Lodge")
+
     for place in query_result.places:
         # Returned places from a query are place summaries.
         print(place.name)
         print(place.geo_location)
         print()
-    '''
 
 if __name__ == "__main__":
     main()
