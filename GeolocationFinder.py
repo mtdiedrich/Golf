@@ -2,19 +2,20 @@ from googleplaces import GooglePlaces
 import pandas as pd
 import numpy as np
 
+pd.set_option('display.max_rows',200)
 x = 0
 google_api_key = input("Key: ")
 google_places = GooglePlaces(google_api_key)
 df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
 
-def add_geo_data(location, keyword):
+def add_geo_data(location, keyword, radius):
     
     global x
     global df
     global google_api_key
     global google_places
 
-    query_result = google_places.nearby_search(location=location,keyword=keyword, radius=50000)
+    query_result = google_places.nearby_search(location=location,keyword=keyword, radius=radius)
     df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
     df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
     x += 1
@@ -28,36 +29,6 @@ def main():
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
 
-    add_geo_data('Orlando, Florida', 'Bay Hill Club and Lodge')
-    add_geo_data('Dallas, Texas', 'Prestion Trail Golf')
-    add_geo_data('Irving, Texas', 'TPC Las Colinas')
-    add_geo_data('St. Louis, Missouri', 'Bellerive Country Club')
-    add_geo_data('Cherry Hills Village, Colorado', 'Cherry Hills Country Club')
-    add_geo_data('Fort Worth, Texas', 'Colonial Country Club')
-    add_geo_data('Memphis, Tennessee', 'TPC Southwind')
-    add_geo_data('Coal Valley, Illinois', 'Oakwood Country Club')
-    add_geo_data('Playa del Carmen', 'El Camaleon')
-    add_geo_data('Tulsa, Oklahoma', 'Southern Hills Country Club')
-    add_geo_data('Bloomfield Township, Michigan', 'Oakland Hills Country Club')
-    add_geo_data('Akron, Ohio','Firestone Country Club')
-    add_geo_data('Bethesda, Maryland','Congressional Country Club')
-    add_geo_data('Pittsford, New York','Oak Hill Country Club')
-    add_geo_data('Mamaroneck, New York','Winged Foot Country Club')
-    add_geo_data('Sammamish, Washington','Sahalee Country Club')
-    add_geo_data('Springfield Township, New Jersey','Baltusrol Golf Club')
-    add_geo_data('Mississaugua, Ontario','Mississaugua Golf and Country Club')
-    add_geo_data('Montreal, Quebec','Royal Montreal Golf Club')
-    add_geo_data('LaSalle, Ontario','Essex Golf and Country Club')
-    add_geo_data('Ancaster, Ontario','Hamilton Golf and Country Club')
-    add_geo_data('Vancouver, British Columbia','Shaughnessy Golf and Country Club')
-    add_geo_data('Hatiesburg, Mississippi','Hattiesburg Country Club')
-    add_geo_data('Honolulu, Hawaii','Waialae Country Club')
-    add_geo_data('Palm Beach Gardens, Florida','PGA National Champion Course')
-    add_geo_data('Newtown Square, Pennsylvania','Aronimink Golf Club')
-    add_geo_data('Potomac, Maryland','TPC Potomac')
-    add_geo_data('Edison, New Jersey','Plainfield Country Club')
-    add_geo_data('Old Westbury, New York','Glen Oaks Club')
-    add_geo_data('Kent, Sandwich','Royal St. George Golf Club')
     print(df)
 
     '''
