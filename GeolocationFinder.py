@@ -47,6 +47,8 @@ def main():
             place = 'Golf Club of Houston'
         if place == 'Richelieu Valley G&CC':
             place = 'Richelieu Golf Quebec'
+        if place == 'CC at Mirasol (Sunset Course)':
+            place = 'Country Club at Mirasol'
         if place[len(place)-4:] == 'G&CC':
             place = place[:len(place)-4] + 'Golf and Country Club'
         if place[len(place)-2:] == 'CC':
