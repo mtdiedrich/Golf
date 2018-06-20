@@ -76,7 +76,9 @@ def main():
         course_end = file_object[file_object.find("Course: "):].find('<')
         course_name = file_object[
                       file_object.find("Course: ") + len("Course: "):file_object.find("Course:") + course_end]
-        if course_name == 'TPC Four Seasons Resort' or course_name == 'Las Colinas Sports Club':
+        if course_name == 'TPC Four Seasons Resort':
+            course_name = 'TPC Las Colinas'
+        if course_name == 'Las Colinas Sports Club':
             course_name = 'TPC Las Colinas'
         if course_name == 'Oakland Hills CC (South)':
             course_name = 'Oakland Hills (South)'
