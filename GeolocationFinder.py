@@ -56,11 +56,12 @@ def main():
     add_geo_data('Newtown Square, Pennsylvania','Aronimink Golf Club')
     add_geo_data('Potomac, Maryland','TPC Potomac')
     add_geo_data('Edison, New Jersey','Plainfield Country Club')
+    add_geo_data('Old Westbury, New York','Glen Oaks Club')
 
     '''
 
 
-    query_result = google_places.nearby_search(location='Edison, New Jersey',keyword='Plainfield Country Club', radius=50000)
+    query_result = google_places.nearby_search(location='Old Westbury, New York',keyword='Glen Oaks Club', radius=50000)
     
     with pd.option_context('display.max_rows', 200):
         print(df)
