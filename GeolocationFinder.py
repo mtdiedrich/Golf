@@ -49,6 +49,8 @@ def main():
             place = 'Richelieu Golf Quebec'
         if place == 'CC at Mirasol (Sunset Course)':
             place = 'Country Club at Mirasol'
+        if place == 'Atlanta CC':
+            place = 'Atlanta Country'
         if place[len(place)-4:] == 'G&CC':
             place = place[:len(place)-4] + 'Golf and Country Club'
         if place[len(place)-2:] == 'CC':
@@ -56,7 +58,7 @@ def main():
         if place[len(place)-2:] == 'GC':
             place = place[:len(place)-2] + 'Golf Club'
         query_result = google_places.text_search(query=place)
-        print(place)
+        print(x, place)
         print(query_result.places[0].name)
         print(query_result.places[0].geo_location)
 
