@@ -15,7 +15,7 @@ def main():
         ndf.append(round_two, ignore_index=True)
         ndf.append(round_three, ignore_index=True)
         ndf.append(round_four,ignore_index=True)
-        print("Percent Done: " + float(x)/len(gdf['0']))
+        print("Percent Done: " + str(float(x)/len(gdf['0'])))
     print(ndf)
         
 if __name__ == "__main__":
