@@ -15,7 +15,8 @@ def main():
         rounds += [[row['0'],row['1'],row['2'],row['9'],row['10']]]
         print("Percent Done: " + str(100 * float(x)/len(gdf['0'])))
     ndf = pd.DataFrame(rounds)
+    ndf.dropna(subset=[4],inplace=True)
     print(ndf)
-        
+
 if __name__ == "__main__":
     main()
