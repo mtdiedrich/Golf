@@ -65,6 +65,8 @@ def main():
         place = df.iloc[x]['Course Name']
         if place == 'Pecan Valley CC':
             place = 'Valor Club San Antonio'
+        if place == 'Turnberry (Ailsa)':
+            place = 'Trump Turnberry Course'
         query_result = google_places.text_search(query=place)
         print(x, place)
         print(query_result.places[0].name)
