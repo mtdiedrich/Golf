@@ -28,7 +28,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-
+    '''
     for x in range(len(df['Course Name'])):
         place = df.iloc[x]['Course Name']
         if place == 'The Ailsa Championship Course':
@@ -45,8 +45,6 @@ def main():
             place = 'Montreux Reno'
         if place == 'Redstone GC (Fall Creek)':
             place = 'Golf Club of Houston'
-        if place == 'Richelieu Valley G&CC':
-            place = 'Richelieu Golf Quebec'
         if place == 'CC at Mirasol (Sunset Course)':
             place = 'Country Club at Mirasol'
         if place == 'Atlanta CC':
@@ -57,6 +55,16 @@ def main():
             place = place[:len(place)-2] + 'Country Club'
         if place[len(place)-2:] == 'GC':
             place = place[:len(place)-2] + 'Golf Club'
+        query_result = google_places.text_search(query=place)
+        print(x, place)
+        print(query_result.places[0].name)
+        print(query_result.places[0].geo_location)
+    '''
+    index_list = [33,96,115,118,130]
+    for x in index_list:
+        place = df.iloc[x]['Course Name']
+        if place == 'Pecan Valley GC':
+            place = 'Valor Club San Antonio'
         query_result = google_places.text_search(query=place)
         print(x, place)
         print(query_result.places[0].name)
