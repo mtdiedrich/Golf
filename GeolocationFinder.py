@@ -64,9 +64,6 @@ def main():
         if place[len(place)-2:] == 'GC':
             place = place[:len(place)-2] + 'Golf Club'
         query_result = google_places.text_search(query=place)
-        print(x)
-        print(df.iloc[x]['Course Name'])
-        print(query_result.places[0])
         df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
         df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
 
