@@ -63,7 +63,7 @@ def main():
     index_list = [33,96,115,118,130]
     for x in index_list:
         place = df.iloc[x]['Course Name']
-        if place == 'Pecan Valley GC':
+        if place == 'Pecan Valley CC':
             place = 'Valor Club San Antonio'
         query_result = google_places.text_search(query=place)
         print(x, place)
