@@ -28,7 +28,7 @@ def main():
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
     df.rename(columns={'1': 'Par'}, inplace=True)
-    '''
+    
     for x in range(len(df['Course Name'])):
         place = df.iloc[x]['Course Name']
         if place == 'The Ailsa Championship Course':
@@ -49,20 +49,6 @@ def main():
             place = 'Country Club at Mirasol'
         if place == 'Atlanta CC':
             place = 'Atlanta Country'
-        if place[len(place)-4:] == 'G&CC':
-            place = place[:len(place)-4] + 'Golf and Country Club'
-        if place[len(place)-2:] == 'CC':
-            place = place[:len(place)-2] + 'Country Club'
-        if place[len(place)-2:] == 'GC':
-            place = place[:len(place)-2] + 'Golf Club'
-        query_result = google_places.text_search(query=place)
-        print(x, place)
-        print(query_result.places[0].name)
-        print(query_result.places[0].geo_location)
-    '''
-    index_list = [33,96,115,118,130]
-    for x in index_list:
-        place = df.iloc[x]['Course Name']
         if place == 'Pecan Valley CC':
             place = 'Valor Club San Antonio'
         if place == 'Turnberry (Ailsa)':
@@ -71,10 +57,21 @@ def main():
             place = 'Torrey Pines Golf Course'
         if place == 'Albany':
             place = 'Albany Golf Bahamas'
+        if place[len(place)-4:] == 'G&CC':
+            place = place[:len(place)-4] + 'Golf and Country Club'
+        if place[len(place)-2:] == 'CC':
+            place = place[:len(place)-2] + 'Country Club'
+        if place[len(place)-2:] == 'GC':
+            place = place[:len(place)-2] + 'Golf Club'
         query_result = google_places.text_search(query=place)
-        print(x, place)
-        print(query_result.places[0].name)
-        print(query_result.places[0].geo_location)
+        print(x)
+        print(df.iloc[x]['Course Name'])
+        print(query_result.places[0])
+        df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
+        df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
+
+    print(df)
+    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
 
 if __name__ == "__main__":
     main()
