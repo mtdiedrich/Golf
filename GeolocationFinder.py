@@ -69,6 +69,8 @@ def main():
             place = 'Trump Turnberry Course'
         if place == 'Torrey Pines (North)':
             place = 'Torrey Pines Golf Course'
+        if place == 'Albany':
+            place = 'Albany Golf Bahamas'
         query_result = google_places.text_search(query=place)
         print(x, place)
         print(query_result.places[0].name)
