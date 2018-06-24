@@ -10,11 +10,10 @@ def main():
     for index, xrow in ddf.iterrows():
         for index, yrow in cdf.iterrows():
             if xrow['0']==yrow['Course Name']:
-                temp_list = [xrow['0'],xrow['1'],yrow['Latitude'],yrow['Longitude']]
-                print(temp_list)
-                lists += [temp_list]
+                lists += [[xrow['0'],xrow['1'],yrow['Latitude'],yrow['Longitude']]]
     ndf = pd.DataFrame(lists)
     ndf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv')
+    print(ndf)
 
 if __name__ == "__main__":
     main()
