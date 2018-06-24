@@ -22,7 +22,7 @@ def main():
         print(float(y)/len(df['0']))
     pairs.sort(key=itemgetter(0))
     ndf = pd.DataFrame(pairs) 
-    print(ndf)
-      
+    ndf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\course_date_pairs.csv')
+
 if __name__=="__main__":
     main()
