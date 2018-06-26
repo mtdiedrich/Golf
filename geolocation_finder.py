@@ -3,27 +3,12 @@ import pandas as pd
 import numpy as np
 
 pd.set_option('display.max_rows',200)
-x = 0
-google_api_key = input("Key: ")
-google_places = GooglePlaces(google_api_key)
-df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
-
-def add_geo(query):
-    
-    global x
-    global df
-    global google_api_key
-    global google_places
-
-    query_result = google_places.text_search(query=query)
-    df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
-    df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
-    x += 1
+GOOGLE_API_KEY = input("Key: ")
+GOOGLE_PLACES = GooglePlaces(GOOGLE_API_KEY)
 
 def main():
 
-    global df
-
+    df = pd.DataFrame.from_csv(path=r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv')
     df['Latitude'] = 0
     df['Longitude'] = 0
     df.rename(columns={'0': 'Course Name'}, inplace=True)
@@ -63,7 +48,7 @@ def main():
             place = place[:len(place)-2] + 'Country Club'
         if place[len(place)-2:] == 'GC':
             place = place[:len(place)-2] + 'Golf Club'
-        query_result = google_places.text_search(query=place)
+        query_result = GOOGLE_PLACES.text_search(query=place)
         df.iloc[x,2] = round(query_result.places[0].geo_location['lat'],7)
         df.iloc[x,3] = round(query_result.places[0].geo_location['lng'],7)
 
