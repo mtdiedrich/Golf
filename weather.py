@@ -23,14 +23,17 @@ def main():
     count = 0
     for index, row in df.iterrows():
         count += 1
+        tourn = row['0']
+        course = row['1']
         lat = row['2']
         lng = row['3']
         date = string_to_date(row['1']).isoformat()
         with ds.forecast(key,lat,lng,time=date) as lw:
-            weather = [lw.summary,lw.precipIntensity,lw.precipProbability,
-                       lw.precipType,lw.temperature,lw.apparentTemperature,
-                       lw.dewPoint,lw.humidity,lw.pressure,lw.windSpeed,
-                       lw.windGust,lw.windBearing,lw.cloudCover,lw.visibility]
+            weather = [tourn,course,lat,lng,lw.summary,lw.precipIntensity,
+                       lw.precipProbability,lw.precipType,lw.temperature,
+                       lw.apparentTemperature,lw.dewPoint,lw.humidity,
+                       lw.pressure,lw.windSpeed,lw.windGust,lw.windBearing,
+                       lw.cloudCover,lw.visibility]
             print(weather)
 
         if count > 2:
