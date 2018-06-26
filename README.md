@@ -84,5 +84,6 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 
 # Additional TODOs
 
-I'd love to turn these link modules into functions in the same module. This
-would let me clean my messy Data folder.
+I'd like to turn these link modules into functions in the same module. This would let me clean my Data folder.
+
+I'd like to use the geodata to find the timezone (see: https://stackoverflow.com/questions/15742045/getting-time-zone-from-lat-long-coordinates). This would allow for noon local time at all courses in the datetime, which would yield more accurate weather data. This is especially important for courses in Asia, Europe, and Hawaii.
