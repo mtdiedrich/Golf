@@ -81,3 +81,7 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 13. Additionally, consider implementing Course as class with attributes name, length, rating, and slope
 
 14. Perform analysis
+
+# Additional TODOs
+
+I'd love to turn these link modules into functions in the same module
