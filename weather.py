@@ -29,8 +29,8 @@ def main():
     weather_data = []
     #Dark Sky limits free calls to 1000 per day. By setting start_count and
     #end_count, it is easy to ensure that less than 1000 calls are made.
-    start_count = 0
-    end_count = 10
+    start_count = int(input("Start Index (Inclusive): "))
+    end_count = int(input("Number of Images: ")) + start_count
     count = start_count
 
     for index, row in df.iterrows():
@@ -124,8 +124,9 @@ def main():
     #writeto_string allows a new .csv to be written for each pair of
     #start_count and end_count. This is beneficial as it allows for multiple
     #CSVs without having to explicitly change the path. The CSVs can be
-    #concatenated to complete the dataset
-    writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count) + '.csv'
+    #concatenated to complete the dataset. Both lower and upper boundaries
+    #used in name are inclusive.
+    writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count-1) + '.csv'
     wdf.to_csv(writeto_string,index=False)
     print(wdf)
 
