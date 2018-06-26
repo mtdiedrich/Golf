@@ -121,7 +121,12 @@ def main():
             'Wind Speed','Wind Gust','Wind Bearing','Cloud Cover',
             'Visibility']
     wdf.columns = cols
-    wdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather_data.csv',index=False)
+    #writeto_string allows a new .csv to be written for each pair of
+    #start_count and end_count. This is beneficial as it allows for multiple
+    #CSVs without having to explicitly change the path. The CSVs can be
+    #concatenated to complete the dataset
+    writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count) + '.csv'
+    wdf.to_csv(writeto_string,index=False)
     print(wdf)
 
 if __name__=="__main__":
