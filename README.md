@@ -84,4 +84,5 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 
 # Additional TODOs
 
-I'd love to turn these link modules into functions in the same module
+I'd love to turn these link modules into functions in the same module. This
+would let me clean my messy Data folder.
