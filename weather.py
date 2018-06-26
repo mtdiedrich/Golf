@@ -2,7 +2,7 @@ import pandas as pd
 import darksky as ds
 from datetime import datetime as dt
 
-pd.set_option('display.max_columns',15)
+pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
 def string_to_date(date):
@@ -19,117 +19,103 @@ def number_string_to_int(number):
     return int(number)
 
 def main():
+
     key = input("Key: ")
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
-    print(df)
     weather_data = []
-    count = 0
+    start_count = 0
+    end_count = 10
+    count = start_count
+
     for index, row in df.iterrows():
-        count += 1
+
         tourn = row['0']
         course = row['1']
         lat = row['2']
         lng = row['3']
         date = string_to_date(row['1']).isoformat()
-        print(date)
-         
+
         with ds.forecast(key,lat,lng,time=date) as lw:
-            
+
             try:
                 summary = lw.summary
-            catch AttributeError:
+            except AttributeError:
                 summary = None
-
             try:
-                nearest_storm_distance = lw.nearestStormDistance
-            catch AttributeError:
-                nearest_storm_distance = None
-
-            try:
-                precip_itens = lw.precipIntensity
-            catch AttributeError:
-                precip_itens = None 
-
+                precip_intens = lw.precipIntensity
+            except AttributeError:
+                precip_intens = None 
             try:
                 precip_intens_error = lw.precipIntensityError
-            catch AttributeError:
-                precip_intens_error = None 
-
+            except AttributeError:
+                precip_intens_error = None
             try:
                 precip_probability = lw.precipProbability
-            catch AttributeError:
+            except AttributeError:
                 precip_probability = None
-
             try:
                 precip_type = lw.precipType
-            catch AttributeError:
-                precip_type = None
-
+            except AttributeError:
+                precip_type = None 
             try:
                 temp = lw.temperature
-            catch AttributeError:
+            except AttributeError:
                 temp = None
-
             try:
                 app_temp = lw.apparentTemperature
-            catch AttributeError:
+            except AttributeError:
                 app_temp = None
-
             try:
                 dew_point = lw.dewPoint
-            catch AttributeError:
+            except AttributeError:
                 dew_point = None
-
             try:
                 humidity = lw.humidity
-            catch AttributeError:
+            except AttributeError:
                 humidity = None
-
             try:
                 pressure = lw.pressure
-            catch AttributeError:
+            except AttributeError:
                 pressure = None
-
             try:
                 wind_speed = lw.windSpeed
-            catch AttributeError:
+            except AttributeError:
                 wind_speed = None
-
             try:
                 wind_gust = lw.windGust
-            catch AttributeError:
-                wind_gust = None
-
+            except AttributeError:
+                wind_gust = None 
             try:
                 wind_bearing = lw.windBearing
-            catch AttributeError:
+            except AttributeError:
                 wind_bearing = None
-
             try:
                 cloud_cover = lw.cloudCover
-            catch AttributeError:
+            except AttributeError:
                 cloud_cover = None
-
-            try:
-                uv_index = lw.uvIndex
-            catch AttributeError:
-                uv_index = None
-
             try:
                 visibility = lw.visibility
-            catch AttributeError:
+            except AttributeError:
                 visibility = None
 
-            try:
-                ozone = lw.ozone
-            catch AttributeError:
-                ozone = None
-
-
-        if count > 10:
+        weather_data += [[tourn,course,lat,lng,summary,precip_intens,
+                          precip_intens_error,precip_probability,
+                          precip_type,temp,app_temp,dew_point,humidity,
+                          pressure,wind_speed,wind_gust,wind_bearing,
+                          cloud_cover,visibility]]
+        count += 1
+        if count >= end_count:
             break
+
     wdf = pd.DataFrame(weather_data)
-    wdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather_data.csv')
+    cols = ['Tournament','Course','Latitude','Longiude','Summary',
+            'Precipitation Intensity','Precipitation Intensity Error',
+            'Precipitation Probability','Precipitation Type','Temperature',
+            'Apparent Temperature','Dew Point','Humidity','Pressure',
+            'Wind Speed','Wind Gust','Wind Bearing','Cloud Cover',
+            'Visibility']
+    wdf.columns = cols
+    wdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather_data.csv',index=False)
     print(wdf)
 
 if __name__=="__main__":
