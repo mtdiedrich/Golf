@@ -26,13 +26,13 @@ def main():
     
     key = input("Key: ") #Dark Sky API
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
+    print(df)
     weather_data = []
     #Dark Sky limits free calls to 1000 per day. By setting start_count and
     #end_count, it is easy to ensure that less than 1000 calls are made.
     start_count = int(input("Start Index (Inclusive): "))
     end_count = int(input("Number of Images: ")) + start_count
     count = start_count
-
     for index, row in df.iterrows():
 
         tourn = row['0']
@@ -112,7 +112,7 @@ def main():
         count += 1
         if count >= end_count:
             break
-
+    
     wdf = pd.DataFrame(weather_data)
     cols = ['Tournament','Course','Latitude','Longiude','Summary',
             'Precipitation Intensity','Precipitation Intensity Error',
