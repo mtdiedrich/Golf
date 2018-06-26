@@ -6,6 +6,8 @@ pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
 def string_to_date(date):
+    #Given the date in the format it is found in the data, this turns each
+    #Number into an int and returns a datetime with those ints
     year = number_string_to_int(date[0:4])
     month = number_string_to_int(date[5:7])
     day = number_string_to_int(date[8:10])
@@ -13,16 +15,20 @@ def string_to_date(date):
     return time
 
 def number_string_to_int(number):
+    #Alleviates concern that an int in string format will have an empty space,
+    #then converts the string to an int
     number = number.replace(" ","")
     if number[0] == '0':
         number = number[1:]
     return int(number)
 
 def main():
-
-    key = input("Key: ")
+    
+    key = input("Key: ") #Dark Sky API
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
     weather_data = []
+    #Dark Sky limits free calls to 1000 per day. By setting start_count and
+    #end_count, it is easy to ensure that less than 1000 calls are made.
     start_count = 0
     end_count = 10
     count = start_count
@@ -34,9 +40,9 @@ def main():
         lat = row['2']
         lng = row['3']
         date = string_to_date(row['1']).isoformat()
-
+        #Some forecasts do not have all attributes. Handling the thrown
+        #exceptions allows None value to be enterred into data
         with ds.forecast(key,lat,lng,time=date) as lw:
-
             try:
                 summary = lw.summary
             except AttributeError:
