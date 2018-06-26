@@ -39,29 +39,93 @@ def main():
                 summary = lw.summary
             catch AttributeError:
                 summary = None
-            precip_itens = lw.precipIntensity
-            precip_prob = lw.precipProbability
-            precip_type = lw.precipType
-            temp = lw.temperature
-            app_temp = lw.apparentTemperature
-            dew_point = lw.dewPoint
-            humidity = lw.humidity
-            pressure = lw.pressure
-            wind_speed = lw.windSpeed
-            wind_gust = lw.windGust
-            wind_bearing = lw.windBearing
-            cloud_cover = lw.cloudCover
-            visibility = lw.c
-            try:
-                weather = [tourn,course,lat,lng,lw.summary,
-                           lw.precipIntensity,lw.precipProbability,
-                           lw.precipType,lw.temperature,lw.apparentTemperature,
-                           lw.dewPoint,lw.humidity,lw.pressure,lw.windSpeed,
-                           lw.windGust,lw.windBearing,lw.cloudCover,
-                           lw.visibility,lw.uvIndex,lw.ozone]
-            except AttributeError:
 
-            weather_data += [weather]
+            try:
+                nearest_storm_distance = lw.nearestStormDistance
+            catch AttributeError:
+                nearest_storm_distance = None
+
+            try:
+                precip_itens = lw.precipIntensity
+            catch AttributeError:
+                precip_itens = None 
+
+            try:
+                precip_intens_error = lw.precipIntensityError
+            catch AttributeError:
+                precip_intens_error = None 
+
+            try:
+                precip_probability = lw.precipProbability
+            catch AttributeError:
+                precip_probability = None
+
+            try:
+                precip_type = lw.precipType
+            catch AttributeError:
+                precip_type = None
+
+            try:
+                temp = lw.temperature
+            catch AttributeError:
+                temp = None
+
+            try:
+                app_temp = lw.apparentTemperature
+            catch AttributeError:
+                app_temp = None
+
+            try:
+                dew_point = lw.dewPoint
+            catch AttributeError:
+                dew_point = None
+
+            try:
+                humidity = lw.humidity
+            catch AttributeError:
+                humidity = None
+
+            try:
+                pressure = lw.pressure
+            catch AttributeError:
+                pressure = None
+
+            try:
+                wind_speed = lw.windSpeed
+            catch AttributeError:
+                wind_speed = None
+
+            try:
+                wind_gust = lw.windGust
+            catch AttributeError:
+                wind_gust = None
+
+            try:
+                wind_bearing = lw.windBearing
+            catch AttributeError:
+                wind_bearing = None
+
+            try:
+                cloud_cover = lw.cloudCover
+            catch AttributeError:
+                cloud_cover = None
+
+            try:
+                uv_index = lw.uvIndex
+            catch AttributeError:
+                uv_index = None
+
+            try:
+                visibility = lw.visibility
+            catch AttributeError:
+                visibility = None
+
+            try:
+                ozone = lw.ozone
+            catch AttributeError:
+                ozone = None
+
+
         if count > 10:
             break
     wdf = pd.DataFrame(weather_data)
