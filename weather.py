@@ -6,6 +6,12 @@ pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
 def string_to_date(date):
+
+
+    #Modify this function with course_dat_lat_lng_toUTC.csv
+
+
+
     #Given the date in the format it is found in the data, this turns each
     #Number into an int and returns a datetime with those ints
     year = number_string_to_int(date[0:4])
@@ -33,6 +39,7 @@ def main():
     start_count = int(input("Start Index (Inclusive): "))
     end_count = int(input("Number of Images: ")) + start_count
     count = start_count
+
     for index, row in df.iterrows():
 
         tourn = row['0']
