@@ -1,23 +1,23 @@
 import pandas as pd
 import darksky as ds
+import sys
 from datetime import datetime as dt
 
 pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
+pd.set_option('display.max_rows',1000)
+def row_to_datetime(row):
+    date = string_to_date(row['1'],row['To UTC'])
 
-def string_to_date(date):
-
-
-    #Modify this function with course_dat_lat_lng_toUTC.csv
-
-
+def string_to_date(date,offset):
 
     #Given the date in the format it is found in the data, this turns each
     #Number into an int and returns a datetime with those ints
     year = number_string_to_int(date[0:4])
     month = number_string_to_int(date[5:7])
     day = number_string_to_int(date[8:10])
-    time = dt(year,month,day,12)
+    print(offset, 12+offset)
+    time = dt(year,month,day,int(12+offset))
     return time
 
 def number_string_to_int(number):
@@ -30,9 +30,11 @@ def number_string_to_int(number):
 
 def main():
     
-    key = input("Key: ") #Dark Sky API
-    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
-    print(df)
+    #key = input("Key: ") #Dark Sky API
+    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\course_date_lat_lng_toUTC.csv', index_col = 'Unnamed: 0')
+    print(df['To UTC'])
+    sys.exit()
+    df.apply(lambda row: row_to_datetime(row),axis=1)
     weather_data = []
     #Dark Sky limits free calls to 1000 per day. By setting start_count and
     #end_count, it is easy to ensure that less than 1000 calls are made.

@@ -6,6 +6,7 @@ from zone_link import sync
 pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
+pd.set_option('display.max_rows',1000)
 def main():
     
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
