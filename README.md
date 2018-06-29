@@ -14,73 +14,17 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 
 ~~6. Link geolocation data with golfer round data~~
 
-7. Get weather conditions of every course on tournament days, write csv
+7. IP Get weather conditions of every course on tournament days, write csv
 
-8. Link weather conditions to each existing round (rewrite to before split by round?)
+~~8. Link weather conditions to each existing round (rewrite to before split by round?)~~
 
 9. Get course length, rating, slope for every course
 
-10. Create list of data where each element is a list featuring all of the following
+~~10. Create list of data where each element is a list of data~~
 
-> Golfer Name
+11. IP Find which weather elements strongly correlate and consider removing
 
-> Tournament Name 
-
-> Course Name
-
-> Course Length
-
-> Course Rating
-
-> Course Slope
-
-> Date of Round
-
-> Round Score 
-
-> Apparent Temperature
-
-> Atmospheric Pressure
-
-> Cloud cover
-
-> Humidity
-
-> Liquid Precipitation rate
-
-> Dew point 
-
-> Moon phase
-
-> Nearest storm distance
-
-> Nearest storm direction
-
-> Ozone
-
-> Precipitation type
-
-> Snowfall
-
-> Sunrise/set
-
-> Temperature
-
-> UV index
-
-> Wind gust
-
-> Wind speed
-
-> Wind direction
-
-11. Find which weather elements strongly correlate and consider removing
-
-12. Consider implement Golfer as a class with name as an attribute and a list of dicts of rounds where each date is the round's key
-
-13. Additionally, consider implementing Course as class with attributes name, length, rating, and slope
-
-14. Perform analysis
+12. Perform analysis
 
 # Additional TODOs
 
