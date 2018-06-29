@@ -1,23 +1,28 @@
 import pandas as pd
 import darksky as ds
+import sys
 from datetime import datetime as dt
 
 pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
+pd.set_option('display.max_rows',1000)
 
-def string_to_date(date):
+def row_to_datetime(row):
+    date = string_to_date(row['1'],row['To UTC'])
+    return date
 
-
-    #Modify this function with course_dat_lat_lng_toUTC.csv
-
-
+def string_to_date(date,offset):
 
     #Given the date in the format it is found in the data, this turns each
     #Number into an int and returns a datetime with those ints
     year = number_string_to_int(date[0:4])
     month = number_string_to_int(date[5:7])
     day = number_string_to_int(date[8:10])
-    time = dt(year,month,day,12)
+    #17 is added to the offset because I want noon local time for the event.
+    #My offsets are wrt to GMT, and my local time (which DateTime is using) is
+    #-5 from GMT, thus, I need to add 12 and 5. Modulo 24 because hour must be
+    #between 0 and 23 incusive
+    time = dt(year,month,day,int(17+offset)%24)
     return time
 
 def number_string_to_int(number):
@@ -29,10 +34,12 @@ def number_string_to_int(number):
     return int(number)
 
 def main():
-    
+   
+    # IS THE FORMAT THIS IS PRINTING IN CORRECT?
+
     key = input("Key: ") #Dark Sky API
-    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
-    print(df)
+    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\course_date_lat_lng_toUTC.csv', index_col = 'Unnamed: 0')
+    dates = df.apply(lambda row: row_to_datetime(row),axis=1)
     weather_data = []
     #Dark Sky limits free calls to 1000 per day. By setting start_count and
     #end_count, it is easy to ensure that less than 1000 calls are made.
@@ -46,7 +53,7 @@ def main():
         course = row['1']
         lat = row['2']
         lng = row['3']
-        date = string_to_date(row['1']).isoformat()
+        date = row_to_datetime(row).isoformat()
         #Some forecasts do not have all attributes. Handling the thrown
         #exceptions allows None value to be enterred into data
         with ds.forecast(key,lat,lng,time=date) as lw:

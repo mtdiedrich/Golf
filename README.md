@@ -85,3 +85,11 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 # Additional TODOs
 
 I'd like to turn these link modules into functions in the same module. This would let me clean my Data folder.
+
+> course_date_link.py
+
+> dates_geodata_link.py
+
+> toUTC_link.py
+
+> zone_link.py
