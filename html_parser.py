@@ -3,7 +3,19 @@ import datetime as dt
 import os
 from difflib import SequenceMatcher
 
+# This module takes downloaded golf score data and parses from said data
+# round scores for individual golfers and course data. This information is
+# written to CSVs
+
+# NOTES
+# Data is curated such that certain events are excluded
+# Exclusion parameters include limited data, course changes mid tournament, or 
+# odd formatting
+
+pd.set_option('display.expand_frame_repr', False)
+
 def find_nth(haystack, needle, n):
+    # Finds the nth of a string (needle) in a list (haystack)
     start = haystack.find(needle)
     while start >= 0 and n > 1:
         start = haystack.find(needle, start + len(needle))
@@ -11,22 +23,10 @@ def find_nth(haystack, needle, n):
     return start
 
 def similar(a,b):
+    # Returns similarity ratio of strings
     return SequenceMatcher(None, a, b).ratio()
 
 def main():
-
-    pd.set_option('display.expand_frame_repr', False)
-
-    # TO DO
-    # Dividing into rounds before pars, geolocation, weather data will result in computational infeasibility
-    # Eventually must add geolocation data
-    # Afterwards must add weather data from DarkSky API
-    # Must combine all events for each individual golfer
-
-    # NOTES
-    # Data is curated such that certain events are ecluded
-    # Exclusion parameters include limited data, course changes mid tournament, or odd formatting
-
 
     frames = []
     courses = []
@@ -101,7 +101,9 @@ def main():
             x.insert(9, str(fourth_date))
 
         frames += golfers
-
+    # These indices are hardcoded because I couldn't think of an effective way
+    # to programatically find the indices for deletion. If/when this code is
+    # rerun, it would be worth again trying to automate 
     courses.sort(key=lambda x: x[1])
     delete_indices = [221,217,215,212,211,210,206,205,204,203,202,201,200,199,198,195,191,190,187,183,177,176,174,172,168,163,161,156,
             149,148,146,144,142,138,137,133,132,128,127,126,124,122,121,120,117,115,114,113,112,107,106,99,96,93,92,90,81,73,69,68,61,60,53,
@@ -133,7 +135,7 @@ def main():
         for col in range(0,len(df.columns)):
             tournament = [x, df[col][0], df[col][1], df[col][2], df[col][3], df[col][4], df[col][5], df[col][6], df[col][7], df[col][8], df[col][9]]
             golfers_list += [tournament]
-    
+
     for x in range(0,len(golfers_list)):
         max_similarity = 0
         max_string = ""
