@@ -4,8 +4,6 @@ from operator import itemgetter
 pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
-def 
-
 def main():
 
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv', index_col='Unnamed: 0', encoding = 'latin1')
@@ -28,4 +26,3 @@ def main():
 
 if __name__=="__main__":
     main()
-
