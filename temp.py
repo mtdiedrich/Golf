@@ -35,6 +35,8 @@ def main():
     df = cdf[cdf['Latitude'].isnull()]
     
     courses = list(set(list(df['Course'])))
+    
+    course_geodata_dict = {}
     for x in courses:
         print(x)
 
