@@ -33,8 +33,10 @@ def main():
     cdf = cdf.drop(['Region'],axis=1)
 
     df = cdf[cdf['Latitude'].isnull()]
-    print(df)
-
+    
+    courses = list(set(list(df['Course'])))
+    for x in courses:
+        print(x)
 
 if __name__=="__main__":
     main()
