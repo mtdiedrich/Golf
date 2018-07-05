@@ -25,7 +25,7 @@ def main():
         try:
             int(timezone['rawOffset']/3600)
         except ValueError:
-            print(timezone)
+            print(timezone)A
     tdf = pd.DataFrame(timezones)
     print(tdf)
     tdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv')

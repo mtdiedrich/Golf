@@ -4,13 +4,18 @@ from operator import itemgetter
 pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 
-def 
-
 def main():
 
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv', index_col='Unnamed: 0', encoding = 'latin1')
     pairs = []
     y = 0
+
+
+
+
+
+
+
     for index, row in df.iterrows():
         y += 1
         temp_pairs = []
