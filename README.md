@@ -38,6 +38,8 @@ I'd like to turn these link modules into functions in the same module. This woul
 
 > zone_link.py
 
+Note: I've now made good progress on these.
+
 As well, change printed CSVs to not have index columns
 
 Merging data can be done much more easily than was implemented: df1.merge(df2, how = 'left', on = ['Date','Latitude'])
