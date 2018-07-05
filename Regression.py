@@ -24,7 +24,8 @@ def main():
     
     #corr_mat = ndf.corr()
     #print(corr_mat)
-
+    
+    #Everything broke because you cahnged the format of the input data. For shame.
     x = ndf[features[1:]]
     x = np.asarray(x).reshape(x.shape[0],x.shape[1])
     y = ndf[features[0]]
