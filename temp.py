@@ -36,9 +36,7 @@ def main():
     
     courses = list(set(list(df['Course'])))
     
-    course_geodata_dict = {}
-    for x in courses:
-        print(x)
+    print(cdf)
 
 if __name__=="__main__":
     main()
