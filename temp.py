@@ -1,6 +1,7 @@
 import math
 import pandas as pd
 from operator import itemgetter
+from html_parser import similar
 
 pd.set_option('display.max_columns',20)
 #pd.set_option('display.max_rows',100000)
@@ -8,7 +9,7 @@ pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',25)
 
 def main():
-
+    
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
     df1 = df[['Golfer','Tournament','Course','Date 1','Score 1']]
@@ -34,9 +35,12 @@ def main():
 
     df = cdf[cdf['Latitude'].isnull()]
     
-    courses = list(set(list(df['Course'])))
-    
-    print(cdf)
+    for index, row in df.iterrows():
+        #Here goes code to turn NaN geodata into geodata from Courses.csv
+        #via similar()
+
+    print(similar('a','a'))
+
 
 if __name__=="__main__":
     main()
