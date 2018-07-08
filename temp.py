@@ -8,8 +8,17 @@ pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',25)
 
+def lat_sim(row):
+    print(row['Course'])
+
 def main():
     
+    #Order
+    #Read in CSVs
+    #Match rows to geodata
+    #Add geodata to rows w/null values via similar()
+    #Separate into individual rounds
+    #Ship
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
     df1 = df[['Golfer','Tournament','Course','Date 1','Score 1']]
@@ -30,17 +39,15 @@ def main():
     tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
     tdf.columns = ['Latitude','Longitude','Region','Timezone','To UTC']
     
-    cdf = mdf.merge(tdf,how='outer',on=['Latitude','Longitude'])
-    cdf = cdf.drop(['Region'],axis=1)
+    ndf = mdf.merge(tdf,how='outer',on=['Latitude','Longitude'])
+    ndf = ndf.drop(['Region'],axis=1)
 
-    df = cdf[cdf['Latitude'].isnull()]
-    
-    for index, row in df.iterrows():
-        #Here goes code to turn NaN geodata into geodata from Courses.csv
-        #via similar()
-
-    print(similar('a','a'))
-
+    null_df = df[df['Latitude'].isnull()]
+    null_df.apply(lambda row: lat_sim(row),axis=1)
+    #df['Latitude'] = df.apply(lambda row: temp_fun(row))
+    #df['Longitude'] = df.apply(lambda row: temp_fun(row))
+    #df['Timezone'] = df.apply(lambda row: temp_fun(row))
+    #df['To UTC'] = df.apply(lambda row: temp_fun(row))
 
 if __name__=="__main__":
     main()
