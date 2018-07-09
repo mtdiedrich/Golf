@@ -1,5 +1,6 @@
 import math
 import pandas as pd
+import numpy as np
 from operator import itemgetter
 from html_parser import similar
 
@@ -10,6 +11,16 @@ pd.set_option('display.max_colwidth',25)
 
 global geo_dict
 geo_dict = {}
+
+def foo(row):
+    similarity = []
+    course = None
+    courses = sorted(geo_dict.keys())
+    for x in courses:
+        similarity += [similar(x,row[0])]
+    ind = np.argmax(similarity)
+    return courses[ind]
+
 
 def create_geodata_dict(row):
     geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
@@ -41,13 +52,11 @@ def main():
 
     ndf.loc[ndf['Course'] == 'TPC Woodlands', 'Latitude'] = 0
 
-    print(ndf)
+    udf = pd.DataFrame(list(set(list(ndf['Course']))))
 
-    for x in (list(set(list(ndf['Course'])))):
-        print(x)
-
+    udf['SimPred'] = udf.apply(lambda row: foo(row),axis=1)
     
-
+    print(udf)
 
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
