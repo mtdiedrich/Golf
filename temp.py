@@ -10,7 +10,9 @@ pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',25)
 
 global geo_dict
+global correction_dict
 geo_dict = {}
+correction_dict = {}
 
 def assign_lat(row):
     return(geo_dict[row[1]][0])
@@ -30,6 +32,9 @@ def predict_course(row):
 
 def create_geodata_dict(row):
     geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
+
+def create_correction_dict(row):
+    correction_dict[row[0]] = (row['SimPred'],row['Latitude'],row['Longitude'])
 
 def main():
     
@@ -61,10 +66,10 @@ def main():
     udf['SimPred'] = udf.apply(lambda row: predict_course(row),axis=1)
     udf['Latitude'] = udf.apply(lambda row: assign_lat(row),axis=1)
     udf['Longitude'] = udf.apply(lambda row: assign_lng(row),axis=1)
+    
+    udf.apply(lambda row: create_correction_dict(row),axis=1)
 
-   
-    print(udf)
-
+    print(correction_dict)
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
