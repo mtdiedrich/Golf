@@ -12,7 +12,13 @@ pd.set_option('display.max_colwidth',25)
 global geo_dict
 geo_dict = {}
 
-def foo(row):
+def assign_lat(row):
+    return(geo_dict[row[1]][0])
+
+def assign_lng(row):
+    return(geo_dict[row[1]][1])
+
+def predict_course(row):
     similarity = []
     course = None
     courses = sorted(geo_dict.keys())
@@ -48,14 +54,15 @@ def main():
     ndf = df[df['Latitude'].isnull()]
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
-    kdf = pd.DataFrame(list(geo_dict.keys()))
 
     ndf.loc[ndf['Course'] == 'TPC Woodlands', 'Latitude'] = 0
 
     udf = pd.DataFrame(list(set(list(ndf['Course']))))
+    udf['SimPred'] = udf.apply(lambda row: predict_course(row),axis=1)
+    udf['Latitude'] = udf.apply(lambda row: assign_lat(row),axis=1)
+    udf['Longitude'] = udf.apply(lambda row: assign_lng(row),axis=1)
 
-    udf['SimPred'] = udf.apply(lambda row: foo(row),axis=1)
-    
+   
     print(udf)
 
 
