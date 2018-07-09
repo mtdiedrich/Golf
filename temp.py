@@ -4,9 +4,15 @@ from operator import itemgetter
 from html_parser import similar
 
 pd.set_option('display.max_columns',20)
-#pd.set_option('display.max_rows',100000)
+pd.set_option('display.max_rows',100000)
 pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',25)
+
+global geo_dict
+geo_dict = {}
+
+def create_geodata_dict(row):
+    geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
 
 def lat_sim(row):
     print(row['Course'])
@@ -15,8 +21,8 @@ def main():
     
     #Order
     #Read in CSVs
-    #You are here
     #Match rows to geodata
+    #You are here
     #Add geodata to rows w/null values via similar()
     #Separate into individual rounds
     #Ship
@@ -30,7 +36,11 @@ def main():
     tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
     tdf.columns = ['Latitude','Longitude','Region','Timezone','UTC Offset'] 
 
-    print(tdf)
+    df = gdf.merge(cdf,'outer',['Course'])
+    ndf = df[df['Latitude'].isnull()]
+
+    cdf.apply(lambda row: create_geodata_dict(row),axis=1)
+    print(geo_dict)
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
