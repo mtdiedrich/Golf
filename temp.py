@@ -9,13 +9,12 @@ pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',25)
 
 global geo_dict
+global keys
 geo_dict = {}
+keys = []
 
 def create_geodata_dict(row):
     geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
-
-def lat_sim(row):
-    print(row['Course'])
 
 def main():
     
@@ -40,7 +39,11 @@ def main():
     ndf = df[df['Latitude'].isnull()]
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
-    print(geo_dict)
+    keys = geo_dict.keys()
+
+    for x in keys:
+        print(x)
+    print(len(keys))
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
