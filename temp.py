@@ -11,10 +11,6 @@ pd.set_option('display.max_colwidth',25)
 global geo_dict
 geo_dict = {}
 
-def foo(row):
-    print(row)
-    print("TEST")
-
 def create_geodata_dict(row):
     geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
 
@@ -43,7 +39,16 @@ def main():
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
     kdf = pd.DataFrame(list(geo_dict.keys()))
 
-    kdf.apply(lambda row: foo(row),axis=1)
+    ndf.loc[ndf['Course'] == 'TPC Woodlands', 'Latitude'] = 0
+
+    print(ndf)
+
+    for x in (list(set(list(ndf['Course'])))):
+        print(x)
+
+    
+
+
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
