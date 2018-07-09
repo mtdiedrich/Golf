@@ -11,19 +11,15 @@ pd.set_option('display.max_colwidth',25)
 global geo_dict
 geo_dict = {}
 
-def course_similar(row, courses):
-    # This can probably be done via apply
-    course = None
-    for x in courses:
-        if similar(row['Course'],x) > similarity:
-            course = row[    
+def foo(row):
+    print(row)
+    print("TEST")
 
 def create_geodata_dict(row):
     geo_dict[row['Course']] = (row['Latitude'],row['Longitude'])
 
 def main():
     
-    global keys
     #Order
     #Read in CSVs
     #Match rows to geodata
@@ -45,7 +41,9 @@ def main():
     ndf = df[df['Latitude'].isnull()]
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
-    keys = list(geo_dict.keys())
+    kdf = pd.DataFrame(list(geo_dict.keys()))
+
+    kdf.apply(lambda row: foo(row),axis=1)
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
