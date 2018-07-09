@@ -60,8 +60,6 @@ def main():
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
 
-    ndf.loc[ndf['Course'] == 'TPC Woodlands', 'Latitude'] = 0
-
     udf = pd.DataFrame(list(set(list(ndf['Course']))))
     udf['SimPred'] = udf.apply(lambda row: predict_course(row),axis=1)
     udf['Latitude'] = udf.apply(lambda row: assign_lat(row),axis=1)
@@ -69,7 +67,12 @@ def main():
     
     udf.apply(lambda row: create_correction_dict(row),axis=1)
 
-    print(correction_dict)
+    for x in correction_dict.keys():
+        ndf.loc[ndf['Course'] == x, 'Latitude'] = correction_dict[x][1]
+        ndf.loc[ndf['Course'] == x, 'Longitude'] = correction_dict[x][2]
+        ndf.loc[ndf['Course'] == x, 'Course'] = correction_dict[x][0]
+
+    print(ndf)
 
     #df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     #df.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
