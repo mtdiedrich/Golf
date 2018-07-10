@@ -42,7 +42,10 @@ def main():
     #Suppress warnings
     #remove unncessary DataFrames
 
-    
+    #Consider rewriting in such a way that the code will run even if it cannot
+    #find input files, but will catch error and instruct user which file needs
+    #to be run to catch up
+
     gdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     gdf.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
 
@@ -90,8 +93,16 @@ def main():
         df.loc[df['Course'] == x, 'Longitude'] = geo_dict[x][1]
 
     print(df)
+    print(tdf)
 
-    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\individual_rounds.csv',index=False)
+    df = df.merge(tdf,how='outer',on=['Latitude','Longitude'])
+    print(df)
+
+    #df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+
+
+    #NO PROGRESS - timezones.py MUST BE REWRITTEN
+
 
     #cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
     #cdf = cdf[['Course Name','Latitude','Longitude']]

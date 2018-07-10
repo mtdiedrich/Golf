@@ -14,6 +14,7 @@ def geo_tuple(row):
     return tuple((lat,lng))
 
 def main():
+    #This need rewriten because the input file no longer exists
     
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\courses_dates_geodata.csv', index_col = 'Unnamed: 0')
     df['Pairs'] = df.apply(lambda row: geo_tuple(row), axis = 1)
@@ -25,7 +26,7 @@ def main():
         try:
             int(timezone['rawOffset']/3600)
         except ValueError:
-            print(timezone)A
+            print(timezone)
     tdf = pd.DataFrame(timezones)
     print(tdf)
     tdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv')
