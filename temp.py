@@ -65,12 +65,12 @@ def main():
     udf.apply(lambda row: create_correction_dict(row),axis=1)
 
     for x in correction_dict.keys():
-        # This must be modified so that Mission Hills is not changed to Weston
-        # Hills. Lat/Lng can be added manually
+        #Would this be faster via apply or vectorization?
         ndf.loc[ndf['Course'] == x, 'Latitude'] = correction_dict[x][1]
         ndf.loc[ndf['Course'] == x, 'Longitude'] = correction_dict[x][2]
         ndf.loc[ndf['Course'] == x, 'Course'] = correction_dict[x][0]
 
+    df = pd.concat([df,ndf])
 
     df = df.dropna(subset=['Golfer'])
     df1 = df[['Golfer','Tournament','Course','Date 1','Score 1']]
@@ -82,15 +82,17 @@ def main():
     df.loc[df['Score'] > 100, 'Score'] = np.nan
     df = df.dropna(subset=['Score'])
     df = df.reset_index(drop=True)
+    
+    for x in geo_dict.keys():
+        #Would this be faster via apply or vectorization?
+        #Can this be combined with the for loop above?
+        df.loc[df['Course'] == x, 'Latitude'] = geo_dict[x][0]
+        df.loc[df['Course'] == x, 'Longitude'] = geo_dict[x][1]
+
+    print(df)
 
     df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\individual_rounds.csv',index=False)
-    #geodata is featured in correction_dict, so add it
 
-    tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
-    tdf.columns = ['Latitude','Longitude','Region','Timezone','To UTC']
-    
-    print(tdf)
-    
     #cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
     #cdf = cdf[['Course Name','Latitude','Longitude']]
     #cdf.columns = ['Course','Latitude','Longitude']
