@@ -28,18 +28,4 @@ Collection and analysis of PGA Tour data. Python. Likely to utilize R or Julia f
 
 # Additional TODOs
 
-I'd like to turn these link modules into functions in the same module. This would let me clean my Data folder.
-
-> course_date_link.py
-
-> dates_geodata_link.py
-
-> toUTC_link.py
-
-> zone_link.py
-
-Note: I've now made good progress on these.
-
-As well, change printed CSVs to not have index columns
-
-Merging data can be done much more easily than was implemented: df1.merge(df2, how = 'left', on = ['Date','Latitude'])
+Change printed CSVs to not have index columns, but this is low priority
