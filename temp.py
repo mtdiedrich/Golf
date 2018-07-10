@@ -73,19 +73,24 @@ def main():
 
 
     df = df.dropna(subset=['Golfer'])
-
     df1 = df[['Golfer','Tournament','Course','Date 1','Score 1']]
     df2 = df[['Golfer','Tournament','Course','Date 2','Score 2']]
     df3 = df[['Golfer','Tournament','Course','Date 3','Score 3']]
     df4 = df[['Golfer','Tournament','Course','Date 4','Score 4']]
     df1.columns = df2.columns = df3.columns = df4.columns = ['Golfer','Tournament','Course','Date','Score']
     df = pd.concat([df1,df2,df3,df4])
+    df.loc[df['Score'] > 100, 'Score'] = np.nan
     df = df.dropna(subset=['Score'])
     df = df.reset_index(drop=True)
 
-    print(df)
     df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\individual_rounds.csv',index=False)
+    #geodata is featured in correction_dict, so add it
 
+    tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
+    tdf.columns = ['Latitude','Longitude','Region','Timezone','To UTC']
+    
+    print(tdf)
+    
     #cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
     #cdf = cdf[['Course Name','Latitude','Longitude']]
     #cdf.columns = ['Course','Latitude','Longitude']
