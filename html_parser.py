@@ -12,6 +12,8 @@ from difflib import SequenceMatcher
 # Exclusion parameters include limited data, course changes mid tournament, or 
 # odd formatting
 
+#I'm sure this is a mess of optimizability
+
 pd.set_option('display.expand_frame_repr', False)
 
 def find_nth(haystack, needle, n):

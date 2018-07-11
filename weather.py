@@ -36,9 +36,17 @@ def number_string_to_int(number):
 def main():
    
     # IS THE FORMAT THIS IS PRINTING IN CORRECT?
-
+    
     key = input("Key: ") #Dark Sky API
-    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\course_date_lat_lng_toUTC.csv', index_col = 'Unnamed: 0')
+    cols = ['Golf','Tournament','Course','Date','Score','Latitude','Longitude','UTC Offset']
+    types = [str,str,str,str,float,float,float,float]
+    data_types = dict(zip(cols,types))
+    df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',dtype=data_types,encoding='latin1')
+    print(df)
+    #Create frame of only lat/lng/offset
+    #Use frame to create list containing only unique entries in frame
+    #use list (perhaps as frame for apply()) to get weather data
+    '''
     dates = df.apply(lambda row: row_to_datetime(row),axis=1)
     weather_data = []
     #Dark Sky limits free calls to 1000 per day. By setting start_count and
@@ -140,9 +148,10 @@ def main():
     #CSVs without having to explicitly change the path. The CSVs can be
     #concatenated to complete the dataset. Both lower and upper boundaries
     #used in name are inclusive.
-    writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count-1) + '.csv'
-    wdf.to_csv(writeto_string,index=False)
-    print(wdf)
+    '''
+    #writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count-1) + '.csv'
+    #wdf.to_csv(writeto_string,index=False)
+    #print(wdf)
 
 if __name__=="__main__":
     main()
