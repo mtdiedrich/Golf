@@ -55,10 +55,12 @@ def main():
     tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
     tdf.columns = ['Latitude','Longitude','Region','Timezone','UTC Offset'] 
 
+
     df = gdf.merge(cdf,'outer',['Course'])
     ndf = df[df['Latitude'].isnull()]
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
+
 
     udf = pd.DataFrame(list(set(list(ndf['Course']))))
     udf['SimPred'] = udf.apply(lambda row: predict_course(row),axis=1)
@@ -67,12 +69,19 @@ def main():
     
     udf.apply(lambda row: create_correction_dict(row),axis=1)
 
+
     for x in correction_dict.keys():
         #Would this be faster via apply or vectorization?
+        #More likely than not, I can improve performance via creating a dict 
+        #for which every correctly named course is a key for itself, and every
+        #incorrectly named course is a key for the corresponding correct course.
+        #Then apply to the DataFrame a function that renames the course by
+        #passing the current coursename to the dict. Then I can use the for
+        #loop below without having to do the iteration here.
         ndf.loc[ndf['Course'] == x, 'Latitude'] = correction_dict[x][1]
         ndf.loc[ndf['Course'] == x, 'Longitude'] = correction_dict[x][2]
         ndf.loc[ndf['Course'] == x, 'Course'] = correction_dict[x][0]
-
+        
     df = pd.concat([df,ndf])
 
     df = df.dropna(subset=['Golfer'])
@@ -92,14 +101,11 @@ def main():
         df.loc[df['Course'] == x, 'Latitude'] = geo_dict[x][0]
         df.loc[df['Course'] == x, 'Longitude'] = geo_dict[x][1]
 
-    print(df)
-    print(tdf)
-
     df = df.merge(tdf,how='outer',on=['Latitude','Longitude'])
+
+    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+
     print(df)
-
-    #df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
-
 
     #NO PROGRESS - timezones.py MUST BE REWRITTEN
 
