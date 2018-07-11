@@ -3,12 +3,8 @@ import darksky as ds
 import sys
 from datetime import datetime as dt
 
-pd.set_option('display.max_columns',20)
-pd.set_option('display.width',1000)
-pd.set_option('display.max_rows',1000)
-
 def row_to_datetime(row):
-    date = string_to_date(row['1'],row['To UTC'])
+    date = string_to_date(row['Date'],row['UTC Offset'])
     return date
 
 def string_to_date(date,offset):
@@ -33,19 +29,90 @@ def number_string_to_int(number):
         number = number[1:]
     return int(number)
 
+def foo(row):
+    time = row['Datetimes'].hour
+    day = row['Datetimes'].day
+    month = row['Datetimes'].month
+    year = row['Datetimes'].year
+
+    print(year,month,day,time)
+    '''
+    with ds.forecast(key,lat,lng,time=date) as lw:
+        try:
+            summary = lw.summary
+        except AttributeError:
+            summary = None
+        try:
+            precip_intens = lw.precipIntensity
+        except AttributeError:
+            precip_intens = None 
+        try:
+            precip_intens_error = lw.precipIntensityError
+        except AttributeError:
+            precip_intens_error = None
+        try:
+            precip_probability = lw.precipProbability
+        except AttributeError:
+            precip_probability = None
+        try:
+            precip_type = lw.precipType
+        except AttributeError:
+            precip_type = None 
+        try:
+            temp = lw.temperature
+        except AttributeError:
+            temp = None
+        try:
+            app_temp = lw.apparentTemperature
+        except AttributeError:
+            app_temp = None
+        try:
+            dew_point = lw.dewPoint
+        except AttributeError:
+            dew_point = None
+        try:
+            humidity = lw.humidity
+        except AttributeError:
+            humidity = None
+        try:
+            pressure = lw.pressure
+        except AttributeError:
+            pressure = None
+        try:
+            wind_speed = lw.windSpeed
+        except AttributeError:
+            wind_speed = None
+        try:
+            wind_gust = lw.windGust
+        except AttributeError:
+            wind_gust = None 
+        try:
+            wind_bearing = lw.windBearing
+        except AttributeError:
+            wind_bearing = None
+        try:
+            cloud_cover = lw.cloudCover
+        except AttributeError:
+            cloud_cover = None
+        try:
+            visibility = lw.visibility
+        except AttributeError:
+            visibility = None
+    '''
+
 def main():
    
-    # IS THE FORMAT THIS IS PRINTING IN CORRECT?
-    
     key = input("Key: ") #Dark Sky API
     cols = ['Golf','Tournament','Course','Date','Score','Latitude','Longitude','UTC Offset']
     types = [str,str,str,str,float,float,float,float]
     data_types = dict(zip(cols,types))
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',dtype=data_types,encoding='latin1')
+    df = df[['Date','Latitude','Longitude','UTC Offset']]
+    df = df.drop_duplicates()
+    df = df.dropna(subset=['UTC Offset'])
+    df['Datetimes'] = df.apply(lambda row: row_to_datetime(row),axis=1)
+    df.apply(lambda row: foo(row),axis=1)
     print(df)
-    #Create frame of only lat/lng/offset
-    #Use frame to create list containing only unique entries in frame
-    #use list (perhaps as frame for apply()) to get weather data
     '''
     dates = df.apply(lambda row: row_to_datetime(row),axis=1)
     weather_data = []
