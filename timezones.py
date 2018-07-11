@@ -31,9 +31,10 @@ def main():
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',dtype=data_types,encoding='latin1')
     ndf = df[['Latitude','Longitude']]
     ndf = ndf.drop_duplicates()
-    #Drop nan from ndf
-    #ndf['UTC Offset'] = ndf.apply(lambda row: timezone_data(row),axis=1)
+    ndf = ndf.dropna(subset=['Latitude','Longitude'])
+    ndf['UTC Offset'] = ndf.apply(lambda row: timezone_data(row),axis=1)
     print(ndf)
+    ndf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\lat_lng_utc.csv',index=False)
     
 if __name__=="__main__":
     main()
