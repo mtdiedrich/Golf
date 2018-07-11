@@ -52,10 +52,9 @@ def main():
     cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
     cdf.columns = ['Course','Score','Latitude','Longitude'] 
 
-    tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
-    tdf.columns = ['Latitude','Longitude','Region','Timezone','UTC Offset'] 
-
-
+    tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\lat_lng_utc.csv',encoding='latin1')
+    tdf.columns = ['Latitude','Longitude','UTC Offset'] 
+    
     df = gdf.merge(cdf,'outer',['Course'])
     ndf = df[df['Latitude'].isnull()]
 
@@ -102,32 +101,10 @@ def main():
         df.loc[df['Course'] == x, 'Longitude'] = geo_dict[x][1]
 
     df = df.merge(tdf,how='outer',on=['Latitude','Longitude'])
-
-    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+    df = df.dropna(subset=['Golfer'])
 
     print(df)
-
-    #NO PROGRESS - timezones.py MUST BE REWRITTEN
-
-
-    #cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
-    #cdf = cdf[['Course Name','Latitude','Longitude']]
-    #cdf.columns = ['Course','Latitude','Longitude']
-    #mdf = df.merge(cdf,how='outer',on=['Course'])
-    #mdf = mdf.reset_index(drop=True)
-
-    #tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\timezones.csv',index_col='Unnamed: 0',encoding='latin1')
-    #tdf.columns = ['Latitude','Longitude','Region','Timezone','To UTC']
-    
-    #ndf = mdf.merge(tdf,how='outer',on=['Latitude','Longitude'])
-    #ndf = ndf.drop(['Region'],axis=1)
-
-    #null_df = df[df['Latitude'].isnull()]
-    #null_df.apply(lambda row: lat_sim(row),axis=1)
-    #df['Latitude'] = df.apply(lambda row: temp_fun(row))
-    #df['Longitude'] = df.apply(lambda row: temp_fun(row))
-    #df['Timezone'] = df.apply(lambda row: temp_fun(row))
-    #df['To UTC'] = df.apply(lambda row: temp_fun(row))
+    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
 
 if __name__=="__main__":
     main()
