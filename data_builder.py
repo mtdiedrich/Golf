@@ -1,10 +1,9 @@
 import pandas as pd
 import numpy as np
-from dask import dataframe as dd
 from html_parser import similar
 
-pd.set_option('display.max_columns',12)
-pd.set_option('display.max_rows',10000000)
+pd.set_option('display.max_columns',10)
+pd.set_option('display.max_colwidth',20)
 
 global geo_dict
 global correction_dict
@@ -35,10 +34,6 @@ def create_correction_dict(row):
 
 def main():
     
-    #Link with timezone data
-    #Link w/weather data (may need to redo API calls)
-
-    #Suppress warnings
     #remove unncessary DataFrames
 
     #Consider rewriting in such a way that the code will run even if it cannot
@@ -48,7 +43,31 @@ def main():
     gdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     gdf.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
 
-    hard_coded_changes = {'Mission Hills GC (Olazabal)':'Mission Hills (Olazabal)'}
+    #this is hardcoded because I am a bad person
+    hard_coded_changes = {'Mission Hills GC (Olazabal)':'Mission Hills (Olazabal)',
+                          'Bethpage State Park (Black)':'Bethpage State Park',
+                          'PGA West (Palmer)':'PGA West (Palmer Course)',
+                          'Pinehurst Resort (No. 2)':'Pinehurst Resort &CC',
+                          "Royal St. George's GC":'Royal St. George GC',
+                          "St. George's G&CC":'Royal St. George GC',
+                          'CC at Mirasol (Sunset)':'CC at Mirasol (Sunset Course)',
+                          'Royal Montreal GC(Blue Course)':'Royal Montreal GC (Blue)',
+                          'Royal Montreal GC':'Royal Montreal GC (Blue)',
+                          'Olympia Fields CC':'Olympia Fields CC (North)',
+                          'Torrey Pines GC (South)':'Torrey Pines (North)',
+                          'Medinah CC':'Medinah CC (No. 3)',
+                          'The Olympic Club':'Olympic Club',
+                          'Oak Hills CC':'Oak Hill CC',
+                          'Oakland Hills (South)':'Oakland Hills CC',
+                          'Oakmont CC (South)':'Oakmont CC',
+                          'Champions Course':'Champions GC',
+                          'Muirfield Village GC':'Muirfield',
+                          'St. Andrews GC (Old Course)':'St. Andrews Links (Old Course)',
+                          'TPC Woodlands':'Woodlands CC',
+                          'Winged Foot CC':'Winged Foot GC',
+                          'Las Colinas Sports Club':'TPC Las Colinas'
+                          }
+
     for x in hard_coded_changes.keys():
         gdf.loc[gdf['Course'] == x, 'Course'] = hard_coded_changes[x]
 
@@ -65,7 +84,6 @@ def main():
 
     cdf.apply(lambda row: create_geodata_dict(row),axis=1)
 
-
     udf = pd.DataFrame(list(set(list(ndf['Course']))))
     udf['SimPred'] = udf.apply(lambda row: predict_course(row),axis=1)
     udf['Latitude'] = udf.apply(lambda row: assign_lat(row),axis=1)
@@ -73,9 +91,7 @@ def main():
     
     udf.apply(lambda row: create_correction_dict(row),axis=1)
 
-
     for x in correction_dict.keys():
-        #Would this be faster via apply or vectorization?
         #More likely than not, I can improve performance via creating a dict 
         #for which every correctly named course is a key for itself, and every
         #incorrectly named course is a key for the corresponding correct course.
@@ -110,13 +126,11 @@ def main():
     df = df.dropna(subset=['Golfer'])
 
     fdf = df.merge(wdf,how='outer',on=['Latitude','Longitude','Date'])
+    fdf = fdf.dropna(subset=['Latitude'])
+    fdf = fdf.reset_index(drop=True)
 
-    ndf = df[df['Latitude'].isnull()]
-    print(ndf[['Golfer','Course','Latitude','Longitude']])
-    for x in (sorted(list(set(list(fdf['Course']))))):
-        print(x)
-
-    #df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+    fdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+    print(fdf)
 
 if __name__=="__main__":
     main()
