@@ -14,13 +14,13 @@ Collection and analysis of PGA Tour data. Python for collection and organization
 
 ~~6. Link geolocation data with golfer round data~~
 
-7. Get weather conditions of every course on tournament days, write csv
+~~7. Get weather conditions of every course on tournament days, write csv~~
 
-8. Link weather conditions to each existing round (rewrite to before split by round?)~~
+~~8. Link weather conditions to each existing round (rewrite to before split by round?)~~
 
-9. Get course length, rating, slope for every course
+9. (?) Get course length, rating, slope for every course
 
-10. Create list of data where each element is a list of data~~
+~~10. Create list of data where each element is a list of data~~
 
 11. Find which weather elements strongly correlate and consider removing
 
