@@ -1,11 +1,10 @@
 import pandas as pd
 import numpy as np
+from dask import dataframe as dd
 from html_parser import similar
 
-pd.set_option('display.max_columns',20)
-#pd.set_option('display.max_rows',100000)
-pd.set_option('display.width',1000)
-pd.set_option('display.max_colwidth',25)
+pd.set_option('display.max_columns',12)
+pd.set_option('display.max_rows',10000000)
 
 global geo_dict
 global correction_dict
@@ -49,11 +48,17 @@ def main():
     gdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\golfers.csv',index_col='Unnamed: 0',encoding='latin1')
     gdf.columns = ['Golfer','Tournament','Course','Date 1','Score 1','Date 2','Score 2','Date 3','Score 3','Date 4','Score 4']
 
+    hard_coded_changes = {'Mission Hills GC (Olazabal)':'Mission Hills (Olazabal)'}
+    for x in hard_coded_changes.keys():
+        gdf.loc[gdf['Course'] == x, 'Course'] = hard_coded_changes[x]
+
     cdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\Courses.csv', index_col = 'Unnamed: 0')
     cdf.columns = ['Course','Score','Latitude','Longitude'] 
 
     tdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\lat_lng_utc.csv',encoding='latin1')
     tdf.columns = ['Latitude','Longitude','UTC Offset'] 
+
+    wdf = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather.csv',encoding='latin1')
     
     df = gdf.merge(cdf,'outer',['Course'])
     ndf = df[df['Latitude'].isnull()]
@@ -100,11 +105,18 @@ def main():
         df.loc[df['Course'] == x, 'Latitude'] = geo_dict[x][0]
         df.loc[df['Course'] == x, 'Longitude'] = geo_dict[x][1]
 
+
     df = df.merge(tdf,how='outer',on=['Latitude','Longitude'])
     df = df.dropna(subset=['Golfer'])
 
-    print(df)
-    df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+    fdf = df.merge(wdf,how='outer',on=['Latitude','Longitude','Date'])
+
+    ndf = df[df['Latitude'].isnull()]
+    print(ndf[['Golfer','Course','Latitude','Longitude']])
+    for x in (sorted(list(set(list(fdf['Course']))))):
+        print(x)
+
+    #df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
 
 if __name__=="__main__":
     main()
