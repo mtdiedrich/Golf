@@ -1,7 +1,7 @@
 import pandas as pd
 import darksky as ds
-import sys
 from datetime import datetime as dt
+from requests.exceptions import HTTPError as BaseHTTPError
 
 global KEY
 KEY = input("Key: ") #Dark Sky API
@@ -39,86 +39,89 @@ def foo(row):
     date = row['Date']
     time = row['Datetimes']
     data = [lat,lng,date]
-    
-    with ds.forecast(KEY,lat,lng,time=time) as lw:
-        try:
-            summary = lw.summary
-        except AttributeError:
-            summary = None
-        data += [summary]
-        try:
-            precip_intens = lw.precipIntensity
-        except AttributeError:
-            precip_intens = None 
-        data += [precip_intens]
-        try:
-            precip_intens_error = lw.precipIntensityError
-        except AttributeError:
-            precip_intens_error = None
-        data += [precip_intens_error]
-        try:
-            precip_probability = lw.precipProbability
-        except AttributeError:
-            precip_probability = None
-        data += [precip_probability]
-        try:
-            precip_type = lw.precipType
-        except AttributeError:
-            precip_type = None 
-        data += [precip_type]
-        try:
-            temp = lw.temperature
-        except AttributeError:
-            temp = None
-        data += [temp]
-        try:
-            app_temp = lw.apparentTemperature
-        except AttributeError:
-            app_temp = None
-        data += [app_temp]
-        try:
-            dew_point = lw.dewPoint
-        except AttributeError:
-            dew_point = None
-        data += [dew_point]
-        try:
-            humidity = lw.humidity
-        except AttributeError:
-            humidity = None
-        data += [humidity]
-        try:
-            pressure = lw.pressure
-        except AttributeError:
-            pressure = None
-        data += [pressure]
-        try:
-            wind_speed = lw.windSpeed
-        except AttributeError:
-            wind_speed = None
-        data += [wind_speed]
-        try:
-            wind_gust = lw.windGust
-        except AttributeError:
-            wind_gust = None 
-        data += [wind_gust]
-        try:
-            wind_bearing = lw.windBearing
-        except AttributeError:
-            wind_bearing = None
-        data += [wind_bearing]
-        try:
-            cloud_cover = lw.cloudCover
-        except AttributeError:
-            cloud_cover = None
-        data += [cloud_cover]
-        try:
-            visibility = lw.visibility
-        except AttributeError:
-            visibility = None
-        data += [visibility]
-
+    try:
+        with ds.forecast(KEY,lat,lng,time=time) as lw:
+            try:
+                summary = lw.summary
+            except AttributeError:
+                summary = None
+            data += [summary]
+            try:
+                precip_intens = lw.precipIntensity
+            except AttributeError:
+                precip_intens = None 
+            data += [precip_intens]
+            try:
+                precip_intens_error = lw.precipIntensityError
+            except AttributeError:
+                precip_intens_error = None
+            data += [precip_intens_error]
+            try:
+                precip_probability = lw.precipProbability
+            except AttributeError:
+                precip_probability = None
+            data += [precip_probability]
+            try:
+                precip_type = lw.precipType
+            except AttributeError:
+                precip_type = None 
+            data += [precip_type]
+            try:
+                temp = lw.temperature
+            except AttributeError:
+                temp = None
+            data += [temp]
+            try:
+                app_temp = lw.apparentTemperature
+            except AttributeError:
+                app_temp = None
+            data += [app_temp]
+            try:
+                dew_point = lw.dewPoint
+            except AttributeError:
+                dew_point = None
+            data += [dew_point]
+            try:
+                humidity = lw.humidity
+            except AttributeError:
+                humidity = None
+            data += [humidity]
+            try:
+                pressure = lw.pressure
+            except AttributeError:
+                pressure = None
+            data += [pressure]
+            try:
+                wind_speed = lw.windSpeed
+            except AttributeError:
+                wind_speed = None
+            data += [wind_speed]
+            try:
+                wind_gust = lw.windGust
+            except AttributeError:
+                wind_gust = None 
+            data += [wind_gust]
+            try:
+                wind_bearing = lw.windBearing
+            except AttributeError:
+                wind_bearing = None
+            data += [wind_bearing]
+            try:
+                cloud_cover = lw.cloudCover
+            except AttributeError:
+                cloud_cover = None
+            data += [cloud_cover]
+            try:
+                visibility = lw.visibility
+            except AttributeError:
+                visibility = None
+            data += [visibility]
+    except BaseHTTPError:
+        print("ERROR")
+        print(row)
+        
     s = pd.Series(data)
-    print(s)
+    print(row.name)
     return s
 
 def main():
@@ -131,14 +134,17 @@ def main():
     df = df.drop_duplicates()
     df = df.dropna(subset=['UTC Offset'])
     df['Datetimes'] = df.apply(lambda row: row_to_datetime(row).isoformat(),axis=1)
-    frame['Latitude','Longitude','Date','Summary','Precipitation Intensity',
-          'Precipitation Intensity Error','Precipitation Probability',
-          'Precipitation Type','Temperature','Apparent Temperature',
-          'Dew Point','Humidity','Pressure',] = df.apply(lambda row: foo(row),axis=1)
+    frame = df.apply(lambda row: foo(row),axis=1)
+
+    frame.columns = ['Latitude','Longitude','Date','Summary',
+                     'Precipitation Intensity','Precipitation Intensity Error',
+                     'Precipitation Probability','Precipitation Type',
+                     'Temperature','Apparent Temperature','Dew Point',
+                     'Humidity','Pressure','Wind Speed','Wind Gust',
+                     'Wind Bearing','Cloud Cover','Visibility']
+
     frame.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather.csv',index=False)
     print(frame)
-
-
 
 if __name__=="__main__":
     main()
