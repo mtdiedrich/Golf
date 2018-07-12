@@ -3,6 +3,9 @@ import darksky as ds
 import sys
 from datetime import datetime as dt
 
+global KEY
+KEY = input("Key: ") #Dark Sky API
+
 def row_to_datetime(row):
     date = string_to_date(row['Date'],row['UTC Offset'])
     return date
@@ -30,79 +33,96 @@ def number_string_to_int(number):
     return int(number)
 
 def foo(row):
-    time = row['Datetimes'].hour
-    day = row['Datetimes'].day
-    month = row['Datetimes'].month
-    year = row['Datetimes'].year
 
-    print(year,month,day,time)
-    '''
-    with ds.forecast(key,lat,lng,time=date) as lw:
+    lat = row['Latitude']
+    lng = row['Longitude']
+    date = row['Date']
+    time = row['Datetimes']
+    data = [lat,lng,date]
+    
+    with ds.forecast(KEY,lat,lng,time=time) as lw:
         try:
             summary = lw.summary
         except AttributeError:
             summary = None
+        data += [summary]
         try:
             precip_intens = lw.precipIntensity
         except AttributeError:
             precip_intens = None 
+        data += [precip_intens]
         try:
             precip_intens_error = lw.precipIntensityError
         except AttributeError:
             precip_intens_error = None
+        data += [precip_intens_error]
         try:
             precip_probability = lw.precipProbability
         except AttributeError:
             precip_probability = None
+        data += [precip_probability]
         try:
             precip_type = lw.precipType
         except AttributeError:
             precip_type = None 
+        data += [precip_type]
         try:
             temp = lw.temperature
         except AttributeError:
             temp = None
+        data += [temp]
         try:
             app_temp = lw.apparentTemperature
         except AttributeError:
             app_temp = None
+        data += [app_temp]
         try:
             dew_point = lw.dewPoint
         except AttributeError:
             dew_point = None
+        data += [dew_point]
         try:
             humidity = lw.humidity
         except AttributeError:
             humidity = None
+        data += [humidity]
         try:
             pressure = lw.pressure
         except AttributeError:
             pressure = None
+        data += [pressure]
         try:
             wind_speed = lw.windSpeed
         except AttributeError:
             wind_speed = None
+        data += [wind_speed]
         try:
             wind_gust = lw.windGust
         except AttributeError:
             wind_gust = None 
+        data += [wind_gust]
         try:
             wind_bearing = lw.windBearing
         except AttributeError:
             wind_bearing = None
+        data += [wind_bearing]
         try:
             cloud_cover = lw.cloudCover
         except AttributeError:
             cloud_cover = None
+        data += [cloud_cover]
         try:
             visibility = lw.visibility
         except AttributeError:
             visibility = None
-    '''
+        data += [visibility]
+
+    s = pd.Series(data)
+    print(s)
+    return s
 
 def main():
    
-    key = input("Key: ") #Dark Sky API
     cols = ['Golf','Tournament','Course','Date','Score','Latitude','Longitude','UTC Offset']
     types = [str,str,str,str,float,float,float,float]
     data_types = dict(zip(cols,types))
@@ -110,115 +130,15 @@ def main():
     df = df[['Date','Latitude','Longitude','UTC Offset']]
     df = df.drop_duplicates()
     df = df.dropna(subset=['UTC Offset'])
-    df['Datetimes'] = df.apply(lambda row: row_to_datetime(row),axis=1)
-    df.apply(lambda row: foo(row),axis=1)
-    print(df)
-    '''
-    dates = df.apply(lambda row: row_to_datetime(row),axis=1)
-    weather_data = []
-    #Dark Sky limits free calls to 1000 per day. By setting start_count and
-    #end_count, it is easy to ensure that less than 1000 calls are made.
-    start_count = int(input("Start Index (Inclusive): "))
-    end_count = int(input("Number of Images: ")) + start_count
-    count = start_count
+    df['Datetimes'] = df.apply(lambda row: row_to_datetime(row).isoformat(),axis=1)
+    frame['Latitude','Longitude','Date','Summary','Precipitation Intensity',
+          'Precipitation Intensity Error','Precipitation Probability',
+          'Precipitation Type','Temperature','Apparent Temperature',
+          'Dew Point','Humidity','Pressure',] = df.apply(lambda row: foo(row),axis=1)
+    frame.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\weather.csv',index=False)
+    print(frame)
 
-    for index, row in df.iterrows():
 
-        tourn = row['0']
-        course = row['1']
-        lat = row['2']
-        lng = row['3']
-        date = row_to_datetime(row).isoformat()
-        #Some forecasts do not have all attributes. Handling the thrown
-        #exceptions allows None value to be enterred into data
-        with ds.forecast(key,lat,lng,time=date) as lw:
-            try:
-                summary = lw.summary
-            except AttributeError:
-                summary = None
-            try:
-                precip_intens = lw.precipIntensity
-            except AttributeError:
-                precip_intens = None 
-            try:
-                precip_intens_error = lw.precipIntensityError
-            except AttributeError:
-                precip_intens_error = None
-            try:
-                precip_probability = lw.precipProbability
-            except AttributeError:
-                precip_probability = None
-            try:
-                precip_type = lw.precipType
-            except AttributeError:
-                precip_type = None 
-            try:
-                temp = lw.temperature
-            except AttributeError:
-                temp = None
-            try:
-                app_temp = lw.apparentTemperature
-            except AttributeError:
-                app_temp = None
-            try:
-                dew_point = lw.dewPoint
-            except AttributeError:
-                dew_point = None
-            try:
-                humidity = lw.humidity
-            except AttributeError:
-                humidity = None
-            try:
-                pressure = lw.pressure
-            except AttributeError:
-                pressure = None
-            try:
-                wind_speed = lw.windSpeed
-            except AttributeError:
-                wind_speed = None
-            try:
-                wind_gust = lw.windGust
-            except AttributeError:
-                wind_gust = None 
-            try:
-                wind_bearing = lw.windBearing
-            except AttributeError:
-                wind_bearing = None
-            try:
-                cloud_cover = lw.cloudCover
-            except AttributeError:
-                cloud_cover = None
-            try:
-                visibility = lw.visibility
-            except AttributeError:
-                visibility = None
-
-        weather_data += [[tourn,course,lat,lng,summary,precip_intens,
-                          precip_intens_error,precip_probability,
-                          precip_type,temp,app_temp,dew_point,humidity,
-                          pressure,wind_speed,wind_gust,wind_bearing,
-                          cloud_cover,visibility]]
-        count += 1
-        if count >= end_count:
-            break
-    
-    wdf = pd.DataFrame(weather_data)
-    cols = ['Tournament','Course','Latitude','Longiude','Summary',
-            'Precipitation Intensity','Precipitation Intensity Error',
-            'Precipitation Probability','Precipitation Type','Temperature',
-            'Apparent Temperature','Dew Point','Humidity','Pressure',
-            'Wind Speed','Wind Gust','Wind Bearing','Cloud Cover',
-            'Visibility']
-    wdf.columns = cols
-    #writeto_string allows a new .csv to be written for each pair of
-    #start_count and end_count. This is beneficial as it allows for multiple
-    #CSVs without having to explicitly change the path. The CSVs can be
-    #concatenated to complete the dataset. Both lower and upper boundaries
-    #used in name are inclusive.
-    '''
-    #writeto_string = r'C:\Users\Mitch\Projects\Golf\Data\weather_data_' + str(start_count) + '_through_' + str(end_count-1) + '.csv'
-    #wdf.to_csv(writeto_string,index=False)
-    #print(wdf)
 
 if __name__=="__main__":
     main()
