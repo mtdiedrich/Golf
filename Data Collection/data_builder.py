@@ -34,8 +34,6 @@ def create_correction_dict(row):
 
 def main():
     
-    #remove unncessary DataFrames
-
     #Consider rewriting in such a way that the code will run even if it cannot
     #find input files, but will catch error and instruct user which file needs
     #to be run to catch up
