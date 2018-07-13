@@ -10,6 +10,30 @@ pd.set_option('display.max_columns',20)
 pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',10)
 
+def replace_nan_with_means():
+    x = 0
+
+def replace_nan_with_medians():
+    x = 0
+
+def replace_nan_with_linreg():
+    x = 0
+
+def replace_nan_with_multreg():
+    x = 0
+
+def replace_nan_with_ridgereg():
+    x = 0
+
+def replace_nan_with_lasso():
+    x = 0
+
+def replace_nan_with_sgd():
+    x = 0
+
+def replace_nan_with_svr():
+    x = 0
+
 def main():
 
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
@@ -19,16 +43,19 @@ def main():
     print(corr_mat)
     print() 
     
-    df = df.dropna()
-    x = df[['UTC Offset','Precipitation Intensity',
+    #Build data
+    
+    #Handle Nan with various estimations
+    #Via average
+    #Via prediction from other attributes
+    df_na_drop = df.dropna()
+    x = df_na_drop[['UTC Offset','Precipitation Intensity',
             'Precipitation Intensity Error','Precipitation Probability',
             'Temperature','Apparent Temperature','Dew Point','Humidity',
             'Pressure','Wind Speed','Wind Gust','Wind Bearing',
             'Cloud Cover','Visibility']]
     x = np.asarray(x).reshape(x.shape[0],x.shape[1])
-    #Remove Nan
-    #Handle Nan with various estimations
-    y = df['Score']
+    y = df_na_drop[['Score']]
     y = np.asarray(y).reshape(y.shape[0],1)
 
     linreg = linear_model.LinearRegression()
@@ -36,10 +63,17 @@ def main():
 
     pred = linreg.predict(x)
     residuals = pred - y
-   
+
+    print("RESIDUAL MEAN")
     print(np.mean(residuals))
+    print("RESIDUAL STD")
     print(np.std(residuals))
-    print(np.histogram(residuals))
+    print()
+    for x in range(len(np.histogram(residuals,bins=[x for x in range(-15,20)])[0])):
+        first = np.histogram(residuals,bins=[x for x in range(-15,20)])[0][x]
+        second = np.histogram(residuals,bins=[x for x in range(-15,20)])[1][x]
+        print(first,second)
+        
     
     #mse = mean_squared_error(test_y, pred)
     #print(linreg.intercept_,linreg.coef_,mse)
