@@ -15,24 +15,31 @@ def main():
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
 
     corr_mat = df.corr()
-    corr_mat.columns = [f[0:4] for f in corr_mat.columns]
+    corr_mat.columns = [f[0:8] for f in corr_mat.columns]
     print(corr_mat)
+    print() 
     
-    #Everything broke because you cahnged the format of the input data. For shame.
-    #x = ndf[features[1:]]
-    #x = np.asarray(x).reshape(x.shape[0],x.shape[1])
-    #y = ndf[features[0]]
-    #y = np.asarray(y).reshape(y.shape[0],1)
+    df = df.dropna()
+    x = df[['UTC Offset','Precipitation Intensity',
+            'Precipitation Intensity Error','Precipitation Probability',
+            'Temperature','Apparent Temperature','Dew Point','Humidity',
+            'Pressure','Wind Speed','Wind Gust','Wind Bearing',
+            'Cloud Cover','Visibility']]
+    x = np.asarray(x).reshape(x.shape[0],x.shape[1])
+    #Remove Nan
+    #Handle Nan with various estimations
+    y = df['Score']
+    y = np.asarray(y).reshape(y.shape[0],1)
 
-    #linreg = linear_model.LinearRegression()
-    #linreg.fit(x,y)
+    linreg = linear_model.LinearRegression()
+    linreg.fit(x,y)
 
-    #pred = linreg.predict(x)
-    #residuals = pred - y
+    pred = linreg.predict(x)
+    residuals = pred - y
    
-    #print(np.mean(residuals))
-    #print(np.std(residuals))
-    #print(np.histogram(residuals))
+    print(np.mean(residuals))
+    print(np.std(residuals))
+    print(np.histogram(residuals))
     
     #mse = mean_squared_error(test_y, pred)
     #print(linreg.intercept_,linreg.coef_,mse)
