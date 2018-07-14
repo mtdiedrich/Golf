@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from html_parser import similar
 
-pd.set_option('display.max_columns',10)
+pd.set_option('display.max_columns',15)
 pd.set_option('display.max_colwidth',20)
 
 global geo_dict
@@ -127,8 +127,12 @@ def main():
     fdf = fdf.dropna(subset=['Latitude'])
     fdf = fdf.reset_index(drop=True)
 
-    fdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
-    print(fdf)
+    #fdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',index=False)
+
+    #Don't waste time rebuilding weather
+    #Build a separate module for missing weather data from DARK SKY
+    
+
 
 if __name__=="__main__":
     main()
