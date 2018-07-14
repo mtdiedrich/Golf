@@ -44,9 +44,12 @@ def main():
     print(corr_mat)
     print() 
 
+    df = df.dropna(['Temperature'],axis=1)
+    golfer = input('Golfer: ')
     #BUILD DATA
     #Nan drop    
-    na_drop_df= df.dropna()
+    na_drop_df = df.dropna()
+    na_drop_df = na_drop_df[['Golfer'==golfer]]
     na_drop_x = return_x_and_y(na_drop_df)[0]
     na_drop_y = return_x_and_y(na_drop_df)[1]
     na_linreg = linear_model.LinearRegression()
@@ -64,21 +67,18 @@ def main():
     median_linreg = linear_model.LinearRegression()
     median_linreg.fit(mean_x,y)
 
-    #pred = linreg.predict(na_drop_x)
-    #residuals = pred - na_drop_y
+    pred = linreg.predict(na_drop_x)
+    residuals = pred - na_drop_y
 
-    #print("RESIDUAL MEAN")
-    #print(np.mean(residuals))
-    #print("RESIDUAL STD")
-    #print(np.std(residuals))
-    #print()
-    #for x in range(len(np.histogram(residuals,bins=[x for x in range(-15,20)])[0])):
-        #first = np.histogram(residuals,bins=[x for x in range(-15,20)])[0][x]
-        #second = np.histogram(residuals,bins=[x for x in range(-15,20)])[1][x]
-        #print(first,second)
+    for x in range(len(np.histogram(residuals,bins=[x for x in range(-15,20)])[0])):
+        first = np.histogram(residuals,bins=[x for x in range(-15,20)])[0][x]
+        second = np.histogram(residuals,bins=[x for x in range(-15,20)])[1][x]
+        print(first,second)
         
-    #mse = mean_squared_error(test_y, pred)
-    #print(linreg.intercept_,linreg.coef_,mse)
+    mse = mean_squared_error(test_y, pred)
+    print(linreg.intercept_,linreg.coef_,mse)
+    
+
 
 if __name__=="__main__":
     main()

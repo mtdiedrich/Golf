@@ -125,7 +125,7 @@ def foo(row):
     return s
 
 def main():
-   
+
     cols = ['Golf','Tournament','Course','Date','Score','Latitude','Longitude','UTC Offset']
     types = [str,str,str,str,float,float,float,float]
     data_types = dict(zip(cols,types))
@@ -135,7 +135,6 @@ def main():
     df = df.dropna(subset=['UTC Offset'])
     df['Datetimes'] = df.apply(lambda row: row_to_datetime(row).isoformat(),axis=1)
     frame = df.apply(lambda row: foo(row),axis=1)
-
     frame.columns = ['Latitude','Longitude','Date','Summary',
                      'Precipitation Intensity','Precipitation Intensity Error',
                      'Precipitation Probability','Precipitation Type',
