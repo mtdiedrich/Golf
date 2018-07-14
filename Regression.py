@@ -2,14 +2,15 @@ import pandas as pd
 import numpy as np
 from sklearn import linear_model
 
-pd.set_option('display.max_columns',10)
+pd.set_option('display.max_columns',25)
+pd.set_option('display.max_rows',1000)
 pd.set_option('display.width',1000)
-pd.set_option('display.max_colwidth',20)
+pd.set_option('display.max_colwidth',10)
 
 def return_x_and_y(frame):
     df = frame
     col_data = ['UTC Offset','Precipitation Intensity',
-                'Precipitation Intensity Error','Precipitation Probability',
+                'Precipitation Probability',
                 'Temperature','Apparent Temperature','Dew Point','Humidity',
                 'Pressure','Wind Speed','Wind Gust','Wind Bearing',
                 'Cloud Cover','Visibility']
@@ -26,7 +27,7 @@ def main():
 
     cols = ['Golfer','Tournament','Course','Date','Score','Latitude',
             'Longitude','UTC Offset','Summary','Precipitation Intensity',
-            'Precipitation Intensity Error','Precipitation Probability',
+            'Precipitation Probability','Precipitation Intensity Error',
             'Precipitation Type','Temperature','Apparent Temperature',
             'Dew Point','Humidity','Pressure','Wind Speed','Wind Gust',
             'Wind Bearing','Cloud Cover','Visibility']
@@ -36,47 +37,42 @@ def main():
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',dtype=data_types,encoding='latin1')
 
     numeric_columns = df.select_dtypes(include=[int,float]).columns
-    linreg = linear_model.LinearRegression()
+
+    df = df.dropna(subset=['Temperature'])
+    df = df.loc[df['Golfer'] == input('Golfer: ')]
     y = return_x_and_y(df)[1]
 
-    corr_mat = df.corr()
-    corr_mat.columns = [f[0:8] for f in corr_mat.columns]
-    print(corr_mat)
-    print() 
-
-    df = df.dropna(['Temperature'],axis=1)
-    golfer = input('Golfer: ')
     #BUILD DATA
     #Nan drop    
-    na_drop_df = df.dropna()
-    na_drop_df = na_drop_df[['Golfer'==golfer]]
-    na_drop_x = return_x_and_y(na_drop_df)[0]
-    na_drop_y = return_x_and_y(na_drop_df)[1]
-    na_linreg = linear_model.LinearRegression()
-    na_linreg.fit(na_drop_x,na_drop_y)
-
+    #na_drop_df = df.dropna()
+    #na_drop_x = return_x_and_y(na_drop_df)[0]
+    #na_drop_y = return_x_and_y(na_drop_df)[1]
+    #na_linreg = linear_model.LinearRegression()
+    #na_linreg.fit(na_drop_x,na_drop_y)
+    #print(na_drop_df)
+    
     #Nan mean replacement
     mean_df = df.fillna(df[numeric_columns].mean())
+    mean_df = mean_df.drop(['Precipitation Intensity Error'],axis=1)
+    print(mean_df[mean_df.isnull().any(axis=1)])
     mean_x = return_x_and_y(mean_df)[0]
     mean_linreg = linear_model.LinearRegression()
     mean_linreg.fit(mean_x,y)
 
     #Nan median replacement
-    median_df = df.fillna(df[numeric_columns].median())
-    median_x = return_x_and_y(median_df)[0]
-    median_linreg = linear_model.LinearRegression()
-    median_linreg.fit(mean_x,y)
+    #median_df = df.fillna(df[numeric_columns].median())
+    #median_x = return_x_and_y(median_df)[0]
+    #median_linreg = linear_model.LinearRegression()
+    #median_linreg.fit(median_x,y)
 
-    pred = linreg.predict(na_drop_x)
-    residuals = pred - na_drop_y
+    pred = mean_linreg.predict(mean_x)
+    residuals = pred - y
 
     for x in range(len(np.histogram(residuals,bins=[x for x in range(-15,20)])[0])):
         first = np.histogram(residuals,bins=[x for x in range(-15,20)])[0][x]
         second = np.histogram(residuals,bins=[x for x in range(-15,20)])[1][x]
         print(first,second)
         
-    mse = mean_squared_error(test_y, pred)
-    print(linreg.intercept_,linreg.coef_,mse)
     
 
 
