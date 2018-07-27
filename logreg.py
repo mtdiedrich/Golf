@@ -1,12 +1,10 @@
 import pandas as pd
 import time
 import numpy as np
-from sklearn import linear_model
+from sklearn import linear_model, metrics
 
-pd.set_option('display.width',150)
-pd.set_option('display.max_coumns',100)
-
-
+pd.set_option('display.width',170)
+pd.set_option('display.max_columns',100)
 
 def return_x_and_y(frame):
     df = frame
@@ -53,10 +51,15 @@ def main():
     df[1] = df[1].apply(lambda row: int(row))
     df.columns = np.concatenate((np.array(['Score','prediction']), logreg.classes_),axis=0)
     print(df)
+    print()
 
+    acc = metrics.accuracy_score(test_y, preds)
+    prec = metrics.precision_score(test_y, preds,average='micro')
+    print('Accuracy: ' + str(acc))
+    print('Precision: ' + str(prec))
 
 if __name__=="__main__":
     start = time.time()
     main()
     end = time.time()
-    print(end-start)
+    print('Runtime: ' + str(end-start))
