@@ -1,7 +1,7 @@
 import pandas as pd
 import time
 import numpy as np
-from sklearn import linear_model, metrics
+from sklearn import svm, metrics
 
 pd.set_option('display.width',170)
 pd.set_option('display.max_columns',100)
@@ -32,56 +32,29 @@ def error_mod(row):
 
 def main():
 
-    #Alternative method: log reg then avg with distribution of all golfers
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
     numeric_columns = df.select_dtypes(include=[int,float]).columns
 
     golfer = df.fillna(df[numeric_columns].mean())
     golfer = golfer.sample(frac=1).reset_index(drop=True)
 
-    temp = golfer.loc[golfer['Golfer'] == 'Shane Lowry']
-    test = round(temp.shape[0]/5)
-    train_df = temp[:(temp.shape[0]-test)]
-    test_df = temp[(temp.shape[0]-test):]
-    train_x, train_y = return_x_and_y(train_df)
-    test_x, test_y = return_x_and_y(test_df)
-    logreg = linear_model.LogisticRegression()
-    logreg.fit(train_x,train_y.ravel())
-    preds = logreg.predict(test_x)
-    probs = logreg.predict_proba(test_x)
-    data = []
-    for x in range(len(preds)):
-        data += [np.concatenate((test_y[x],np.array([preds[x]]),probs[x]),axis=0)]
-    df = pd.DataFrame(data)
-    df[0] = df[0].apply(lambda row: int(row))
-    df[1] = df[1].apply(lambda row: int(row))
-    df.columns = np.concatenate((np.array(['Score','prediction']), logreg.classes_),axis=0)
-    df['error'] = df.apply(lambda row: error(row),axis=1)
-    df['error mod'] = df.apply(lambda row: error_mod(row),axis=1)
-    correct = list(df['error'].values >=0)
-    acc = metrics.accuracy_score(test_y, preds)
-    prec = metrics.precision_score(test_y, preds,average='micro')
-    print('Experiment')
-    print('Error: ' + str(sum(abs(df['error'].values))))
-    print('Squared Error: ' + str(sum(df['error'].values**2)))
-    print('Error Mod: ' + str(sum(abs(df['error mod'].values))))
-    print('Squared Error Mod: ' + str(sum(df['error mod'].values**2)))
-    print('Accuracy: ' + str(acc))
-    print('Precision: ' + str(prec))
-    print('Hit rate: ' + str(correct.count(True)/len(correct)))
-    print()
 
-    temp = golfer.loc[golfer['Golfer'] == 'Kevin Streelman']
+    temp = golfer
+
     test = round(temp.shape[0]/5)
     train_df = temp[:(temp.shape[0]-test)]
     test_df = temp[(temp.shape[0]-test):]
+
     train_x, train_y = return_x_and_y(train_df)
     test_x, test_y = return_x_and_y(test_df)
-    logreg = linear_model.LogisticRegression()
+
+    logreg = svm.SVC()
     logreg.fit(train_x,train_y.ravel())
+
     preds = logreg.predict(test_x)
     probs = logreg.predict_proba(test_x)
     data = []
+
     for x in range(len(preds)):
         data += [np.concatenate((test_y[x],np.array([preds[x]]),probs[x]),axis=0)]
     df = pd.DataFrame(data)
@@ -91,9 +64,11 @@ def main():
     df['error'] = df.apply(lambda row: error(row),axis=1)
     df['error mod'] = df.apply(lambda row: error_mod(row),axis=1)
     correct = list(df['error'].values >=0)
+
     acc = metrics.accuracy_score(test_y, preds)
     prec = metrics.precision_score(test_y, preds,average='micro')
-    print('Experiment')
+
+    print('Control')
     print('Error: ' + str(sum(abs(df['error'].values))))
     print('Squared Error: ' + str(sum(df['error'].values**2)))
     print('Error Mod: ' + str(sum(abs(df['error mod'].values))))
