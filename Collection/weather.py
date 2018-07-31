@@ -121,7 +121,6 @@ def foo(row):
         print(row)
         
     s = pd.Series(data)
-    print(row.name)
     return s
 
 def main():
