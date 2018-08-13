@@ -113,21 +113,9 @@ def get_weather(lat,lng,time):
 
 def main():
 
-    #Alternative method: log reg then avg with distribution of all golfers
-    #Classify scores iteratively
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
     numeric_columns = df.select_dtypes(include=[int,float]).columns
 
-
-    # Change all this info
-    latitude = 38.659434
-    longitude = -90.482938
-    year = 2018
-    month = 8
-    day = 10
-    hour_offset = -1
-    hour = 12 + hour_offset
-    
     weath = get_weather(latitude,longitude,datetime.datetime(year,month,day,hour).isoformat())
 
     golfer = df.fillna(df[numeric_columns].mean())
@@ -143,12 +131,12 @@ def main():
     dfs = []
 
     for i in golfers:
-        temp = golfer.loc[golfer['Golfer'] == i]
-        test = round(temp.shape[0]/5)
-        train_df = temp[:(temp.shape[0]-test)]
-        test_df = temp[(temp.shape[0]-test):]
-        train_x, train_y = return_x_and_y(train_df)
-        test_x, test_y = return_x_and_y(test_df)
+#        temp = golfer.loc[golfer['Golfer'] == i]
+#        test = round(temp.shape[0]/5)
+#        train_df = temp[:(temp.shape[0]-test)]
+#        test_df = temp[(temp.shape[0]-test):]
+#        train_x, train_y = return_x_and_y(train_df)
+#        test_x, test_y = return_x_and_y(test_df)
         logreg = linear_model.LogisticRegression()
         logreg.fit(train_x,train_y.ravel())
         preds = logreg.predict(test_x)
@@ -214,10 +202,49 @@ def main():
     total = round(total *100,2)
     print('Tie: ' + str(total) + '%')
 
-if __name__=="__main__":
-    print()
-    start = time.time()
-    main()
-    end = time.time()
-    print()
-    print('Runtime: ' + str(end-start))
+class Model:
+
+    def __init__(self,filename):
+        self.lines = pd.read_csv(filename)
+        self.data = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
+        numeric_columns = self.data.select_dtypes(include=[int,float]).columns
+        self.data = self.data.fillna(self.data[numeric_columns].mean())
+        favorites = list(self.lines['Favorite'])
+        dogs = list(self.lines['Dog'])
+        golfers = list(set(list(favorites+dogs)))
+        golfer_dfs = [self.data.loc[self.data['Golfer'] == x] for x in golfers]
+        logreg = linear_model.LogisticRegression()
+        wpdf = self.lines[['Latitude','Longitude','Date']].drop_duplicates()
+        weather = get_weather(float(wpdf['Latitude'][0]),float(wpdf['Longitude'][0]),datetime.datetime.strptime(str(wpdf['Date'][0]),"%m/%d/%Y").isoformat())
+        dfs = []
+        for golfer in golfer_dfs:
+            name = list(set(list(golfer['Golfer'])))
+            x, y = return_x_and_y(golfer)
+            logreg.fit(x,y.ravel())
+            weath_proba = logreg.predict_proba(weather.values.reshape(1,-1))
+            df = pd.DataFrame(weath_proba)
+            df.columns = logreg.classes_
+            df.index = [name]
+            dfs += [df]
+        df = pd.concat(dfs)
+        self.probabilities = df.fillna(0)
+
+    def get_downward_cumulative_probabilities(self):
+        probabilities = self.probabilities
+        prob_list = np.asarray(probabilities)
+        cumulative_downward = pd.DataFrame([np.cumsum(np.flip(x,axis=0)) for x in prob_list])
+        cumulative_downward.index = probabilities.index
+        cumulative_downward.columns = probabilities.columns
+        return cumulative_downward
+
+    def evaluate(self):
+        probabilities = self.probabilities
+        lines = self.lines
+        downward = self.get_downward_cumulative_probabilities()
+        for x in lines.values.tolist():
+            golfer1 = x[0]
+            golfer2 = x[2]
+            g1_probs = probabilities.loc[probabilities.index == golfer1]
+            g2_probs = probabilities.loc[probabilities.index == golfer2]
+            g1_down = probabilities.loc[downward.index == golfer1]
+            g2_down = probabilities.loc[downward.index == golfer1]
