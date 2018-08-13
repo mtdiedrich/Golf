@@ -1,3 +1,4 @@
+import LogisticRegressionModel
 import pandas as pd
 import numpy as np
 
@@ -17,25 +18,35 @@ def implied_probabilities(values):
         probabilities += [temp_probabilities]
     return probabilities
 
+def kelly_criterion(data):
+    kelly = []
+    for x in data:
+        kelly += [np.sqrt(np.sqrt(100*(x[3]-x[2])/(1-x[2])))]
+    return kelly
+
 def main():
 
-    lat = 38.659434
-    lng = -90.482938
-    data = [['Pat Perez',133,'Henrik Stenson',-160, lat, lng, 2018, 8, 18, -1],
-            ['Keegan Bradley',104,'Phil Mickelson',-124,lat, lng, 2018, 8, 18, -1],
-            ['Jhonattan Vegas',121,'Matthew Fitzpatrick',-146, lat, lng, 2018, 8, 18, -1],
-            ['Haotong Li',108,'Brandt Snedeker',-130,lat,lng,2018,8,18, -1],
-            ['Yuta Ikeda',132,'Adam Hadwin',-159,lat,lng,2018,8,18, -1]]
-    df = pd.DataFrame(data)
-    df.columns = ['Dog','Dog Odds','Favorite','Favorite Odds','Lat','Lng','Year','Month','Day','Hour Offset']
-    vals = np.asarray(df)
-    implied = implied_probabilities(vals)
+    logreg = LogisticRegressionModel.Model(r'C:\Users\Mitch\Projects\Golf\Data\Lines.csv')
+    evals = logreg.evaluate()
+    implied = implied_probabilities(np.asarray(logreg.lines))
     ip = pd.DataFrame(implied)
-    ip.columns = ['Dog Implied','Favorite Implied']
-    df = pd.concat([df,ip],axis=1)
-    df = df[['Favorite','Favorite Odds','Favorite Implied','Dog','Dog Odds','Dog Implied','Lat','Lng','Year','Month','Day','Hour Offset']]
+    ip.columns = ['First Implied','Second Implied']
+    df = pd.concat([logreg.lines,ip],axis=1)
+    first_df = df[['First Golfer','First Odds','First Implied']]
+    second_df = df[['Second Golfer','Second Odds','Second Implied']]
+    cols = ['Golfer','Odds','Implied']
+    first_df.columns = cols
+    second_df.columns = cols
+    df = pd.concat([first_df,second_df])
+    df = df.reset_index(drop=True)
+    projections = {}
+    for x in evals:
+        for y in x.keys():
+            projections[y] = x[y]
+    df['Prediction'] = [projections[x] for x in list(df['Golfer'])]
+    df['Kelly'] = kelly_criterion(np.asarray(df))
+    df = df.dropna()
     print(df)
-
 
 if __name__=="__main__":
     main()

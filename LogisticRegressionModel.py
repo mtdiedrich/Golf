@@ -209,8 +209,8 @@ class Model:
         self.data = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
         numeric_columns = self.data.select_dtypes(include=[int,float]).columns
         self.data = self.data.fillna(self.data[numeric_columns].mean())
-        favorites = list(self.lines['Favorite'])
-        dogs = list(self.lines['Dog'])
+        favorites = list(self.lines['First Golfer'])
+        dogs = list(self.lines['Second Golfer'])
         golfers = list(set(list(favorites+dogs)))
         golfer_dfs = [self.data.loc[self.data['Golfer'] == x] for x in golfers]
         logreg = linear_model.LogisticRegression()
