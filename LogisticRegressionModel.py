@@ -215,7 +215,9 @@ class Model:
         golfer_dfs = [self.data.loc[self.data['Golfer'] == x] for x in golfers]
         logreg = linear_model.LogisticRegression()
         wpdf = self.lines[['Latitude','Longitude','Date']].drop_duplicates()
-        weather = get_weather(float(wpdf['Latitude'][0]),float(wpdf['Longitude'][0]),datetime.datetime.strptime(str(wpdf['Date'][0]),"%m/%d/%Y").isoformat())
+        hour = int(float(wpdf['Longitude'][0])/15) + 17
+        date = str(wpdf['Date'][0]) + '-' + str(hour)
+        weather = get_weather(float(wpdf['Latitude'][0]),float(wpdf['Longitude'][0]),datetime.datetime.strptime(date,"%m/%d/%Y-%H").isoformat())
         dfs = []
         for golfer in golfer_dfs:
             name = list(set(list(golfer['Golfer'])))
@@ -228,23 +230,35 @@ class Model:
             dfs += [df]
         df = pd.concat(dfs)
         self.probabilities = df.fillna(0)
+        self.probabilities.columns = [int(x) for x in self.probabilities.columns]
 
     def get_downward_cumulative_probabilities(self):
         probabilities = self.probabilities
         prob_list = np.asarray(probabilities)
-        cumulative_downward = pd.DataFrame([np.cumsum(np.flip(x,axis=0)) for x in prob_list])
+        cumulative_downward = pd.DataFrame([np.flip(np.cumsum(np.flip(x,axis=0)),axis=0) for x in prob_list])
         cumulative_downward.index = probabilities.index
-        cumulative_downward.columns = probabilities.columns
+        cumulative_downward.columns = [int(x) for x in probabilities.columns]
         return cumulative_downward
 
     def evaluate(self):
         probabilities = self.probabilities
         lines = self.lines
         downward = self.get_downward_cumulative_probabilities()
+        evals = []
         for x in lines.values.tolist():
             golfer1 = x[0]
             golfer2 = x[2]
             g1_probs = probabilities.loc[probabilities.index == golfer1]
             g2_probs = probabilities.loc[probabilities.index == golfer2]
-            g1_down = probabilities.loc[downward.index == golfer1]
-            g2_down = probabilities.loc[downward.index == golfer1]
+            g1_down = downward.loc[downward.index == golfer1]
+            g2_down = downward.loc[downward.index == golfer2]
+            
+            evaluations = {x: 0 for x in [golfer1,golfer2]}
+            for x in probabilities.columns:
+                for y in probabilities.columns:
+                    if x==y-1:
+                        evaluations[golfer1] += g1_probs[x][0] * g2_down[y][0]
+                        evaluations[golfer2] += g2_probs[x][0] * g1_down[y][0]
+            evaluations['Push'] = 1 - evaluations[golfer1] - evaluations[golfer2]
+            evals += [evaluations]
+        return evals

@@ -124,7 +124,7 @@ def main():
     longitude = -90.482938
     year = 2018
     month = 8
-    day = 10
+    day = 9
     hour_offset = -1
     hour = 12 + hour_offset
     
@@ -213,6 +213,10 @@ def main():
                 total += g1[x] * g2[y]
     total = round(total *100,2)
     print('Tie: ' + str(total) + '%')
+
+    print(g1)
+    print(g2)
+
 
 if __name__=="__main__":
     print()
