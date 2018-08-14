@@ -213,24 +213,31 @@ class Model:
         dogs = list(self.lines['Second Golfer'])
         golfers = list(set(list(favorites+dogs)))
         golfer_dfs = [self.data.loc[self.data['Golfer'] == x] for x in golfers]
+        real_golfers = list(set(list(pd.concat(golfer_dfs)['Golfer'])))
+        fail_list = [x for x in golfers if x not in real_golfers]
         logreg = linear_model.LogisticRegression()
         wpdf = self.lines[['Latitude','Longitude','Date']].drop_duplicates()
         hour = int(float(wpdf['Longitude'][0])/15) + 17
         date = str(wpdf['Date'][0]) + '-' + str(hour)
         weather = get_weather(float(wpdf['Latitude'][0]),float(wpdf['Longitude'][0]),datetime.datetime.strptime(date,"%m/%d/%Y-%H").isoformat())
         dfs = []
-        for golfer in golfer_dfs:
-            name = list(set(list(golfer['Golfer'])))
-            x, y = return_x_and_y(golfer)
-            logreg.fit(x,y.ravel())
-            weath_proba = logreg.predict_proba(weather.values.reshape(1,-1))
-            df = pd.DataFrame(weath_proba)
-            df.columns = logreg.classes_
-            df.index = [name]
-            dfs += [df]
-        df = pd.concat(dfs)
-        self.probabilities = df.fillna(0)
-        self.probabilities.columns = [int(x) for x in self.probabilities.columns]
+        try:
+            for golfer in golfer_dfs:
+                name = list(set(list(golfer['Golfer'])))
+                x, y = return_x_and_y(golfer)
+                logreg.fit(x,y.ravel())
+                weath_proba = logreg.predict_proba(weather.values.reshape(1,-1))
+                df = pd.DataFrame(weath_proba)
+                df.columns = logreg.classes_
+                df.index = [name]
+                dfs += [df]
+            df = pd.concat(dfs)
+            self.probabilities = df.fillna(0)
+            self.probabilities.columns = [int(x) for x in self.probabilities.columns]
+        except ValueError:
+            print('Golfers not found: ')
+            for x in fail_list:
+                print(x)
 
     def get_downward_cumulative_probabilities(self):
         probabilities = self.probabilities

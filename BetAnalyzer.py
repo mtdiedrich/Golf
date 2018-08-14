@@ -27,7 +27,10 @@ def kelly_criterion(data):
 def main():
 
     logreg = LogisticRegressionModel.Model(r'C:\Users\Mitch\Projects\Golf\Data\Lines.csv')
-    evals = logreg.evaluate()
+    try:
+        evals = logreg.evaluate()
+    except AttributeError:
+        print('Resolve above issue before continuing')
     implied = implied_probabilities(np.asarray(logreg.lines))
     ip = pd.DataFrame(implied)
     ip.columns = ['First Implied','Second Implied']
