@@ -1,4 +1,5 @@
 import LogisticRegressionModel
+import os
 import pandas as pd
 import numpy as np
 
@@ -54,6 +55,30 @@ def main():
         df['Date'] = [list(logreg.lines['Date'])[0] for x in range(df.shape[0])]
         df = df.dropna()
         print(df)
+
+        entry = None
+        indices = []
+        while entry != '!':
+            entry = input('Row to write: ')
+            if entry == 'A':
+                indices = df.index
+                entry = '!'
+            if entry != '!':
+                indices += [entry]
+        if 'History.csv' in os.listdir(r'C:\Users\Mitch\Projects\Golf\Data'):
+            hist = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv')
+            df = df.loc[df.index.isin(indices)]
+            df['Grade'] = [np.nan for x in df.index]
+            df = pd.concat([hist,df])
+            df = df.reset_index(drop=True)
+            df = df[['Date','Golfer','Matchup','Odds','Implied','Prediction','Kelly','Grade']]
+            df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv',index=False)
+        else:
+            df = df.loc[df.index.isin(indices)]
+            df = df.reset_index(drop=True)
+            df = df[['Date','Golfer','Matchup','Odds','Implied','Prediction','Kelly']]
+            df['Grade'] = [np.nan() for x in df.index]
+            df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv',index=False)
 
 if __name__=="__main__":
     main()
