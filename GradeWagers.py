@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 
 pd.set_option('display.width',500)
+pd.set_option('display.max_row',500)
 
 def grade(data):
     grades = []
@@ -27,6 +28,7 @@ def grade(data):
 
 def main():
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv')
+    df = df.drop_duplicates()
     df['Grade'] = grade(np.asarray(df))
     print(df)
     df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv',index=False)

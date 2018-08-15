@@ -2,10 +2,6 @@ import itertools
 import pandas as pd
 import numpy as np
 
-pd.set_option('display.width',175)
-pd.set_option('display.max_columns',40)
-pd.set_option('display.max_rows',2500)
-
 class ProportionalModel:
 
     def __init__(self,full=False):

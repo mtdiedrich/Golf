@@ -77,7 +77,7 @@ def main():
             df = df.loc[df.index.isin(indices)]
             df = df.reset_index(drop=True)
             df = df[['Date','Golfer','Matchup','Odds','Implied','Prediction','Kelly']]
-            df['Grade'] = [np.nan() for x in df.index]
+            df['Grade'] = [np.nan for x in df.index]
             df.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\History.csv',index=False)
 
 if __name__=="__main__":
