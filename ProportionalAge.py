@@ -1,8 +1,7 @@
 import time
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.signal import savgol_filter
+from collections import Counter
 
 def main():
     df = pd.read_csv(r'C:\Users\Mitch\Projects\Golf\Data\full_data.csv',encoding='latin1')
@@ -24,19 +23,9 @@ def main():
                 rounds[y] += [x['Score'][y]]
             except KeyError:
                 continue
-    proportions = []
-    for x in rounds.keys():
-        idf = pd.Series(rounds[x])
-        count = idf.value_counts()
-        proportion = count/count.sum()
-        proportions += [proportion]
-    pdf = pd.concat(proportions,axis=1)
-    pdf = pdf.fillna(0)
-    pdf = pdf.T
-    pdf.to_csv(r'C:\Users\Mitch\Projects\Golf\Data\AgeProbs.csv')
-    print(pdf)
-        
-        
+    scores = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in rounds.items()]))
+    print(scores)
+
 
 if __name__ == "__main__":
     start = time.time()
