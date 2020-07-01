@@ -1,7 +1,7 @@
 # Golf
 Collection and analysis of PGA Tour data. Python for collection and organization of data. Analysis may be performed in Python, R, Julia, or MATLAB.
 
-# Process (Status: Collecting Data)
+# Process (Status: DEAD)
 ~~1. Download the results webpages for every year of all PGA Tour Tournaments~~
 
 ~~2. Parse webpages into data by golfer~~
